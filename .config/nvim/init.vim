@@ -47,11 +47,17 @@ Plug 'deoplete-plugins/deoplete-jedi', { 'do': ':UpdateRemotePlugins' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+" Aesthetic:
 " Color Theme
 Plug 'drewtempelmeyer/palenight.vim'
 
-" Goyo (zen mode)
+" Goyo and limelight (zen mode)
 Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
+
+" LaTeX:
+" this plug contains a bunch of LaTeX support stuff
+Plug 'lervag/vimtex'
 
 call plug#end()
 
@@ -98,3 +104,13 @@ let g:jedi#usages_command = ',o'
 let g:jedi#goto_assignments_command = ',a'
 " Go to definition in new tab
 nmap ,D :tab split<CR>:call jedi#goto()<CR>
+
+" Goyo and Limelight--------------------
+" turn on limelight only while in goyo
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!
+" Color name (:help cterm-colors) or ANSI code
+let g:limelight_conceal_ctermfg = 'gray'
+let g:limelight_conceal_ctermfg = 240
+
+" hi! Normal ctermbg=NONE guibg=NONE
