@@ -50,6 +50,9 @@ Plug 'vim-airline/vim-airline-themes'
 " Color Theme
 Plug 'drewtempelmeyer/palenight.vim'
 
+" Goyo (zen mode)
+Plug 'junegunn/goyo.vim'
+
 call plug#end()
 
 " Install plugins on new install:
@@ -69,7 +72,8 @@ set completeopt+=noinsert
 
 " change color scheme
 colorscheme palenight
-" let g:lightline.colorscheme = 'palenight'
+" let g:airline_theme = 'palenight' " palenight hasn't been added to airline
+" yet
 
 " === Specific Plugin Settings ===
 
