@@ -1,7 +1,7 @@
 " neovim .init.vim file 
 " Author: Liam Timms
-" Date: 4/29/19 
-" Version: 1.0
+" Date: 5/2/19 
+" Version: 1.1
 
 " ====== Vim-plug install =======
 " taken from:
@@ -47,6 +47,9 @@ Plug 'deoplete-plugins/deoplete-jedi', { 'do': ':UpdateRemotePlugins' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+" Color Theme
+Plug 'drewtempelmeyer/palenight.vim'
+
 call plug#end()
 
 " Install plugins on new install:
@@ -63,6 +66,10 @@ set nu
 " make autocompletion behave better
 set wildmode=list:longest
 set completeopt+=noinsert
+
+" change color scheme
+colorscheme palenight
+" let g:lightline.colorscheme = 'palenight'
 
 " === Specific Plugin Settings ===
 
