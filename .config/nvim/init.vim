@@ -3,6 +3,12 @@
 " Date: 5/3/19 
 " Version: 1.1
 
+" TODO: add file type checking so that different settings are loaded for
+" python, latex or anything else I end up doing. 
+" TODO: add file type specifc key bindings, i.e. one short cut to create a
+" comment in markdown, laTeX, python, MATLAB, etc. with the appropiate syntax
+" for that file type.
+
 " ====== Vim-plug install =======
 " taken from:
 " raw.githubusercontent.com/fisadev/fisa-nvim-config/master/init.vim
@@ -114,3 +120,7 @@ let g:limelight_conceal_ctermfg = 'gray'
 let g:limelight_conceal_ctermfg = 240
 
 " hi! Normal ctermbg=NONE guibg=NONE
+"
+" vimtex -------------------------------
+let g:vimtex_view_method = 'zathura'
+
