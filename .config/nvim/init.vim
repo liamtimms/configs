@@ -76,7 +76,8 @@ endif
 " ======= General Settings ======
 "
 " show line numbers
-set nu
+" set nu
+set number relativenumber
 
 " make autocompletion behave better
 set wildmode=list:longest
@@ -113,8 +114,8 @@ nmap ,D :tab split<CR>:call jedi#goto()<CR>
 
 " Goyo and Limelight--------------------
 " turn on limelight only while in goyo
-autocmd! User GoyoEnter Limelight
-autocmd! User GoyoLeave Limelight!
+" autocmd! User GoyoEnter Limelight
+" autocmd! User GoyoLeave Limelight!
 " Color name (:help cterm-colors) or ANSI code
 let g:limelight_conceal_ctermfg = 'gray'
 let g:limelight_conceal_ctermfg = 240
