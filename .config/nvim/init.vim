@@ -65,6 +65,11 @@ Plug 'junegunn/limelight.vim'
 " this plug contains a bunch of LaTeX support stuff
 Plug 'lervag/vimtex'
 
+" Prose:
+" this plug helps navigation and writing of prose (paragraphs
+" instead of lines of code)
+Plug 'reedes/vim-pencil'
+
 call plug#end()
 
 " Install plugins on new install:
