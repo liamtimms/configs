@@ -1,7 +1,7 @@
 " neovim .init.vim file 
 " Author: Liam Timms
-" Date: 5/3/19 
-" Version: 1.1
+" Date: 5/24/19 
+" Version: 1.2
 
 " TODO: add file type checking so that different settings are loaded for
 " python, latex or anything else I end up doing. 
@@ -48,6 +48,9 @@ Plug 'davidhalter/jedi-vim'
 " deoplete-jedi (connects them)
 Plug 'deoplete-plugins/deoplete-jedi', { 'do': ':UpdateRemotePlugins' }
 
+" easier parenthesis, etc. 
+Plug 'tpope/vim-surround'
+
 " Statusline:
 " airline and associated theming
 Plug 'vim-airline/vim-airline'
@@ -56,7 +59,6 @@ Plug 'vim-airline/vim-airline-themes'
 " Aesthetic:
 " Color Theme
 Plug 'drewtempelmeyer/palenight.vim'
-
 " Goyo and limelight (zen mode)
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
