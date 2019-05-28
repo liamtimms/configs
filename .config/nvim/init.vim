@@ -1,6 +1,6 @@
-" neovim .init.vim file 
+" neovim .init.vim file
 " Author: Liam Timms
-" Date: 5/24/19 
+" Date: 5/24/19
 " Version: 1.2
 
 " TODO: add file type checking so that different settings are loaded for
@@ -55,6 +55,10 @@ Plug 'tpope/vim-surround'
 " airline and associated theming
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+
+" Git:
+" git integration that works wiht airline
+Plug 'tpope/vim-fugitive'
 
 " Aesthetic:
 " Color Theme
@@ -126,6 +130,11 @@ nmap ,D :tab split<CR>:call jedi#goto()<CR>
 " Color name (:help cterm-colors) or ANSI code
 let g:limelight_conceal_ctermfg = 'gray'
 let g:limelight_conceal_ctermfg = 240
+
+" Airline -----------------------------
+" I want to have the little arrows in airline instead of flat blocks
+" Apparently this requires Installing powerline symbols so I'm not
+" bothering right now
 
 " hi! Normal ctermbg=NONE guibg=NONE
 "
