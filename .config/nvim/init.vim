@@ -7,7 +7,7 @@
 " python, latex or anything else I end up doing. 
 " TODO: add file type specifc key bindings, i.e. one short cut to create a
 " comment in markdown, laTeX, python, MATLAB, etc. with the appropiate syntax
-" for that file type.
+" for that file type. 
 
 " ====== Vim-plug install =======
 " taken from:
@@ -70,6 +70,8 @@ Plug 'junegunn/limelight.vim'
 " LaTeX:
 " this plug contains a bunch of LaTeX support stuff
 Plug 'lervag/vimtex'
+" this plug allows a live preview of LaTeX
+Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 
 " Prose:
 " this plug helps navigation and writing of prose (paragraphs
@@ -140,4 +142,6 @@ let g:limelight_conceal_ctermfg = 240
 "
 " vimtex -------------------------------
 let g:vimtex_view_method = 'zathura'
+" vim-latex-live-preview ---------------
+let g:livepreview_previewer = 'zathura'
 
