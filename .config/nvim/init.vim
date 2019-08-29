@@ -1,13 +1,13 @@
 " neovim .init.vim file
 " Author: Liam Timms
-" Date: 5/24/19
-" Version: 1.2
+" Date: 8/28/19
+" Version: 1.5
 
 " TODO: add file type checking so that different settings are loaded for
-" python, latex or anything else I end up doing. 
+" python, latex or anything else I end up doing.
 " TODO: add file type specifc key bindings, i.e. one short cut to create a
 " comment in markdown, laTeX, python, MATLAB, etc. with the appropiate syntax
-" for that file type. 
+" for that file type.
 
 " ====== Vim-plug install =======
 " taken from:
@@ -34,7 +34,7 @@ endif
 call plug#begin('~/.config/nvim/plugged')
 
 " Autocomplete:
-" deoplete (neovim autocompletion) 
+" deoplete (neovim autocompletion)
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 else
@@ -48,7 +48,7 @@ Plug 'davidhalter/jedi-vim'
 " deoplete-jedi (connects them)
 Plug 'deoplete-plugins/deoplete-jedi', { 'do': ':UpdateRemotePlugins' }
 
-" easier parenthesis, etc. 
+" easier parenthesis, etc.
 Plug 'tpope/vim-surround'
 
 " Statusline:
@@ -101,6 +101,15 @@ colorscheme palenight
 " let g:airline_theme = 'palenight' " palenight hasn't been added to airline
 " yet
 
+" delete all extra whitespace when saving
+autocmd BufWritePre * %s/\s\+$//e
+
+" change tabs into spaces
+set tabstop=4 shiftwidth=4 expandtab
+
+" pressing F2 shows tabs and the end of the line more explicitly
+nnoremap <F2> :<C-U>setlocal lcs=tab:>-,trail:-,eol:$ list! list? <CR>
+
 " === Specific Plugin Settings ===
 
 " Deoplete -----------------------------
@@ -127,8 +136,8 @@ nmap ,D :tab split<CR>:call jedi#goto()<CR>
 
 " Goyo and Limelight--------------------
 " turn on limelight only while in goyo
-" autocmd! User GoyoEnter Limelight
-" autocmd! User GoyoLeave Limelight!
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!
 " Color name (:help cterm-colors) or ANSI code
 let g:limelight_conceal_ctermfg = 'gray'
 let g:limelight_conceal_ctermfg = 240
@@ -145,3 +154,4 @@ let g:vimtex_view_method = 'zathura'
 " vim-latex-live-preview ---------------
 let g:livepreview_previewer = 'zathura'
 
+" TODO: alias 'gj' to 'j' in .tex
