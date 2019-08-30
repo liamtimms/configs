@@ -1,6 +1,6 @@
 " neovim .init.vim file
 " Author: Liam Timms
-" Date: 8/28/19
+" Date: 8/29/19
 " Version: 1.5
 
 " TODO: add file type checking so that different settings are loaded for
@@ -109,6 +109,10 @@ set tabstop=4 shiftwidth=4 expandtab
 
 " pressing F2 shows tabs and the end of the line more explicitly
 nnoremap <F2> :<C-U>setlocal lcs=tab:>-,trail:-,eol:$ list! list? <CR>
+
+" pressing F3 turns on spell
+nnoremap <F3> :setlocal spell spelllang=en_us
+
 
 " === Specific Plugin Settings ===
 
