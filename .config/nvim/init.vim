@@ -1,6 +1,6 @@
 " neovim .init.vim file
 " Author: Liam Timms
-" Date: 8/29/19
+" Date: 9/11/19
 " Version: 1.5
 
 " TODO: add file type checking so that different settings are loaded for
@@ -150,6 +150,7 @@ let g:limelight_conceal_ctermfg = 240
 " I want to have the little arrows in airline instead of flat blocks
 " Apparently this requires Installing powerline symbols so I'm not
 " bothering right now
+let g:airline_powerline_fonts = 1
 
 " hi! Normal ctermbg=NONE guibg=NONE
 "
