@@ -8,6 +8,10 @@ case $- in
       *) return;;
 esac
 
+export EDITOR=nvim
+source /usr/share/git/completion/git-prompt.sh
+source /usr/share/git/completion/git-completion.bash
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
@@ -58,6 +62,7 @@ fi
 
 if [ "$color_prompt" = yes ]; then
     PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    PS1='\[\033[38;5;4m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\]\[$(tput sgr0)\]\[\033[38;5;12m\]$(__git_ps1 "[%s]")\[\033[38;5;14m\]\$\[$(tput sgr0)\] '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -123,6 +128,6 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 # custom bash codes are in ~/bin
-if [ -d "$HOME/bin" ] ; then
+if [ -d "$HOME/bin/" ] ; then
     export PATH="$HOME/bin:$PATH"
 fi
