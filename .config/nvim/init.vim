@@ -1,13 +1,12 @@
 " neovim .init.vim file
 " Author: Liam Timms
-" Date: 8/29/19
-" Version: 1.5
+" Arch
 
 " TODO: add file type checking so that different settings are loaded for
 " python, latex or anything else I end up doing.
 " TODO: add file type specifc key bindings, i.e. one short cut to create a
 " comment in markdown, laTeX, python, MATLAB, etc. with the appropiate syntax
-" for that file type.
+" for that file type (or find a plugin that does this)
 
 " ====== Vim-plug install =======
 " taken from:
@@ -48,6 +47,9 @@ Plug 'davidhalter/jedi-vim'
 " deoplete-jedi (connects them)
 Plug 'deoplete-plugins/deoplete-jedi', { 'do': ':UpdateRemotePlugins' }
 
+" code linter
+Plug 'dense-analysis/ale'
+
 " easier parenthesis, etc.
 Plug 'tpope/vim-surround'
 
@@ -63,6 +65,8 @@ Plug 'tpope/vim-fugitive'
 " Aesthetic:
 " Color Theme
 Plug 'drewtempelmeyer/palenight.vim'
+" Color Theme Alt
+Plug 'dracula/vim', { 'as': 'dracula' }
 " Goyo and limelight (zen mode)
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
@@ -97,7 +101,8 @@ set wildmode=list:longest
 set completeopt+=noinsert
 
 " change color scheme
-colorscheme palenight
+" colorscheme palenight
+" colorscheme dracula
 " let g:airline_theme = 'palenight' " palenight hasn't been added to airline
 " yet
 
@@ -107,12 +112,11 @@ autocmd BufWritePre * %s/\s\+$//e
 " change tabs into spaces
 set tabstop=4 shiftwidth=4 expandtab
 
-" pressing F2 shows tabs and the end of the line more explicitly
-nnoremap <F2> :<C-U>setlocal lcs=tab:>-,trail:-,eol:$ list! list? <CR>
+" pressing F5 shows tabs and the end of the line more explicitly
+nnoremap <F5> :<C-U>setlocal lcs=tab:>-,trail:-,eol:$ list! list? <CR>
 
 " pressing F3 turns on spell
 nnoremap <F3> :setlocal spell spelllang=en_us
-
 
 " === Specific Plugin Settings ===
 
@@ -150,6 +154,7 @@ let g:limelight_conceal_ctermfg = 240
 " I want to have the little arrows in airline instead of flat blocks
 " Apparently this requires Installing powerline symbols so I'm not
 " bothering right now
+let g:airline_powerline_fonts = 1
 
 " hi! Normal ctermbg=NONE guibg=NONE
 "
@@ -158,4 +163,42 @@ let g:vimtex_view_method = 'zathura'
 " vim-latex-live-preview ---------------
 let g:livepreview_previewer = 'zathura'
 
+" ALE ---------------------------------
+" define linters and fixers
+" from https://www.vimfromscratch.com/articles/vim-for-python/
+let g:ale_linters = {
+      \   'python': ['flake8'],
+      \   'ruby': ['standardrb', 'rubocop'],
+      \   'javascript': ['eslint'],
+      \}
+
+let g:ale_fixers = {
+      \    'python': ['yapf'],
+      \}
+nmap <F4> :ALEFix<CR>
+"let g:ale_fix_on_save = 1
+
+"""""
+"function! LinterStatus() abort
+"  let l:counts = ale#statusline#Count(bufnr(''))
+"
+"  let l:all_errors = l:counts.error + l:counts.style_error
+"  let l:all_non_errors = l:counts.total - l:all_errors
+"
+"  return l:counts.total == 0 ? '✨ all good ✨' : printf(
+"        \   '😞 %dW %dE',
+"        \   all_non_errors,
+"        \   all_errors
+"        \)
+"endfunction
+"
+"set statusline=
+"set statusline+=%m
+"set statusline+=\ %f
+"set statusline+=%=
+"set statusline+=\ %{LinterStatus()}
+"""""
+
+" BLAH
 " TODO: alias 'gj' to 'j' in .tex
+"au BufNewFile,BufRead *.tex
