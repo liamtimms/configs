@@ -96,6 +96,9 @@ endif
 " set nu
 set number relativenumber
 
+" make splits behave in a more natural way
+set splitbelow splitright
+
 " make autocompletion behave better
 set wildmode=list:longest
 set completeopt+=noinsert
@@ -112,8 +115,8 @@ autocmd BufWritePre * %s/\s\+$//e
 " change tabs into spaces
 set tabstop=4 shiftwidth=4 expandtab
 
-" pressing F5 shows tabs and the end of the line more explicitly
-nnoremap <F5> :<C-U>setlocal lcs=tab:>-,trail:-,eol:$ list! list? <CR>
+" pressing F6 shows tabs and the end of the line more explicitly
+nnoremap <F6> :<C-U>setlocal lcs=tab:>-,trail:-,eol:$ list! list? <CR>
 
 " pressing F3 turns on spell
 nnoremap <F3> :setlocal spell spelllang=en_us
@@ -154,11 +157,7 @@ let g:limelight_conceal_ctermfg = 240
 " I want to have the little arrows in airline instead of flat blocks
 " Apparently this requires Installing powerline symbols so I'm not
 " bothering right now
-<<<<<<< HEAD
 let g:airline_powerline_fonts = 1
-=======
-" let g:airline_powerline_fonts = 1
->>>>>>> 793f136d44da0b38bc310e9cfe449bc8e654a7e0
 
 " hi! Normal ctermbg=NONE guibg=NONE
 "
@@ -170,6 +169,7 @@ let g:livepreview_previewer = 'zathura'
 " ALE ---------------------------------
 " define linters and fixers
 " from https://www.vimfromscratch.com/articles/vim-for-python/
+let g:ale_enabled = 0
 let g:ale_linters = {
       \   'python': ['flake8'],
       \   'ruby': ['standardrb', 'rubocop'],
@@ -179,7 +179,9 @@ let g:ale_linters = {
 let g:ale_fixers = {
       \    'python': ['yapf'],
       \}
-nmap <F4> :ALEFix<CR>
+
+nnoremap <F4> :ALEToggle
+nnoremap <F5> :ALEFix
 "let g:ale_fix_on_save = 1
 
 """""
