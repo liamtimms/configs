@@ -4,7 +4,7 @@
 
 {
 	"layer": "top",
-	"position": "bottom",
+	"position": "top",
 
 	"modules-left": [
 		"sway/workspaces",
@@ -13,18 +13,11 @@
 	"modules-center": [
 		"custom/left-arrow-dark",
 		"clock#1",
-		"custom/left-arrow-light",
-		"custom/left-arrow-dark",
-		"clock#2",
-		"custom/right-arrow-dark",
-		"custom/right-arrow-light",
 		"clock#3",
+		"clock#2",
 		"custom/right-arrow-dark"
 	],
 	"modules-right": [
-		"custom/left-arrow-dark",
-		"pulseaudio",
-		"custom/left-arrow-light",
 		"custom/left-arrow-dark",
 		"memory",
 		"custom/left-arrow-light",
@@ -33,6 +26,9 @@
 		"custom/left-arrow-light",
 		"custom/left-arrow-dark",
 		"battery",
+		"custom/left-arrow-light",
+		"custom/left-arrow-dark",
+		"pulseaudio",
 		"custom/left-arrow-light",
 		"custom/left-arrow-dark",
 		"tray"
@@ -73,21 +69,6 @@
 		"tooltip": false
 	},
 
-	"pulseaudio": {
-		"format": "{icon} {volume:2}%",
-		"format-bluetooth": "{icon}  {volume}%",
-		"format-muted": "MUTE",
-		"format-icons": {
-			"headphones": "",
-			"default": [
-				"",
-				""
-			]
-		},
-		"scroll-step": 5,
-		"on-click": "pamixer -t",
-		"on-click-right": "pavucontrol"
-	},
 	"memory": {
 		"interval": 5,
 		"format": "Mem {}%"
@@ -110,6 +91,21 @@
 			"",
 			""
 		]
+	},
+	"pulseaudio": {
+		"format": "{icon} {volume:2}%",
+		"format-bluetooth": "{icon}  {volume}%",
+		"format-muted": "MUTE",
+		"format-icons": {
+			"headphones": "🎧",
+			"default": [
+				"🔊",
+				"🔉"
+			]
+		},
+		"scroll-step": 5,
+		"on-click": "pamixer -t",
+		"on-click-right": "pavucontrol"
 	},
 	"tray": {
 		"icon-size": 20
