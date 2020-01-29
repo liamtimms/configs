@@ -50,6 +50,9 @@ Plug 'deoplete-plugins/deoplete-jedi', { 'do': ':UpdateRemotePlugins' }
 " code linter
 Plug 'dense-analysis/ale'
 
+" tags
+Plug 'majutsushi/tagbar'
+
 " easier parenthesis, etc.
 Plug 'tpope/vim-surround'
 
@@ -115,8 +118,8 @@ autocmd BufWritePre * %s/\s\+$//e
 " change tabs into spaces
 set tabstop=4 shiftwidth=4 expandtab
 
-" pressing F6 shows tabs and the end of the line more explicitly
-nnoremap <F6> :<C-U>setlocal lcs=tab:>-,trail:-,eol:$ list! list? <CR>
+" pressing F7 shows tabs and the end of the line more explicitly
+nnoremap <F7> :<C-U>setlocal lcs=tab:>-,trail:-,eol:$ list! list? <CR>
 
 " pressing F3 turns on spell
 nnoremap <F3> :setlocal spell spelllang=en_us
@@ -184,6 +187,8 @@ nnoremap <F4> :ALEToggle
 nnoremap <F5> :ALEFix
 "let g:ale_fix_on_save = 1
 
+" Tagbar -----------------------------
+nnoremap <F6> :TagbarToggle
 """""
 "function! LinterStatus() abort
 "  let l:counts = ale#statusline#Count(bufnr(''))
