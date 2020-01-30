@@ -3,4 +3,4 @@ Description=Downloads pacman updates in the background without installing them
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/bash -c 'pacman -Syuw --noconfirm ; notify-send updatedl'
+ExecStart=/usr/bin/bash -c 'pacman -Syuw --noconfirm'
