@@ -1,6 +1,6 @@
 * {
-	font-size: 12px;
-	font-family: monospace;
+	font-size: 14px;
+	font-family: sourcecode;
 }
 
 window#waybar {
@@ -65,7 +65,7 @@ window#waybar {
 	color: #6c71c4;
 }
 #battery {
-	color: #859900;
+	color: #409509;
 }
 
 #clock,
