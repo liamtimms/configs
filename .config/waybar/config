@@ -17,10 +17,10 @@
 	],
 	"modules-right": [
 		"custom/left-arrow-dark",
-		"memory",
+		"cpu",
 		"custom/left-arrow-light",
 		"custom/left-arrow-dark",
-		"cpu",
+		"memory",
 		"custom/left-arrow-light",
 		"custom/left-arrow-dark",
 		"battery",

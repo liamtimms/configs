@@ -50,13 +50,13 @@ window#waybar {
 }
 
 #pulseaudio {
-	color: #268bd2;
+	color: #78A7E8;
 }
 #backlight {
 	color: #b58900;
 }
 #memory {
-	color: #2aa198;
+	color: #D39484;
 }
 #temperature {
 	color: #b58900;
@@ -65,7 +65,7 @@ window#waybar {
 	color: #6c71c4;
 }
 #battery {
-	color: #409509;
+	color: #B08197;
 }
 
 #clock,
