@@ -122,7 +122,7 @@ set tabstop=4 shiftwidth=4 expandtab
 nnoremap <F7> :<C-U>setlocal lcs=tab:>-,trail:-,eol:$ list! list? <CR>
 
 " pressing F3 turns on spell
-nnoremap <F3> :setlocal spell spelllang=en_us
+nnoremap <F3> :setlocal spell! spelllang=en_us <CR>
 
 " === Specific Plugin Settings ===
 
