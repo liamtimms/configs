@@ -24,6 +24,7 @@ window#waybar {
 #clock.3,
 #pulseaudio,
 #backlight,
+#disk,
 #memory,
 #cpu,
 #temperature,
@@ -67,8 +68,12 @@ window#waybar {
 #battery {
 	color: #B08197;
 }
+#disk {
+	color: #B89AAE;
+}
 
 #clock,
+#disk,
 #pulseaudio,
 #backlight,
 #memory,
