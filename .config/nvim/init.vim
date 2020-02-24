@@ -106,6 +106,12 @@ set splitbelow splitright
 set wildmode=list:longest
 set completeopt+=noinsert
 
+" Shortcutting split navigation
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
 " change color scheme
 " colorscheme palenight
 " colorscheme dracula
@@ -123,6 +129,9 @@ nnoremap <F7> :<C-U>setlocal lcs=tab:>-,trail:-,eol:$ list! list? <CR>
 
 " pressing F3 turns on spell
 nnoremap <F3> :setlocal spell! spelllang=en_us <CR>
+
+" pressing F2 toggles on prose mode
+nnoremap <F2> :call ToggleProse() <CR>
 
 " === Specific Plugin Settings ===
 
