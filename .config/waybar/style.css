@@ -18,6 +18,12 @@ window#waybar {
 	background: #1a1a1a;
 }
 
+#custom-updates {
+    padding: 2px 2px;
+	color: #C58F8E;
+}
+
+#custom-updates,
 #workspaces,
 #clock.1,
 #clock.2,
