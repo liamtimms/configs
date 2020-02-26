@@ -6,6 +6,8 @@
 
 default_border pixel 5
 
+client.focused #285577 #268bd2 #ffffff
+
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
@@ -18,6 +20,7 @@ set $right l
 # Your preferred terminal emulator
 #set $term urxvt
 set $term gnome-terminal
+#set $term ~/configs/.config/sway/scripts/term-wrapper.sh
 # Your preferred application launcher
 # Note: it's recommended that you pass the final command to sway
 set $menu dmenu_path | dmenu | xargs swaymsg exec --
@@ -77,6 +80,9 @@ input "2:14:ETPS/2_Elantech_Touchpad" {
 
     # Start your launcher
     bindsym $mod+m exec $menu
+
+    # Start firefox
+    bindsym $mod+f exec firefox
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -170,7 +176,7 @@ input "2:14:ETPS/2_Elantech_Touchpad" {
     bindsym $mod+e layout toggle split
 
     # Make the current focus fullscreen
-    bindsym $mod+f fullscreen
+    # bindsym $mod+f fullscreen
 
     # Toggle the current focus between tiling and floating mode
     bindsym $mod+Shift+space floating toggle
