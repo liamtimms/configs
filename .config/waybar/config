@@ -5,6 +5,7 @@
 	"position": "top",
 
 	"modules-left": [
+		"custom/updates",
 		"sway/workspaces",
 		"custom/right-arrow-dark"
 	],
@@ -51,9 +52,15 @@
 		"format": "",
 		"tooltip": false
 	},
+	"custom/updates": {
+		"format": "{}",
+        "interval": 3600,
+        "exec":"checkupdates | wc -l",
+        "signal": 8
+	},
 
 	"sway/workspaces": {
-		"disable-scroll": true,
+		"disable-scroll": false,
 		"format": "{name}"
 	},
 
@@ -71,7 +78,7 @@
 	},
 
 	"disk": {
-		"interval": 50,
+		"interval": 100,
 		"format": "🖴 {percentage_used}%"
 	},
 	"memory": {
