@@ -6,6 +6,8 @@
 
 	"modules-left": [
 		"custom/updates",
+		"custom/right-arrow-dark",
+		"custom/right-arrow-light",
 		"sway/workspaces",
 		"custom/right-arrow-dark"
 	],
@@ -53,10 +55,11 @@
 		"tooltip": false
 	},
 	"custom/updates": {
-		"format": "{}",
-        "interval": 3600,
-        "exec":"checkupdates | wc -l",
-        "signal": 8
+		"format": "{icon}",
+		"return-type": "json",
+		"format-icons": [ "☑️", "🔼" ],
+        "interval": 300,
+        "exec": "$HOME/bin/bashscripts/module-update 2> /dev/null"
 	},
 
 	"sway/workspaces": {
@@ -92,8 +95,8 @@
 	"battery": {
 		"states": {
 			"good": 95,
-			"warning": 30,
-			"critical": 15
+			"warning": 50,
+			"critical": 20
 		},
 		"format": "{icon} {capacity}%",
 		"format-icons": [
