@@ -124,6 +124,9 @@ autocmd BufWritePre * %s/\s\+$//e
 " change tabs into spaces
 set tabstop=4 shiftwidth=4 expandtab
 
+" remap Escape to get out of terminal mode
+tnoremap <Esc> <C-\><C-n>
+
 " pressing F7 shows tabs and the end of the line more explicitly
 nnoremap <F7> :<C-U>setlocal lcs=tab:>-,trail:-,eol:$ list! list? <CR>
 
