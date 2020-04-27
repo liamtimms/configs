@@ -106,6 +106,9 @@ set splitbelow splitright
 set wildmode=list:longest
 set completeopt+=noinsert
 
+" make mouse do more
+set mouse=a
+
 " Shortcutting split navigation
 map <C-h> <C-w>h
 map <C-j> <C-w>j
