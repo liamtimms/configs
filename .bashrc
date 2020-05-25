@@ -8,6 +8,15 @@ case $- in
       *) return;;
 esac
 
+# Stop Nested Ranger
+ranger() {
+    if [ -z "$RANGER_LEVEL" ]; then
+        /usr/bin/ranger "$@"
+    else
+        exit
+    fi
+}
+
 export EDITOR=nvim
 source /usr/share/git/completion/git-prompt.sh
 source /usr/share/git/completion/git-completion.bash
