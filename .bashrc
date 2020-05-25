@@ -140,3 +140,14 @@ eval "$(pyenv virtualenv-init -)"
 if [ -d "$HOME/bin/" ] ; then
     export PATH="$HOME/bin:$PATH"
 fi
+
+# .bashrc functions
+# cribbed from connor mcd (nixcast)
+
+fcd() {
+    cd $HOME && cd "$(fd -t d | fzf --preview="ls {}")"
+}
+
+fo() {
+    fd -t f | fzf -m | xargs -r -d "\n" xdg-open 2>&-
+}

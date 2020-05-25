@@ -90,6 +90,12 @@ Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 " instead of lines of code)
 Plug 'reedes/vim-pencil'
 
+
+" FZF:
+" fuzzyfinder!!!
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
 call plug#end()
 
 " Install plugins on new install:
