@@ -65,6 +65,11 @@ Plug 'vim-airline/vim-airline-themes'
 " git integration that works wiht airline
 Plug 'tpope/vim-fugitive'
 
+" FZF:
+" powerful functionality from fzf
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
 " Aesthetic:
 " Color Theme
 Plug 'drewtempelmeyer/palenight.vim'
