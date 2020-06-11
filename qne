@@ -5,11 +5,9 @@ automake 1.16.2-3
 baobab 3.34.0-2
 barrier 2.3.2-2
 base 2-2
-bash 5.0.017-1
 binutils 2.34-5
 bison 3.6.3-1
 bzip2 1.0.8-3
-cheese 3.34.0+23+gcac6d3a1-1
 chrome-gnome-shell 10.1-4
 chromium 83.0.4103.97-2
 cinnamon 4.6.3-1
@@ -48,7 +46,6 @@ gcc-libs 10.1.0-2
 gdm 3.36.2-1
 gedit 3.36.2-1
 gettext 0.20.2-1
-git 2.27.0-1
 git-annex 8.20200522-19
 glew 2.2.0-2
 glibc 2.31-5
@@ -84,9 +81,7 @@ gnome-user-share 3.34.0-2
 gnome-video-effects 0.5.0+4+g9554041-2
 gnome-weather 3.36.1-1
 gnuchess 6.2.7-1
-grep 3.4-1
 grilo-plugins 0.3.11+4+g11cc1f8-1
-groff 1.22.4-3
 grub 2:2.04-7
 gtk-engine-murrine 0.98.2-4
 gvfs-afc 1.44.1-3
@@ -107,11 +102,9 @@ iputils 20190709-2
 jfsutils 1.1.15-7
 jupyterlab 2.1.4-1
 krita 4.2.9-6
-less 551-3
 lib32-nvidia-utils 440.82-1
 libreoffice-fresh 6.4.4-1
 libtool 2.4.6+42+gb88cebd5-13
-licenses 20200427-1
 linux 5.7.2.arch1-1
 linux-firmware 20200519.8ba6fa6-1
 logrotate 3.16.0-1
@@ -120,7 +113,6 @@ m4 1.4.18-3
 make 4.3-3
 man-db 2.9.2-1
 man-pages 5.07-1
-mdadm 4.1-2
 mousetweaks 3.32.0-2
 mpv 1:0.32.0-4
 namcap 3.2.10-1
@@ -129,12 +121,10 @@ nautilus 3.36.3-1
 neofetch 7.0.0-1
 neovim 0.4.3-3
 netctl 1.23-1
-nodejs 14.4.0-1
 nss-mdns 0.14.1-3
 nvidia 440.82-21
 nvidia-settings 440.82-1
 obs-studio 25.0.8-1
-pacman 5.2.1-6
 pacman-contrib 1.3.0-2
 pacutils 0.10.0-1
 pandoc 2.9.2.1-73
@@ -170,8 +160,6 @@ reflector 2020.3.21.2-1
 reiserfsprogs 3.6.27-3
 rygel 0.38.3-2
 s-nail 14.9.19-1
-sed 4.8-1
-shadow 4.8.1-1
 simple-scan 3.36.3-1
 steam 1.0.0.62-1
 steam-native-runtime 1.0.0.62-1
@@ -181,7 +169,6 @@ sway 1:1.4-9
 swayidle 1.6-1
 syncthing 1.5.0-1
 sysfsutils 2.1.0-11
-systemd 245.6-4
 systemd-sysvcompat 245.6-4
 tar 1.32-3
 texinfo 6.7-3
