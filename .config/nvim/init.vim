@@ -236,8 +236,6 @@ nnoremap <F6> :TagbarToggle
 " BLAH
 " TODO: alias 'gj' to 'j' in .tex
 "au BufNewFile,BufRead *.tex
-" solution: Prose Mode from github:
-" 'LukeSmithxyz/vimling/master/plugin/prose.vim'
 
 let g:ProseOn=0
 
