@@ -1,212 +1,217 @@
-arc-gtk-theme 20200513-1
-asp 5-2
-autoconf 2.69-7
-automake 1.16.2-3
-baobab 3.34.0-2
-barrier 2.3.2-2
-base 2-2
-binutils 2.34-5
-bison 3.6.3-1
-bzip2 1.0.8-3
-chrome-gnome-shell 10.1-4
-chromium 83.0.4103.97-2
-cinnamon 4.6.3-1
-clamav 0.102.3-1
-coreutils 8.32-1
-cryptsetup 2.3.3-1
-cups 2.3.3-1
-cython 0.29.20-1
-dhcpcd 9.1.1-1
-diffutils 3.7-3
-docker 1:19.03.11-1
-e2fsprogs 1.45.6-2
-efibootmgr 17-1
-eog 3.36.2-1
-epiphany 3.36.2-1
-espeak 1:1.48.04-2
-evince 3.36.5-1
-evolution 3.36.3-1
-evolution-ews 3.36.3-1
-fakeroot 1.24-2
-fd 8.1.1-1
-file 5.38-3
-file-roller 3.36.2-1
-filesystem 2020.05.20-1
-findutils 4.7.0-2
-firefox 77.0.1-1
-flake8 1:3.8.3-1
-flashplugin 32.0.0.387-1
-flex 2.6.4-3
-fwupd 1.4.2-1
-fzf 0.21.1-2
-gawk 5.1.0-1
-gcc 10.1.0-2
-gcc-fortran 10.1.0-2
-gcc-libs 10.1.0-2
-gdm 3.36.2-1
-gedit 3.36.2-1
-gettext 0.20.2-1
-git-annex 8.20200522-19
-glew 2.2.0-2
-glibc 2.31-5
-gnome-books 3.34.0+21+g4d34d109-1
-gnome-boxes 3.36.4-1
-gnome-calculator 3.36.0-1
-gnome-calendar 3.36.1-1
-gnome-characters 3.34.0-1
-gnome-chess 3.36.1-1
-gnome-clocks 3.36.2-1
-gnome-color-manager 3.36.0-1
-gnome-contacts 3.36.1-1
-gnome-control-center 3.36.3-1
-gnome-dictionary 3.26.1+96+gedfc2b5-1
-gnome-disk-utility 3.36.1-2
-gnome-documents 3.34.0+6+g966b04ec-1
-gnome-font-viewer 3.34.0+27+g5ffd1ba-1
-gnome-getting-started-docs 3.36.2-1
-gnome-keyring 1:3.36.0-1
-gnome-logs 3.36.0-1
-gnome-maps 3.36.2-1
-gnome-menus 3.36.0-1
-gnome-music 1:3.36.3-1
-gnome-photos 3.34.2-1
-gnome-remote-desktop 0.1.8-1
-gnome-screenshot 3.36.0-1
-gnome-shell-extensions 3.36.2-1
-gnome-software 3.36.1-1
-gnome-system-monitor 3.36.1-1
-gnome-tweaks 3.34.0-3
-gnome-user-docs 3.36.2-1
-gnome-user-share 3.34.0-2
-gnome-video-effects 0.5.0+4+g9554041-2
-gnome-weather 3.36.1-1
-gnuchess 6.2.7-1
-grilo-plugins 0.3.11+4+g11cc1f8-1
-grub 2:2.04-7
-gtk-engine-murrine 0.98.2-4
-gvfs-afc 1.44.1-3
-gvfs-goa 1.44.1-3
-gvfs-google 1.44.1-3
-gvfs-gphoto2 1.44.1-3
-gvfs-mtp 1.44.1-3
-gvfs-nfs 1.44.1-3
-gvfs-smb 1.44.1-3
-gzip 1.10-3
-hddtemp 0.3.beta15.53-2
-hplip 1:3.20.5-2
-htop 2.2.0-3
-hunspell-en_US 2019.10.06-1
-inetutils 1.9.4-8
-iproute2 5.7.0-1
-iputils 20190709-2
-jfsutils 1.1.15-7
-jupyterlab 2.1.4-1
-krita 4.2.9-6
-lib32-nvidia-utils 440.82-1
-libreoffice-fresh 6.4.4-1
-libtool 2.4.6+42+gb88cebd5-13
-linux 5.7.2.arch1-1
-linux-firmware 20200519.8ba6fa6-1
-logrotate 3.16.0-1
-lvm2 2.02.187-3
-m4 1.4.18-3
-make 4.3-3
-man-db 2.9.2-1
-man-pages 5.07-1
-mousetweaks 3.32.0-2
-mpv 1:0.32.0-4
-namcap 3.2.10-1
-nano 4.9.3-1
-nautilus 3.36.3-1
-neofetch 7.0.0-1
-neovim 0.4.3-3
-netctl 1.23-1
-nss-mdns 0.14.1-3
-nvidia 440.82-21
-nvidia-settings 440.82-1
-obs-studio 25.0.8-1
-pacman-contrib 1.3.0-2
-pacutils 0.10.0-1
-pandoc 2.9.2.1-73
-papirus-icon-theme 20200602-1
-patch 2.7.6-8
-pciutils 3.7.0-1
-pdfgrep 2.1.2-1
-perl 5.30.3-1
-pigz 2.4-2
-pkgconf 1.7.3-1
-pkgstats 2.4.2-2
-powerline-fonts 2.8-2
-procps-ng 3.3.16-2
-psmisc 23.3-2
-python-click 7.1.2-1
-python-coverage 4.5.4-3
-python-future 0.18.2-2
-python-matplotlib 3.2.1-1
-python-netifaces 0.10.9-3
-python-nose 1.3.7-7
-python-numpydoc 1.0.0-1
-python-pandas 1.0.3-1
-python-pip 20.0.2-1
-python-pynvim 0.4.1-1
-python-rope 0.17.0-1
-python-seaborn 0.10.1-1
-python-simplejson 3.17.0-1
-python-traits 6.0.0-1
-python-zeroconf 0.25.1-1
-r 4.0.1-1
-ranger 1.9.3-1
-reflector 2020.3.21.2-1
-reiserfsprogs 3.6.27-3
-rygel 0.38.3-2
-s-nail 14.9.19-1
-simple-scan 3.36.3-1
-steam 1.0.0.62-1
-steam-native-runtime 1.0.0.62-1
-sudo 1.9.0-1
-sushi 3.34.0+15+g6aa213e-1
-sway 1:1.4-9
-swayidle 1.6-1
-syncthing 1.5.0-1
-sysfsutils 2.1.0-11
-systemd-sysvcompat 245.6-4
-tar 1.32-3
-texinfo 6.7-3
-texlive-bibtexextra 2019.52577-1
-texlive-core 2019.52579-1
-texlive-fontsextra 2019.52580-1
-texlive-formatsextra 2019.51280-1
-texlive-games 2019.52525-1
-texlive-humanities 2019.52574-1
-texlive-latexextra 2019.52575-1
-texlive-music 2019.52275-1
-texlive-pictures 2019.52499-1
-texlive-pstricks 2019.52550-1
-texlive-publishers 2019.52538-1
-texlive-science 2019.52582-1
-tmux 3.1_b-1
-torbrowser-launcher 0.3.2-2
-totem 3.34.1-2
-tracker 2.3.4-2
-tracker-miners 2.3.3-2
-trash-cli 0.17.1.14-5
-ttf-joypixels 5.5.0-3
-usbutils 012-2
-util-linux 2.35.2-1
-vi 1:070224-4
-vim 8.2.0814-2
-vino 3.22.0+60+gd29a4f2-2
-virtualbox 6.1.10-1
-virtualbox-guest-iso 6.1.10-1
-vtk 8.2.0-13
-wget 1.20.3-3
-which 2.21-5
-xclip 0.13-3
-xdg-user-dirs-gtk 0.10+9+g5b7efc6-3
-xfsprogs 5.6.0-2
-yaml-cpp 0.6.3-2
-yapf 0.30.0-1
-yelp 3.36.0-1
-youtube-dl 2020.06.06-1
-zathura 0.4.5-1
-zathura-pdf-mupdf 0.3.5-3
+arc-gtk-theme
+asp
+autoconf
+automake
+baobab
+barrier
+base
+binutils
+bison
+bzip2
+chrome-gnome-shell
+chromium
+cinnamon
+clamav
+coreutils
+cryptsetup
+cups
+cython
+dhcpcd
+diffutils
+docker
+e2fsprogs
+efibootmgr
+entr
+eog
+epiphany
+espeak
+evince
+evolution
+evolution-ews
+evolution-rss
+fakeroot
+fd
+file
+file-roller
+filesystem
+findutils
+firefox
+flake8
+flashplugin
+flex
+fwupd
+fzf
+gawk
+gcc
+gcc-fortran
+gcc-libs
+gdm
+gedit
+gettext
+git-annex
+glew
+glibc
+gnome-books
+gnome-boxes
+gnome-calculator
+gnome-calendar
+gnome-characters
+gnome-chess
+gnome-clocks
+gnome-color-manager
+gnome-contacts
+gnome-control-center
+gnome-dictionary
+gnome-disk-utility
+gnome-documents
+gnome-font-viewer
+gnome-getting-started-docs
+gnome-keyring
+gnome-logs
+gnome-maps
+gnome-menus
+gnome-music
+gnome-photos
+gnome-remote-desktop
+gnome-screenshot
+gnome-shell-extensions
+gnome-software
+gnome-system-monitor
+gnome-tweaks
+gnome-user-docs
+gnome-user-share
+gnome-video-effects
+gnome-weather
+gnuchess
+gource
+grilo-plugins
+grub
+gtk-engine-murrine
+gufw
+gvfs-afc
+gvfs-goa
+gvfs-google
+gvfs-gphoto2
+gvfs-mtp
+gvfs-nfs
+gvfs-smb
+gzip
+hddtemp
+hplip
+htop
+hunspell-en_US
+inetutils
+iproute2
+iputils
+jfsutils
+jupyterlab
+krita
+lib32-nvidia-utils
+libreoffice-fresh
+libtool
+linux
+linux-firmware
+logrotate
+lostfiles
+lvm2
+m4
+make
+man-db
+man-pages
+mousetweaks
+mpv
+namcap
+nano
+nautilus
+neofetch
+neovim
+netctl
+nss-mdns
+nvidia
+nvidia-settings
+obs-studio
+pacman-contrib
+pacutils
+pandoc
+papirus-icon-theme
+patch
+pciutils
+pdfgrep
+perl
+pigz
+pkgconf
+pkgstats
+powerline-fonts
+procps-ng
+psmisc
+python-click
+python-coverage
+python-future
+python-matplotlib
+python-netifaces
+python-nose
+python-numpydoc
+python-pandas
+python-pip
+python-pynvim
+python-rope
+python-seaborn
+python-simplejson
+python-traits
+python-zeroconf
+r
+ranger
+reflector
+reiserfsprogs
+rygel
+s-nail
+simple-scan
+steam
+steam-native-runtime
+sudo
+sushi
+sway
+swayidle
+syncthing
+sysfsutils
+systemd-sysvcompat
+tar
+texinfo
+texlive-bibtexextra
+texlive-core
+texlive-fontsextra
+texlive-formatsextra
+texlive-games
+texlive-humanities
+texlive-latexextra
+texlive-music
+texlive-pictures
+texlive-pstricks
+texlive-publishers
+texlive-science
+tmux
+torbrowser-launcher
+totem
+tracker
+tracker-miners
+trash-cli
+ttf-joypixels
+usbutils
+util-linux
+vi
+vim
+vino
+virtualbox
+virtualbox-guest-iso
+vtk
+wget
+which
+xclip
+xdg-user-dirs-gtk
+xfsprogs
+yaml-cpp
+yapf
+yelp
+youtube-dl
+zathura
+zathura-pdf-mupdf
