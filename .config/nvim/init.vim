@@ -47,14 +47,13 @@ Plug 'davidhalter/jedi-vim'
 " deoplete-jedi (connects them)
 Plug 'deoplete-plugins/deoplete-jedi', { 'do': ':UpdateRemotePlugins' }
 
+" Linter:
 " code linter
 Plug 'dense-analysis/ale'
 
+" Tags:
 " tags
 Plug 'majutsushi/tagbar'
-
-" easier parenthesis, etc.
-Plug 'tpope/vim-surround'
 
 " Statusline:
 " airline and associated theming
@@ -75,20 +74,25 @@ Plug 'junegunn/fzf.vim'
 Plug 'drewtempelmeyer/palenight.vim'
 " Color Theme Alt
 Plug 'dracula/vim', { 'as': 'dracula' }
+
 " Goyo and limelight (zen mode)
-Plug 'junegunn/goyo.vim'
-Plug 'junegunn/limelight.vim'
+" Plug 'junegunn/goyo.vim'
+" Plug 'junegunn/limelight.vim'
 
 " LaTeX:
 " this plug contains a bunch of LaTeX support stuff
-Plug 'lervag/vimtex'
+Plug 'lervag/vimtex', { 'for': 'tex' }
 " this plug allows a live preview of LaTeX
 Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 
 " Prose:
 " this plug helps navigation and writing of prose (paragraphs
 " instead of lines of code)
-Plug 'reedes/vim-pencil'
+" Plug 'reedes/vim-pencil'
+" replaced by prose mode function
+
+" easier parenthesis, etc.
+Plug 'tpope/vim-surround'
 
 call plug#end()
 
@@ -171,13 +175,13 @@ let g:jedi#goto_assignments_command = ',a'
 " Go to definition in new tab
 nmap ,D :tab split<CR>:call jedi#goto()<CR>
 
-" Goyo and Limelight--------------------
-" turn on limelight only while in goyo
-autocmd! User GoyoEnter Limelight
-autocmd! User GoyoLeave Limelight!
-" Color name (:help cterm-colors) or ANSI code
-let g:limelight_conceal_ctermfg = 'gray'
-let g:limelight_conceal_ctermfg = 240
+" " Goyo and Limelight--------------------
+" " turn on limelight only while in goyo
+" autocmd! User GoyoEnter Limelight
+" autocmd! User GoyoLeave Limelight!
+" " Color name (:help cterm-colors) or ANSI code
+" let g:limelight_conceal_ctermfg = 'gray'
+" let g:limelight_conceal_ctermfg = 240
 
 " Airline -----------------------------
 " I want to have the little arrows in airline instead of flat blocks
