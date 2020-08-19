@@ -42,10 +42,10 @@ else
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
 let g:deoplete#enable_at_startup = 1
-" jedi (python completion)
-Plug 'davidhalter/jedi-vim'
-" deoplete-jedi (connects them)
-Plug 'deoplete-plugins/deoplete-jedi', { 'do': ':UpdateRemotePlugins' }
+" " jedi (python completion)
+" Plug 'davidhalter/jedi-vim'
+" " deoplete-jedi (connects them)
+" Plug 'deoplete-plugins/deoplete-jedi', { 'do': ':UpdateRemotePlugins' }
 
 " Linter:
 " code linter
@@ -162,18 +162,18 @@ call deoplete#custom#option({
 let g:context_filetype#same_filetypes = {}
 let g:context_filetype#same_filetypes._ = '_'
 
-" Jedi-vim ------------------------------
-" Disable autocompletion (using deoplete instead)
-let g:jedi#completions_enabled = 0
-" All these mappings work only for python code:
-" Go to definition
-let g:jedi#goto_command = ',d'
-" Find ocurrences
-let g:jedi#usages_command = ',o'
-" Find assignments
-let g:jedi#goto_assignments_command = ',a'
-" Go to definition in new tab
-nmap ,D :tab split<CR>:call jedi#goto()<CR>
+" " Jedi-vim ------------------------------
+" " Disable autocompletion (using deoplete instead)
+" let g:jedi#completions_enabled = 0
+" " All these mappings work only for python code:
+" " Go to definition
+" let g:jedi#goto_command = ',d'
+" " Find ocurrences
+" let g:jedi#usages_command = ',o'
+" " Find assignments
+" let g:jedi#goto_assignments_command = ',a'
+" " Go to definition in new tab
+" nmap ,D :tab split<CR>:call jedi#goto()<CR>
 
 " " Goyo and Limelight--------------------
 " " turn on limelight only while in goyo
