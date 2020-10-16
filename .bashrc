@@ -8,7 +8,9 @@ case $- in
       *) return;;
 esac
 
-# Stop Nested Ranger
+shopt -s autocd
+
+# Stop nested Ranger
 ranger() {
     if [ -z "$RANGER_LEVEL" ]; then
         /usr/bin/ranger "$@"
@@ -18,8 +20,13 @@ ranger() {
 }
 
 export EDITOR=nvim
+# GIT
 source /usr/share/git/completion/git-prompt.sh
 source /usr/share/git/completion/git-completion.bash
+
+# FZF:
+source /usr/share/fzf/key-bindings.bash
+source /usr/share/fzf/completion.bash
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
@@ -29,8 +36,8 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=10000
+HISTFILESIZE=20000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
