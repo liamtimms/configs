@@ -136,6 +136,11 @@ autocmd BufWritePre * %s/\s\+$//e
 " change tabs into spaces
 set tabstop=4 shiftwidth=4 expandtab
 
+" Fix LaTeX math formatting in markdown
+" (stackoverflow q: vim-syntax-and-latex-math-inside-markdown)
+autocmd filetype markdown syn region match start=/\\$\\$/ end=/\\$\\$/
+autocmd filetype markdown syn match math '\\$[^$].\{-}\$'
+
 " remap Escape to get out of terminal mode
 tnoremap <Esc> <C-\><C-n>
 
