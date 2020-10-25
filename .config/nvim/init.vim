@@ -8,7 +8,7 @@
 " comment in markdown, laTeX, python, MATLAB, etc. with the appropiate syntax
 " for that file type (or find a plugin that does this)
 
-" ====== Vim-plug install =======
+" ====== Vim-plug Install =======
 " taken from:
 " raw.githubusercontent.com/fisadev/fisa-nvim-config/master/init.vim
 let vim_plug_just_installed = 0
@@ -26,7 +26,7 @@ if vim_plug_just_installed
     :execute 'source '.fnameescape(vim_plug_path)
 endif
 
-" ======== Plugin Setup =========
+" ======== Plugin Installs =========
 " specify a directory for plugins
 " - For Neovim: ~/.local/share/nvim/plugged
 " - Avoid using standard Vim directory names like 'plugin'
@@ -41,7 +41,6 @@ else
   Plug 'roxma/nvim-yarp'
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
-let g:deoplete#enable_at_startup = 1
 " " jedi (python completion)
 " Plug 'davidhalter/jedi-vim'
 " " deoplete-jedi (connects them)
@@ -89,7 +88,13 @@ Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 " this plug helps navigation and writing of prose (paragraphs
 " instead of lines of code)
 " Plug 'reedes/vim-pencil'
-" replaced by prose mode function
+" replaced by prose mode function defined at the bottom of this
+
+" Snippets:
+" this plug provides snippet support
+Plug 'SirVer/ultisnips'
+" Snippets are separated from the engine. Add this if you want them:
+Plug 'honza/vim-snippets'
 
 " easier parenthesis, etc.
 Plug 'tpope/vim-surround'
@@ -102,7 +107,7 @@ if vim_plug_just_installed
     :PlugInstall
 endif
 
-" ======= General Settings ======
+" ======= In-built Settings ======
 "
 " show line numbers
 " set nu
@@ -144,19 +149,20 @@ autocmd filetype markdown syn match math '\\$[^$].\{-}\$'
 " remap Escape to get out of terminal mode
 tnoremap <Esc> <C-\><C-n>
 
-" pressing F7 shows tabs and the end of the line more explicitly
-nnoremap <F7> :<C-U>setlocal lcs=tab:>-,trail:-,eol:$ list! list? <CR>
+" pressing F2 toggles on prose mode
+nnoremap <F2> :call ToggleProse() <CR>
 
 " pressing F3 turns on spell
 nnoremap <F3> :setlocal spell! spelllang=en_us <CR>
 
-" pressing F2 toggles on prose mode
-nnoremap <F2> :call ToggleProse() <CR>
+" pressing F7 shows tabs and the end of the line more explicitly
+nnoremap <F7> :<C-U>setlocal lcs=tab:>-,trail:-,eol:$ list! list? <CR>
+
+
 
 " === Specific Plugin Settings ===
 
-" Deoplete -----------------------------
-" Use deoplete.
+" Deoplete: -----------------------------
 let g:deoplete#enable_at_startup = 1
 call deoplete#custom#option({
 \ 'ignore_case' : v:true,
@@ -188,20 +194,21 @@ let g:context_filetype#same_filetypes._ = '_'
 " let g:limelight_conceal_ctermfg = 'gray'
 " let g:limelight_conceal_ctermfg = 240
 
-" Airline -----------------------------
+" Airline: -----------------------------
 " I want to have the little arrows in airline instead of flat blocks
 " Apparently this requires Installing powerline symbols so I'm not
 " bothering right now
 let g:airline_powerline_fonts = 1
 
 " hi! Normal ctermbg=NONE guibg=NONE
-"
-" vimtex -------------------------------
+
+" Vimtex: -------------------------------
+let g:tex_flavor='latex'
 let g:vimtex_view_method = 'zathura'
 " vim-latex-live-preview ---------------
 let g:livepreview_previewer = 'zathura'
 
-" ALE ---------------------------------
+" ALE: ---------------------------------
 " define linters and fixers
 " from https://www.vimfromscratch.com/articles/vim-for-python/
 let g:ale_enabled = 0
@@ -214,13 +221,9 @@ let g:ale_linters = {
 let g:ale_fixers = {
       \    'python': ['yapf'],
       \}
-
 nnoremap <F4> :ALEToggle
 nnoremap <F5> :ALEFix
 "let g:ale_fix_on_save = 1
-
-" Tagbar -----------------------------
-nnoremap <F6> :TagbarToggle
 """""
 "function! LinterStatus() abort
 "  let l:counts = ale#statusline#Count(bufnr(''))
@@ -242,10 +245,21 @@ nnoremap <F6> :TagbarToggle
 "set statusline+=\ %{LinterStatus()}
 """""
 
-" BLAH
-" TODO: alias 'gj' to 'j' in .tex
-"au BufNewFile,BufRead *.tex
+" Ultisnip: -----------------------------
+" Trigger configuration. You need to change this to something other than <tab> if you use one of the following:
+" - https://github.com/Valloric/YouCompleteMe
+" - https://github.com/nvim-lua/completion-nvim
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+
+" Tagbar: -----------------------------
+nnoremap <F6> :TagbarToggle
+
+" ====== Prose Mode! =======
 let g:ProseOn=0
 
 function! ToggleProse()
