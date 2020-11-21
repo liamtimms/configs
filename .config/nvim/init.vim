@@ -78,6 +78,10 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 " Plug 'junegunn/goyo.vim'
 " Plug 'junegunn/limelight.vim'
 
+" Jupyter:
+" integration with Jupyter consoles
+Plug 'jupyter-vim/jupyter-vim'
+
 " LaTeX:
 " this plug contains a bunch of LaTeX support stuff
 Plug 'lervag/vimtex', { 'for': 'tex' }
@@ -89,6 +93,8 @@ Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 " instead of lines of code)
 " Plug 'reedes/vim-pencil'
 " replaced by prose mode function defined at the bottom of this
+" Plug 'vim-pandoc/vim-pandoc'
+Plug 'vim-pandoc/vim-pandoc-syntax'
 
 " Snippets:
 " this plug provides snippet support
@@ -122,6 +128,7 @@ set completeopt+=noinsert
 
 " make mouse do more
 set mouse=a
+
 
 " Shortcutting split navigation
 map <C-h> <C-w>h
@@ -208,6 +215,15 @@ let g:vimtex_view_method = 'zathura'
 " vim-latex-live-preview ---------------
 let g:livepreview_previewer = 'zathura'
 
+
+" Pandoc: ------------------------------
+"
+augroup pandoc_syntax
+    au! BufNewFile,BufFilePre,BufRead *.md set filetype=markdown.pandoc
+augroup END
+"
+set conceallevel=0
+
 " ALE: ---------------------------------
 " define linters and fixers
 " from https://www.vimfromscratch.com/articles/vim-for-python/
@@ -281,6 +297,7 @@ function! Prose()
     noremap A g$a
     noremap I g0i
     setlocal linebreak nonumber norelativenumber t_Co=0 foldcolumn=2
+    set conceallevel=0
     hi! link FoldColumn Normal
 
 endfunction
