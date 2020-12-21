@@ -105,6 +105,9 @@ Plug 'honza/vim-snippets'
 " easier parenthesis, etc.
 Plug 'tpope/vim-surround'
 
+" tmux-vim integration
+Plug 'christoomey/vim-tmux-navigator'
+
 call plug#end()
 
 " Install plugins on new install:
@@ -170,7 +173,7 @@ nnoremap <F7> :<C-U>setlocal lcs=tab:>-,trail:-,eol:$ list! list? <CR>
 " === Specific Plugin Settings ===
 
 " Deoplete: -----------------------------
-let g:deoplete#enable_at_startup = 1
+" let g:deoplete#enable_at_startup = 1
 call deoplete#custom#option({
 \ 'ignore_case' : v:true,
 \ 'smart_case': v:true,
