@@ -108,6 +108,9 @@ Plug 'tpope/vim-surround'
 " tmux-vim integration
 Plug 'christoomey/vim-tmux-navigator'
 
+" session saving
+Plug 'tpope/vim-obsession'
+
 call plug#end()
 
 " Install plugins on new install:
@@ -142,8 +145,7 @@ map <C-l> <C-w>l
 " change color scheme
 " colorscheme palenight
 " colorscheme dracula
-" let g:airline_theme = 'palenight' " palenight hasn't been added to airline
-" yet
+let g:airline_theme = 'distinguished'
 
 " delete all extra whitespace when saving
 autocmd BufWritePre * %s/\s\+$//e
