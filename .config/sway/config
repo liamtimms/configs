@@ -64,6 +64,19 @@ input "2:14:ETPS/2_Elantech_Touchpad" {
    natural_scroll enabled
    middle_emulation enabled
 }
+
+input "2:7:SynPS/2_Synaptics_TouchPad" {
+   events disabled
+   # dwt enabled
+   # tap enabled
+   # natural_scroll enabled
+   # middle_emulation enabled
+}
+
+input "type:keyboard" {
+    xkb_options caps:escape
+}
+
 #
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
@@ -82,7 +95,7 @@ input "2:14:ETPS/2_Elantech_Touchpad" {
     bindsym $mod+m exec $menu
 
     # Start firefox
-    bindsym $mod+f exec firefox
+    bindsym $mod+b exec MOZ_ENABLE_WAYLAND=1 firefox
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -167,7 +180,7 @@ input "2:14:ETPS/2_Elantech_Touchpad" {
     # You can "split" the current object of your focus with
     # $mod+b or $mod+v, for horizontal and vertical splits
     # respectively.
-    bindsym $mod+b splith
+    # bindsym $mod+b splith
     bindsym $mod+v splitv
 
     # Switch the current container between different layout styles
@@ -235,9 +248,9 @@ bindsym $mod+r mode "resize"
 #     position top
 #
 #     # When the status_command prints a new line to stdout, swaybar updates.
-#     # The default just shows the current date and time.
+#     # The default just sho
 #     status_command while date +'%Y-%m-%d %l:%M:%S %p'; do sleep 1; done
-#
+
 #     colors {
 #         statusline #ffffff
 #         background #323232
