@@ -3,7 +3,7 @@ Description=Download pacman updates in the background without installing them
 
 [Timer] 
 OnBootSec=15min 
-OnUnitActiveSec=30min
+OnUnitActiveSec=3h
 
 [Install] 
 WantedBy=timers.target

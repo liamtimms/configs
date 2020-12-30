@@ -1,12 +1,9 @@
-" neovim .init.vim file
+" Title: neovim .init.vim file
 " Author: Liam Timms
-" Arch
+" OS: Arch Linux
 
 " TODO: add file type checking so that different settings are loaded for
 " python, latex or anything else I end up doing.
-" TODO: add file type specifc key bindings, i.e. one short cut to create a
-" comment in markdown, laTeX, python, MATLAB, etc. with the appropiate syntax
-" for that file type (or find a plugin that does this)
 
 " ====== Vim-plug Install =======
 " taken from:
@@ -33,14 +30,14 @@ endif
 call plug#begin('~/.config/nvim/plugged')
 
 " Autocomplete:
-" deoplete (neovim autocompletion)
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-endif
+" " deoplete (neovim autocompletion)
+" if has('nvim')
+"   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" else
+"   Plug 'Shougo/deoplete.nvim'
+"   Plug 'roxma/nvim-yarp'
+"   Plug 'roxma/vim-hug-neovim-rpc'
+" endif
 " " jedi (python completion)
 " Plug 'davidhalter/jedi-vim'
 " " deoplete-jedi (connects them)
@@ -48,7 +45,7 @@ endif
 
 " Linter:
 " code linter
-Plug 'dense-analysis/ale'
+Plug 'dense-analysis/ale', { 'for': 'python' }
 
 " Tags:
 " tags
@@ -63,30 +60,22 @@ Plug 'vim-airline/vim-airline-themes'
 " git integration that works wiht airline
 Plug 'tpope/vim-fugitive'
 
+" Godly TPope:
+" easier parenthesis, etc.
+Plug 'tpope/vim-surround'
+" session saving
+Plug 'tpope/vim-obsession'
+" easier commenting
+Plug 'tpope/vim-commentary'
+
 " FZF:
 " powerful functionality from fzf
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
-" Aesthetic:
-" Color Theme
-Plug 'drewtempelmeyer/palenight.vim'
-" Color Theme Alt
-Plug 'dracula/vim', { 'as': 'dracula' }
-
-" Goyo and limelight (zen mode)
-" Plug 'junegunn/goyo.vim'
-" Plug 'junegunn/limelight.vim'
-
 " Jupyter:
 " integration with Jupyter consoles
 Plug 'jupyter-vim/jupyter-vim'
-
-" LaTeX:
-" this plug contains a bunch of LaTeX support stuff
-Plug 'lervag/vimtex', { 'for': 'tex' }
-" this plug allows a live preview of LaTeX
-Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 
 " Prose:
 " this plug helps navigation and writing of prose (paragraphs
@@ -94,7 +83,23 @@ Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 " Plug 'reedes/vim-pencil'
 " replaced by prose mode function defined at the bottom of this
 " Plug 'vim-pandoc/vim-pandoc'
-Plug 'vim-pandoc/vim-pandoc-syntax'
+Plug 'vim-pandoc/vim-pandoc-syntax', { 'for': 'markdown' }
+
+" " Aesthetic:
+" " Color Theme
+" Plug 'drewtempelmeyer/palenight.vim'
+" " Color Theme Alt
+" Plug 'dracula/vim', { 'as': 'dracula' }
+
+" Goyo and limelight (zen mode)
+" Plug 'junegunn/goyo.vim'
+" Plug 'junegunn/limelight.vim'
+
+" LaTeX:
+" this plug contains a bunch of LaTeX support stuff
+Plug 'lervag/vimtex', { 'for': 'tex' }
+" this plug allows a live preview of LaTeX
+Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 
 " Snippets:
 " this plug provides snippet support
@@ -102,8 +107,9 @@ Plug 'SirVer/ultisnips'
 " Snippets are separated from the engine. Add this if you want them:
 Plug 'honza/vim-snippets'
 
-" easier parenthesis, etc.
-Plug 'tpope/vim-surround'
+" TMUX:
+" tmux-vim integration
+Plug 'christoomey/vim-tmux-navigator'
 
 call plug#end()
 
@@ -139,8 +145,7 @@ map <C-l> <C-w>l
 " change color scheme
 " colorscheme palenight
 " colorscheme dracula
-" let g:airline_theme = 'palenight' " palenight hasn't been added to airline
-" yet
+let g:airline_theme = 'distinguished'
 
 " delete all extra whitespace when saving
 autocmd BufWritePre * %s/\s\+$//e
@@ -169,12 +174,12 @@ nnoremap <F7> :<C-U>setlocal lcs=tab:>-,trail:-,eol:$ list! list? <CR>
 
 " === Specific Plugin Settings ===
 
-" Deoplete: -----------------------------
-let g:deoplete#enable_at_startup = 1
-call deoplete#custom#option({
-\ 'ignore_case' : v:true,
-\ 'smart_case': v:true,
-\ })
+" " Deoplete: -----------------------------
+" " let g:deoplete#enable_at_startup = 1
+" call deoplete#custom#option({
+" \ 'ignore_case' : v:true,
+" \ 'smart_case': v:true,
+" \ })
 
 " complete with words from any opened file
 let g:context_filetype#same_filetypes = {}
