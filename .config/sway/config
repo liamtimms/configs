@@ -65,7 +65,15 @@ input "2:14:ETPS/2_Elantech_Touchpad" {
    middle_emulation enabled
 }
 
-input type:keyboard {
+input "2:7:SynPS/2_Synaptics_TouchPad" {
+   events disabled
+   # dwt enabled
+   # tap enabled
+   # natural_scroll enabled
+   # middle_emulation enabled
+}
+
+input "type:keyboard" {
     xkb_options caps:escape
 }
 
@@ -172,6 +180,7 @@ input type:keyboard {
     # You can "split" the current object of your focus with
     # $mod+b or $mod+v, for horizontal and vertical splits
     # respectively.
+    # bindsym $mod+b splith
     bindsym $mod+s splith
     bindsym $mod+v splitv
 
@@ -240,9 +249,9 @@ bindsym $mod+r mode "resize"
 #     position top
 #
 #     # When the status_command prints a new line to stdout, swaybar updates.
-#     # The default just shows the current date and time.
+#     # The default just sho
 #     status_command while date +'%Y-%m-%d %l:%M:%S %p'; do sleep 1; done
-#
+
 #     colors {
 #         statusline #ffffff
 #         background #323232
