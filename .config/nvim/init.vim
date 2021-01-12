@@ -328,6 +328,7 @@ let g:coc_global_extensions =  [
             \ 'coc-snippets',
             \ 'coc-prettier',
             \ 'coc-json',
+            \ 'coc-python',
             \ ]
 
 " Use <c-space> to trigger completion.
@@ -433,7 +434,6 @@ augroup end
 " Example: `<leader>aap` for current paragraph
 xmap <leader>a  <Plug>(coc-codeaction-selected)
 nmap <leader>a  <Plug>(coc-codeaction-selected)
-
 
 " Remap keys for applying codeAction to the current buffer.
 nmap <leader>ac  <Plug>(coc-codeaction)
