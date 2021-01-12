@@ -244,8 +244,8 @@ let g:ale_fixers = {
       \    'python': ['yapf'],
       \    'c': ['clang-format'],
       \}
-nnoremap <F4> :ALEToggle
-nnoremap <F5> :ALEFix
+nnoremap <F4> :ALEToggle<CR>
+nnoremap <F5> :ALEFix<CR>
 "let g:ale_fix_on_save = 1
 """""
 "function! LinterStatus() abort
