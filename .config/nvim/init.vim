@@ -112,6 +112,10 @@ Plug 'honza/vim-snippets'
 " tmux-vim integration
 Plug 'christoomey/vim-tmux-navigator'
 
+" Treesitter:
+" k i s s i n g
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
 call plug#end()
 
 " Install plugins on new install:
@@ -174,6 +178,20 @@ nnoremap <F7> :<C-U>setlocal lcs=tab:>-,trail:-,eol:$ list! list? <CR>
 
 
 " === Specific Plugin Settings ===
+
+
+" Treesitter: -----------------------------
+"
+lua <<EOF
+require'nvim-treesitter.configs'.setup {
+  ensure_installed = "maintained", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
+  highlight = {
+    enable = true,              -- false will disable the whole extension
+    disable = { "c", "rust" },  -- list of language that will be disabled
+  },
+}
+EOF
+
 
 " " Deoplete: -----------------------------
 " " let g:deoplete#enable_at_startup = 1
@@ -352,7 +370,7 @@ set nobackup
 set nowritebackup
 
 " Give more space for displaying messages.
-set cmdheight=2
+" set cmdheight=2
 
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
