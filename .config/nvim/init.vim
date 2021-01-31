@@ -247,8 +247,8 @@ let g:ale_fixers = {
       \    'python': ['yapf'],
       \    'c': ['clang-format'],
       \}
-nnoremap <F4> :ALEToggle
-nnoremap <F5> :ALEFix
+nnoremap <F4> :ALEToggle<CR>
+nnoremap <F5> :ALEFix<CR>
 "let g:ale_fix_on_save = 1
 """""
 "function! LinterStatus() abort
@@ -331,6 +331,7 @@ let g:coc_global_extensions =  [
             \ 'coc-snippets',
             \ 'coc-prettier',
             \ 'coc-json',
+            \ 'coc-python',
             \ ]
 
 " Use <c-space> to trigger completion.
@@ -436,7 +437,6 @@ augroup end
 " Example: `<leader>aap` for current paragraph
 xmap <leader>a  <Plug>(coc-codeaction-selected)
 nmap <leader>a  <Plug>(coc-codeaction-selected)
-
 
 " Remap keys for applying codeAction to the current buffer.
 nmap <leader>ac  <Plug>(coc-codeaction)
