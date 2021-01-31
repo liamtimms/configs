@@ -91,6 +91,7 @@ Plug 'vim-pandoc/vim-pandoc-syntax', { 'for': 'markdown' }
 " Plug 'drewtempelmeyer/palenight.vim'
 " " Color Theme Alt
 " Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'arcticicestudio/nord-vim'
 
 " Goyo and limelight (zen mode)
 " Plug 'junegunn/goyo.vim'
@@ -146,7 +147,9 @@ map <C-l> <C-w>l
 " change color scheme
 " colorscheme palenight
 " colorscheme dracula
-let g:airline_theme = 'distinguished'
+colorscheme nord
+
+" let g:airline_theme = 'distinguished'
 
 " delete all extra whitespace when saving
 autocmd BufWritePre * %s/\s\+$//e
