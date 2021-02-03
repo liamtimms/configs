@@ -41,7 +41,7 @@ call plug#begin('~/.config/nvim/plugged')
 " Plug 'davidhalter/jedi-vim'
 " " deoplete-jedi (connects them)
 " Plug 'deoplete-plugins/deoplete-jedi', { 'do': ':UpdateRemotePlugins' }
-" coc
+" COC:
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Linter:
@@ -73,6 +73,10 @@ Plug 'tpope/vim-commentary'
 " powerful functionality from fzf
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+
+" Align:
+" easier table formatting?
+Plug 'junegunn/vim-easy-align'
 
 " Jupyter:
 " integration with Jupyter consoles
@@ -249,7 +253,7 @@ augroup pandoc_syntax
     au! BufNewFile,BufFilePre,BufRead *.md set filetype=markdown.pandoc
 augroup END
 "
-set conceallevel=0
+let g:pandoc#syntax#conceal#use =  0
 
 " ALE: ---------------------------------
 " define linters and fixers
@@ -259,14 +263,20 @@ let g:ale_linters = {
       \   'python': ['flake8'],
       \   'ruby': ['standardrb', 'rubocop'],
       \   'javascript': ['eslint'],
+      \   'markdown': ['proselint'],
       \}
 
 let g:ale_fixers = {
       \    'python': ['yapf'],
       \    'c': ['clang-format'],
+      \    'json': ['prettier'],
+      \    'markdown': ['prettier'],
       \}
 nnoremap <F4> :ALEToggle<CR>
 nnoremap <F5> :ALEFix<CR>
+nnoremap ]e   :ALENextWrap<CR>
+nnoremap [e   :ALEPreviousWrap<CR>
+
 "let g:ale_fix_on_save = 1
 """""
 "function! LinterStatus() abort
@@ -349,7 +359,7 @@ let g:coc_global_extensions =  [
             \ 'coc-snippets',
             \ 'coc-prettier',
             \ 'coc-json',
-            \ 'coc-python',
+            \ 'coc-jedi',
             \ ]
 
 " Use <c-space> to trigger completion.
