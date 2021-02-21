@@ -4,7 +4,7 @@
 #
 # Read `man 5 sway` for a complete reference.
 
-default_border pixel 5
+default_border pixel 3
 
 client.focused #285577 #268bd2 #ffffff
 
@@ -19,7 +19,7 @@ set $up k
 set $right l
 # Your preferred terminal emulator
 #set $term urxvt
-set $term gnome-terminal
+set $term alacritty
 #set $term ~/configs/.config/sway/scripts/term-wrapper.sh
 # Your preferred application launcher
 # Note: it's recommended that you pass the final command to sway
@@ -181,8 +181,8 @@ input "type:keyboard" {
     # $mod+b or $mod+v, for horizontal and vertical splits
     # respectively.
     # bindsym $mod+b splith
-    bindsym $mod+s splith
-    bindsym $mod+v splitv
+    bindsym $mod+underscore splitv
+    bindsym $mod+bar splith
 
     # Switch the current container between different layout styles
     bindsym $mod+y layout stacking
