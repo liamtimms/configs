@@ -58,7 +58,7 @@ window:
   # Values for `decorations` (macOS only):
   #     - transparent: Title bar, transparent background and title bar buttons
   #     - buttonless: Title bar, transparent background and no title bar buttons
-  decorations: none
+  decorations: full
 
   # Startup Mode (changes require restart)
   #
@@ -116,40 +116,40 @@ font:
     #style: Regular
 
   # Bold font face
-  #bold:
+  bold:
     # Font family
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    #family: monospace
+    family: source code pro
 
     # The `style` can be specified to pick a specific face.
-    #style: Bold
+    style: Bold
 
   # Italic font face
-  #italic:
+  italic:
     # Font family
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    #family: monospace
+    family: source code pro extralight
 
     # The `style` can be specified to pick a specific face.
-    #style: Italic
+    style: Italic
 
   # Bold italic font face
-  #bold_italic:
+  bold_italic:
     # Font family
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    #family: monospace
+    family: monospace
 
     # The `style` can be specified to pick a specific face.
-    #style: Bold Italic
+    style: Bold Italic
 
   # Point size
-  size: 14.0
+  size: 12
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -309,10 +309,39 @@ colors:
     cyan:    '#33c7de'
     white:   '#ffffff'
 
+# Colors (Nord)
+colors:
+   # Default colors
+   primary:
+     background: '#2E3440'
+     foreground: '#D8DEE9'
+
+   # Normal colors
+   normal:
+     black:   '#3B4252'
+     red:     '#BF616A'
+     green:   '#A3BE8C'
+     yellow:  '#EBCB8B'
+     blue:    '#81A1C1'
+     magenta: '#B48EAD'
+     cyan:    '#88C0D0'
+     white:   '#E5E9F0'
+
+   # Bright colors
+   bright:
+     black:   '#4C566A'
+     red:     '#BF616A'
+     green:   '#A3BE8C'
+     yellow:  '#EBCB8B'
+     blue:    '#81A1C1'
+     magenta: '#B48EAD'
+     cyan:    '#8FBCBB'
+     white:   '#ECEFF4'
+
 # Bell
 #
 # The bell is rung every time the BEL control character is received.
-#bell:
+bell:
   # Visual Bell Animation
   #
   # Animation effect for flashing the screen when the visual bell is rung.
@@ -328,7 +357,7 @@ colors:
   #   - EaseOutExpo
   #   - EaseOutCirc
   #   - Linear
-  #animation: EaseOutExpo
+  animation: EaseOutExpo
 
   # Duration of the visual bell flash in milliseconds. A `duration` of `0` will
   # disable the visual bell animation.
@@ -354,7 +383,7 @@ colors:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.97
+# background_opacity: 0.97
 
 #selection:
   # This string contains all characters that are used as separators for
@@ -426,7 +455,7 @@ background_opacity: 0.97
 # Send ESC (\x1b) before characters when alt is pressed.
 #alt_send_esc: true
 
-#mouse:
+mouse:
   # Click settings
   #
   # The `double_click` and `triple_click` settings control the time
@@ -436,7 +465,7 @@ background_opacity: 0.97
   #triple_click: { threshold: 300 }
 
   # If this is `true`, the cursor is temporarily hidden when typing.
-  #hide_when_typing: false
+  hide_when_typing: true
 
   #url:
     # URL launcher

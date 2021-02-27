@@ -1,0 +1,21 @@
+* alacritty/alacritty.yml
+* nvim/init.vim
+package_info/qme
+package_info/qme_asus
+package_info/qmett
+package_info/qmett_asus
+package_info/qne
+package_info/qne_asus
+package_info/qnett
+package_info/qnett_asus
+ranger/rc.conf
+* shell/bashrc_arch
+shell/bashrc_asus
+shell/core_pkgs
+shell/inputrc
+sway/config
+systemd/updatedl.service
+systemd/updatedl.timer
+* tmux/tmux.conf
+waybar/config
+waybar/style.css
