@@ -174,10 +174,10 @@ autocmd filetype markdown syn match math '\\$[^$].\{-}\$'
 tnoremap <Esc> <C-\><C-n>
 
 " pressing F2 toggles on prose mode
-nnoremap <F2> :call ToggleProse() <CR>
+nnoremap <leader>p :call ToggleProse() <CR>
 
 " pressing F3 turns on spell
-nnoremap <F3> :setlocal spell! spelllang=en_us <CR>
+nnoremap <leader>s :setlocal spell! spelllang=en_us <CR>
 
 " pressing F7 shows tabs and the end of the line more explicitly
 nnoremap <F7> :<C-U>setlocal lcs=tab:>-,trail:-,eol:$ list! list? <CR>
@@ -272,8 +272,8 @@ let g:ale_fixers = {
       \    'json': ['prettier'],
       \    'markdown': ['prettier'],
       \}
-nnoremap <F4> :ALEToggle<CR>
-nnoremap <F5> :ALEFix<CR>
+nnoremap <leader>al :ALEToggle<CR>
+nnoremap <leader>af :ALEFix<CR>
 nnoremap ]e   :ALENextWrap<CR>
 nnoremap [e   :ALEPreviousWrap<CR>
 
