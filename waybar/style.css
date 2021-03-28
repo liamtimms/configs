@@ -1,10 +1,11 @@
 * {
-	font-size: 14px;
-	font-family: sourcecode;
+	font-family: "Source Code Pro Semibold";
+	font-size: 13px;
+    min-height: 0;
 }
 
 window#waybar {
-	background: #292b2e;
+	background: @theme_base_color;
 	color: #fdf6e3;
 }
 
@@ -14,7 +15,7 @@ window#waybar {
 }
 #custom-right-arrow-light,
 #custom-left-arrow-light {
-	color: #292b2e;
+	color: @theme_base_color;
 	background: #1a1a1a;
 }
 

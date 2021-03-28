@@ -23,13 +23,16 @@ set $term alacritty
 #set $term ~/configs/.config/sway/scripts/term-wrapper.sh
 # Your preferred application launcher
 # Note: it's recommended that you pass the final command to sway
-set $menu dmenu_path | dmenu | xargs swaymsg exec --
+# set $menu dmenu_path | dmenu | xargs swaymsg exec --
 #set $menu bemenu_path | bemenu | xargs swaymsg exec --
+# set $menu bemenu_path | bemenu | xargs swaymsg exec --
+set $menu wofi_path | wofi --allow-images --show run
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 #output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-output * bg /home/liam/Pictures/Firefox_wallpaper.png fill
+output * bg /home/liam/Pictures/wallhaven-013gxw_2560x1600.png fill
+output eDP-1 scale 1.55
 #
 # Example configuration:
 #
@@ -71,6 +74,11 @@ input "2:7:SynPS/2_Synaptics_TouchPad" {
    # tap enabled
    # natural_scroll enabled
    # middle_emulation enabled
+}
+
+input type:touchpad {
+   tap enabled
+   natural_scroll enabled
 }
 
 input "type:keyboard" {
