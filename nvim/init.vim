@@ -95,7 +95,8 @@ Plug 'vim-pandoc/vim-pandoc-syntax', { 'for': 'markdown' }
 " Plug 'drewtempelmeyer/palenight.vim'
 " " Color Theme Alt
 " Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'arcticicestudio/nord-vim'
+" My custom nord with extra pandoc syntax:
+Plug 'liamtimms/nord-vim'
 
 " Goyo and limelight (zen mode)
 " Plug 'junegunn/goyo.vim'
