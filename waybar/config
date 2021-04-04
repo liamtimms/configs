@@ -58,7 +58,7 @@
 		"format": "{icon}",
 		"return-type": "json",
 		"format-icons": [ "☑️", "🔼" ],
-        "interval": 1800,
+        "interval": 3600,
         "exec": "$HOME/bin/bashscripts/module-update 2> /dev/null"
 	},
 
