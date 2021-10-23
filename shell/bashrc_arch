@@ -170,6 +170,11 @@ fi
 export ANTSPATH=/opt/ANTs/bin/
 export PATH=${ANTSPATH}:$PATH
 
+# CAVASS
+VIEWNIX_ENV=/home/liam/Documents/cavass_test/cavass-build
+PATH=$PATH:/home/liam/Documents/cavass_test/cavass-build
+export PATH VIEWNIX_ENV
+
 # Switch to Vi style key bindings
 set -o vi
 bind -m vi-insert 'Control-l: clear-screen'
