@@ -200,7 +200,6 @@ require'nvim-treesitter.configs'.setup {
 }
 EOF
 
-
 " " Deoplete: -----------------------------
 " " let g:deoplete#enable_at_startup = 1
 " call deoplete#custom#option({
@@ -272,6 +271,7 @@ let g:ale_fixers = {
       \    'c': ['clang-format'],
       \    'json': ['prettier'],
       \    'markdown': ['prettier'],
+      \    'javascript': ['prettier'],
       \}
 nnoremap <leader>al :ALEToggle<CR>
 nnoremap <leader>af :ALEFix<CR>
