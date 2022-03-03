@@ -28,6 +28,8 @@ endif
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.config/nvim/plugged')
 
+Plug 'dstein64/vim-startuptime'
+
 " Autocomplete:
 " " deoplete (neovim autocompletion)
 " if has('nvim')
@@ -52,14 +54,21 @@ Plug 'dense-analysis/ale'
 " tags
 Plug 'majutsushi/tagbar'
 
+
+
 " Statusline:
 " airline and associated theming
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
+Plug 'nvim-lualine/lualine.nvim'
+" If you want to have icons in your statusline choose one of these
+Plug 'kyazdani42/nvim-web-devicons'
 
 " Git:
 " git integration that works wiht airline
 Plug 'tpope/vim-fugitive'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'lewis6991/gitsigns.nvim'
 
 " Godly TPope:
 " easier parenthesis, etc.
@@ -80,7 +89,7 @@ Plug 'junegunn/vim-easy-align'
 
 " Jupyter:
 " integration with Jupyter consoles
-Plug 'jupyter-vim/jupyter-vim'
+" Plug 'jupyter-vim/jupyter-vim'
 
 " Prose:
 " this plug helps navigation and writing of prose (paragraphs
@@ -95,8 +104,10 @@ Plug 'vim-pandoc/vim-pandoc-syntax', { 'for': 'markdown' }
 " Plug 'drewtempelmeyer/palenight.vim'
 " " Color Theme Alt
 " Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'Mofiqul/dracula.nvim'
+
 " My custom nord with extra pandoc syntax:
-Plug 'liamtimms/nord-vim'
+" Plug 'liamtimms/nord-vim'
 
 " Goyo and limelight (zen mode)
 " Plug 'junegunn/goyo.vim'
@@ -155,10 +166,10 @@ map <C-l> <C-w>l
 
 " change color scheme
 " colorscheme palenight
-" colorscheme dracula
-colorscheme nord
+let g:dracula_transparent_bg = v:true
+colorscheme dracula
+" colorscheme nord
 
-" let g:airline_theme = 'distinguished'
 
 " delete all extra whitespace when saving
 autocmd BufWritePre * %s/\s\+$//e
@@ -187,10 +198,10 @@ nnoremap <F7> :<C-U>setlocal lcs=tab:>-,trail:-,eol:$ list! list? <CR>
 
 " === Specific Plugin Settings ===
 
-
-" Treesitter: -----------------------------
+" lua based configs:
 "
-lua <<EOF
+lua << END
+-- treesitter
 require'nvim-treesitter.configs'.setup {
   ensure_installed = "maintained", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
   highlight = {
@@ -198,7 +209,40 @@ require'nvim-treesitter.configs'.setup {
     disable = { "c", "rust" },  -- list of language that will be disabled
   },
 }
-EOF
+-- lualine
+require('lualine').setup {
+  options = {
+      icons_enabled = false,
+      theme = 'auto',
+      component_separators = { left = '', right = ''},
+      section_separators = { left = '', right = ''},
+      disabled_filetypes = {},
+      always_divide_middle = true,
+    },
+  sections = {
+    lualine_a = {'mode'},
+    lualine_b = {'branch', 'diff', 'diagnostics'},
+    lualine_c = {'filename'},
+    lualine_x = {'g:coc_status', 'filetype'},
+    lualine_y = {'progress'},
+    lualine_z = {'location'}
+  },
+  inactive_sections = {
+    lualine_a = {},
+    lualine_b = {},
+    lualine_c = {'filename'},
+    lualine_x = {'location'},
+    lualine_y = {},
+    lualine_z = {}
+  },
+  tabline = {},
+  extensions = {}
+  }
+
+-- git signs
+require('gitsigns').setup()
+
+END
 
 " " Deoplete: -----------------------------
 " " let g:deoplete#enable_at_startup = 1
@@ -236,7 +280,9 @@ let g:context_filetype#same_filetypes._ = '_'
 " I want to have the little arrows in airline instead of flat blocks
 " Apparently this requires Installing powerline symbols so I'm not
 " bothering right now
-let g:airline_powerline_fonts = 1
+" let g:airline_powerline_fonts = 0
+" let g:airline_theme='base16_dracula'
+" let g:airline#extensions#whitespace#mixed_indent_algo = 1
 
 " hi! Normal ctermbg=NONE guibg=NONE
 
@@ -510,7 +556,7 @@ command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organize
 " Add (Neo)Vim's native statusline support.
 " NOTE: Please see `:h coc-status` for integrations with external plugins that
 " provide custom statusline: lightline.vim, vim-airline.
-set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+" set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 
 " Mappings for CoCList
