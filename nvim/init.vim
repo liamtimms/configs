@@ -1,6 +1,7 @@
 " Title: neovim .init.vim file
 " Author: Liam Timms
 " OS: Arch Linux
+"
 
 " TODO: add file type checking so that different settings are loaded for python, latex or anything else I end up doing.
 "
@@ -28,7 +29,10 @@ endif
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.config/nvim/plugged')
 
-Plug 'dstein64/vim-startuptime'
+" Speed up lua even more
+Plug 'lewis6991/impatient.nvim'
+
+" Plug 'dstein64/vim-startuptime'
 
 " COC:
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -108,6 +112,8 @@ if vim_plug_just_installed
     echo "Installing Bundles, please ignore key map error messages"
     :PlugInstall
 endif
+
+lua require('impatient')
 
 source $CUSTOM_CONFIG_HOME/nvim/basic_settings.vim
 source $CUSTOM_CONFIG_HOME/nvim/coc_settings.vim
