@@ -3,7 +3,7 @@
 " OS: Arch Linux
 
 " TODO: add file type checking so that different settings are loaded for python, latex or anything else I end up doing.
-
+"
 " ====== Vim-plug Install =======
 " taken from:
 " raw.githubusercontent.com/fisadev/fisa-nvim-config/master/init.vim
@@ -51,10 +51,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dense-analysis/ale'
 
 " Tags:
-" tags
+" tag bar to show variables and functions from ctags
 Plug 'majutsushi/tagbar'
-
-
 
 " Statusline:
 " airline and associated theming
@@ -99,13 +97,13 @@ Plug 'junegunn/vim-easy-align'
 " Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax', { 'for': 'markdown' }
 
-" " Aesthetic:
-" " Color Theme
+" Aesthetic:
+" Color Theme
 " Plug 'drewtempelmeyer/palenight.vim'
 " " Color Theme Alt
 " Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'marko-cerovac/material.nvim'
 Plug 'Mofiqul/dracula.nvim'
-
 " My custom nord with extra pandoc syntax:
 " Plug 'liamtimms/nord-vim'
 
@@ -122,7 +120,7 @@ Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 " Snippets:
 " this plug provides snippet support
 Plug 'SirVer/ultisnips'
-" Snippets are separated from the engine. Add this if you want them:
+" Snippets are separated from the engine.
 Plug 'honza/vim-snippets'
 
 " TMUX:
@@ -133,6 +131,10 @@ Plug 'christoomey/vim-tmux-navigator'
 " k i s s i n g
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
+" Firenvim:
+" browser embedds
+Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
+
 call plug#end()
 
 " Install plugins on new install:
@@ -141,11 +143,27 @@ if vim_plug_just_installed
     :PlugInstall
 endif
 
-" ======= In-built Settings ======
+source $CUSTOM_CONFIG_HOME/nvim/basic_settings.vim
+source $CUSTOM_CONFIG_HOME/nvim/coc_settings.vim
+source $CUSTOM_CONFIG_HOME/nvim/plug_settings.vim
+source $CUSTOM_CONFIG_HOME/nvim/prose_mode.vim
+
+" Firenvim:
 "
-" show line numbers
-" set nu
-set number relativenumber
+let g:firenvim_config = {
+    \ 'globalSettings': {
+        \ 'alt': 'all',
+    \  },
+    \ 'localSettings': {
+        \ '.*': {
+            \ 'cmdline': 'neovim',
+            \ 'content': 'text',
+            \ 'priority': 0,
+            \ 'selector': 'textarea',
+            \ 'takeover': 'never',
+        \ },
+    \ }
+\ }
 
 " make splits behave in a more natural way
 set splitbelow splitright
@@ -166,8 +184,6 @@ map <C-l> <C-w>l
 
 " change color scheme
 " colorscheme palenight
-let g:dracula_transparent_bg = v:true
-colorscheme dracula
 " colorscheme nord
 
 
@@ -412,15 +428,20 @@ let g:coc_global_extensions =  [
 " Use <c-space> to trigger completion.
 if has('nvim')
   inoremap <silent><expr> <c-space> coc#refresh()
-else
-  inoremap <silent><expr> <c-@> coc#refresh()
 endif
 
-inoremap <silent><expr> <NUL> coc#refresh()
-
+if exists('g:started_by_firenvim')
+  set laststatus=0
+  let g:material_style = "darker"
+  colorscheme material
+  autocmd BufNew,BufEnter *.py execute "silent! CocDisable"
+else
+  let g:dracula_transparent_bg = v:true
+  colorscheme dracula
+  set laststatus=2
+endif
 
 " copy and pasted from neoclide/coc.nvim
-
 
 " TextEdit might fail if hidden is not set.
 set hidden
