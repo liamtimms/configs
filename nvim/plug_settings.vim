@@ -128,3 +128,5 @@ nnoremap <leader>fg <cmd>lua require('fzf-lua').grep()<CR>
 " fugitive: -----------------------------
 nnoremap <leader>gw :Gwrite
 nnoremap <leader>gc :Git commit
+nnoremap <leader>gp :Git push
+nnoremap <leader>gpl :Git pull
