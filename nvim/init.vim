@@ -3,6 +3,7 @@
 " OS: Arch Linux
 "
 
+
 " TODO: add file type checking so that different settings are loaded for python, latex or anything else I end up doing.
 "
 " ====== Vim-plug Install =======
@@ -34,6 +35,9 @@ Plug 'lewis6991/impatient.nvim'
 
 " Plug 'dstein64/vim-startuptime'
 
+" Indentation Guides:
+Plug 'lukas-reineke/indent-blankline.nvim'
+
 " COC:
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
@@ -62,12 +66,16 @@ Plug 'tpope/vim-surround'
 " session saving
 Plug 'tpope/vim-obsession'
 " easier commenting
-Plug 'tpope/vim-commentary'
+" Plug 'tpope/vim-commentary'
+
+" Comments:
+Plug 'numToStr/Comment.nvim'
 
 " FZF:
 " powerful functionality from fzf
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
+" Plug 'junegunn/fzf.vim'
+Plug 'ibhagwan/fzf-lua'
 
 " Align:
 " easier table formatting?
@@ -107,13 +115,14 @@ Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 
 call plug#end()
 
+lua require('impatient')
+
 " Install plugins on new install:
 if vim_plug_just_installed
     echo "Installing Bundles, please ignore key map error messages"
     :PlugInstall
 endif
 
-lua require('impatient')
 
 source $CUSTOM_CONFIG_HOME/nvim/basic_settings.vim
 source $CUSTOM_CONFIG_HOME/nvim/coc_settings.vim

@@ -14,10 +14,10 @@ require'nvim-treesitter.configs'.setup {
 -- lualine
 require('lualine').setup {
   options = {
-      icons_enabled = false,
+      icons_enabled = true,
       theme = 'auto',
-      component_separators = { left = '', right = ''},
-      section_separators = { left = '', right = ''},
+      -- component_separators = { left = '', right = ''},
+      -- section_separators = { left = '', right = ''},
       disabled_filetypes = {},
       always_divide_middle = true,
     },
@@ -43,6 +43,22 @@ require('lualine').setup {
 
 -- git signs
 require('gitsigns').setup()
+
+--comments
+require('Comment').setup()
+
+--fzf
+-- require('fzf-lua').setup()
+
+-- vim.opt.list = true
+-- vim.opt.listchars:append("space:⋅")
+-- vim.opt.listchars:append("eol:↴")
+
+require("indent_blankline").setup {
+    space_char_blankline = " ",
+    show_current_context = true,
+    show_current_context_start = true,
+}
 
 END
 
@@ -103,3 +119,12 @@ let g:UltiSnipsEditSplit="vertical"
 
 " Tagbar: -----------------------------
 nnoremap <F6> :TagbarToggle
+
+" fzf-lua: -----------------------------
+nnoremap <leader>ff <cmd>lua require('fzf-lua').files()<CR>
+nnoremap <leader>fb <cmd>lua require('fzf-lua').buffers()<CR>
+nnoremap <leader>fg <cmd>lua require('fzf-lua').grep()<CR>
+
+" fugitive: -----------------------------
+nnoremap <leader>gw :Gwrite
+nnoremap <leader>gc :Git commit
