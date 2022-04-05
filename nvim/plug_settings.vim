@@ -60,6 +60,9 @@ require("indent_blankline").setup {
     show_current_context_start = true,
 }
 
+-- explorer
+require('nvim-tree').setup()
+
 END
 
 " complete with words from any opened file
@@ -93,10 +96,10 @@ let g:ale_linters = {
       \}
 
 let g:ale_fixers = {
-      \    'python': ['yapf'],
+      \    'python': ['black', 'yapf', 'isort', 'remove_trailing_lines', 'trim_whitespace'],
       \    'c': ['clang-format'],
       \    'json': ['prettier'],
-      \    'markdown': ['prettier'],
+      \    'markdown': ['prettier', 'remove_trailing_lines', 'trim_whitespace'],
       \    'javascript': ['prettier'],
       \}
 nnoremap <leader>al :ALEToggle<CR>
@@ -104,7 +107,12 @@ nnoremap <leader>af :ALEFix<CR>
 nnoremap ]e   :ALENextWrap<CR>
 nnoremap [e   :ALEPreviousWrap<CR>
 
-"let g:ale_fix_on_save = 1
+let g:ale_fix_on_save = 1
+
+" Quickscope
+" Trigger a highlight in the appropriate direction when pressing these keys:
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+
 "
 " Ultisnip: -----------------------------
 " Trigger configuration. You need to change this to something other than <tab> if you use one of the following:
@@ -130,3 +138,6 @@ nnoremap <leader>gw :Gwrite
 nnoremap <leader>gc :Git commit
 nnoremap <leader>gp :Git push
 nnoremap <leader>gpl :Git pull
+
+" NvimTree
+nnoremap <leader>e :NvimTreeToggle<cr>

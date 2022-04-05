@@ -1,11 +1,8 @@
-" Title: neovim .init.vim file
+" Title: neovim/init.vim
 " Author: Liam Timms
-" OS: Arch Linux
-"
-
 
 " TODO: add file type checking so that different settings are loaded for python, latex or anything else I end up doing.
-"
+
 " ====== Vim-plug Install =======
 " taken from:
 " raw.githubusercontent.com/fisadev/fisa-nvim-config/master/init.vim
@@ -30,89 +27,95 @@ endif
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.config/nvim/plugged')
 
-" Speed up lua even more
-Plug 'lewis6991/impatient.nvim'
+    " Speed up lua even more
+    Plug 'lewis6991/impatient.nvim'
 
-" Plug 'dstein64/vim-startuptime'
+    " extra lua functions required by some other plugins
+    Plug 'nvim-lua/plenary.nvim'
+    " Plug 'dstein64/vim-startuptime'
 
-" Indentation Guides:
-Plug 'lukas-reineke/indent-blankline.nvim'
+    " Indentation Guides:
+    Plug 'lukas-reineke/indent-blankline.nvim'
 
-" COC:
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    " explorer
+    Plug 'kyazdani42/nvim-tree.lua'
 
-" Linter:
-" code linter
-Plug 'dense-analysis/ale'
+    " COC:
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-" Tags:
-" tag bar to show variables and functions from ctags
-Plug 'majutsushi/tagbar'
+    " Linter:
+    " code linter
+    Plug 'dense-analysis/ale'
 
-" Statusline:
-Plug 'nvim-lualine/lualine.nvim'
-" If you want to have icons in your statusline choose one of these
-Plug 'kyazdani42/nvim-web-devicons'
+    " Tags:
+    " tag bar to show variables and functions from ctags
+    Plug 'majutsushi/tagbar'
 
-" Git:
-" git integration
-Plug 'tpope/vim-fugitive'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'lewis6991/gitsigns.nvim'
+    " Statusline:
+    Plug 'nvim-lualine/lualine.nvim'
+    " If you want to have icons in your statusline choose one of these
+    Plug 'kyazdani42/nvim-web-devicons'
 
-" Godly TPope:
-" easier parenthesis, etc.
-Plug 'tpope/vim-surround'
-" session saving
-Plug 'tpope/vim-obsession'
-" easier commenting
-" Plug 'tpope/vim-commentary'
+    " Git:
+    " git integration
+    Plug 'tpope/vim-fugitive'
+    Plug 'lewis6991/gitsigns.nvim'
 
-" Comments:
-Plug 'numToStr/Comment.nvim'
+    " Godly TPope:
+    " easier parenthesis, etc.
+    Plug 'tpope/vim-surround'
+    " session saving
+    Plug 'tpope/vim-obsession'
+    " easier commenting
+    " Plug 'tpope/vim-commentary'
 
-" FZF:
-" powerful functionality from fzf
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-" Plug 'junegunn/fzf.vim'
-Plug 'ibhagwan/fzf-lua'
+    " Comments:
+    Plug 'numToStr/Comment.nvim'
 
-" Align:
-" easier table formatting?
-Plug 'junegunn/vim-easy-align'
+    " FZF:
+    " powerful functionality from fzf
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    " Plug 'junegunn/fzf.vim'
+    Plug 'ibhagwan/fzf-lua'
 
-" Prose:
-" replaced by prose mode function defined at the bottom of this
-Plug 'vim-pandoc/vim-pandoc-syntax', { 'for': 'markdown' }
+    " Align:
+    " easier table formatting?
+    Plug 'junegunn/vim-easy-align'
 
-" Aesthetic:
-Plug 'marko-cerovac/material.nvim'
-Plug 'Mofiqul/dracula.nvim'
+    " Prose:
+    " replaced by prose mode function defined at the bottom of this
+    Plug 'vim-pandoc/vim-pandoc-syntax', { 'for': 'markdown' }
 
-" LaTeX:
-" this plug contains a bunch of LaTeX support stuff
-Plug 'lervag/vimtex', { 'for': 'tex' }
-" this plug allows a live preview of LaTeX
-Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
+    " Aesthetic:
+    Plug 'marko-cerovac/material.nvim'
+    Plug 'Mofiqul/dracula.nvim'
 
-" Snippets:
-" this plug provides snippet engine support
-Plug 'SirVer/ultisnips'
-" Snippets are separated from the engine.
-Plug 'honza/vim-snippets'
+    " LaTeX:
+    " this plug contains a bunch of LaTeX support stuff
+    Plug 'lervag/vimtex', { 'for': 'tex' }
+    " this plug allows a live preview of LaTeX
+    Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 
-" TMUX:
-" tmux-vim integration
-Plug 'christoomey/vim-tmux-navigator'
+    " Snippets:
+    " this plug provides snippet engine support
+    Plug 'SirVer/ultisnips'
+    " Snippets are separated from the engine.
+    Plug 'honza/vim-snippets'
 
-" Treesitter:
-" k i s s i n g
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+    " easier f movement
+    Plug 'unblevable/quick-scope'       " Plug
 
-" Firenvim:
-" browser embedding of full nvim
-Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
+    " TMUX:
+    " tmux-vim integration
+    Plug 'christoomey/vim-tmux-navigator'
 
+    " Treesitter:
+    " k i s s i n g
+    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
+    " Firenvim:
+    " browser embedding of full nvim
+    Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 call plug#end()
 
 lua require('impatient')
