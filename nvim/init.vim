@@ -157,7 +157,7 @@ if exists('g:started_by_firenvim')
 else
   let g:dracula_transparent_bg = v:true
   colorscheme dracula
-  set laststatus=2
+  set laststatus=3
 endif
 
 
