@@ -21,13 +21,15 @@ export EDITOR=nvim
 
 alias ls='ls --color=auto'
 alias tmn='tmux new-session -s'
+alias t='tree'
+alias r='ranger'
 alias e='$EDITOR'
 alias nc='nipypecli crash'
 alias tc='trash crash*'
 alias cu='checkupdates | grep -v hask | wc -l'
 alias tm='tmux attach || tmux'
 
-WORKINGDIR=/mnt/4e43a4f6-7402-4881-bcf5-d280e54cc385/Analysis/DCM2BIDS5/code/nipype
+WORKINGDIR=~/Documents/Research
 alias cdw='cd ${WORKINGDIR}'
 
 alias vmtk_env='source ~/bin/anaconda/bin/activate vmtk'
