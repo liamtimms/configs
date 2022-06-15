@@ -88,7 +88,7 @@ call plug#begin('~/.config/nvim/plugged')
 
     " Aesthetic:
     Plug 'marko-cerovac/material.nvim'
-    Plug 'Mofiqul/dracula.nvim'
+    Plug 'liamtimms/dracula.nvim'
 
     " LaTeX:
     " this plug contains a bunch of LaTeX support stuff
