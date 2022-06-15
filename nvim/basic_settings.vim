@@ -41,11 +41,16 @@ autocmd filetype markdown syn match math '\\$[^$].\{-}\$'
 " remap Escape to get out of terminal mode
 tnoremap <Esc> <C-\><C-n>
 
-" pressing F2 toggles on prose mode
+" turn on mode change text wrapping and movement that's better suited to prose
 nnoremap <leader>p :call ToggleProse() <CR>
 
-" pressing F3 turns on spell
+" turn on and off spell check
 nnoremap <leader>s :setlocal spell! spelllang=en_us <CR>
+
+" zoom in and out kind of like tmux
+nnoremap <leader>zz <c-w>_ \| <c-w>\|
+nnoremap <leader>zo <c-w>=
+
 
 " pressing F7 shows tabs and the end of the line more explicitly
 nnoremap <F7> :<C-U>setlocal lcs=tab:>-,trail:-,eol:$ list! list? <CR>
