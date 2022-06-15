@@ -90,10 +90,11 @@ let g:pandoc#syntax#conceal#use =  0
 " from https://www.vimfromscratch.com/articles/vim-for-python/
 let g:ale_enabled = 0
 let g:ale_linters = {
-      \   'python': ['flake8'],
+      \   'python': ['flake8', 'mypy'],
       \   'ruby': ['standardrb', 'rubocop'],
       \   'javascript': ['eslint'],
       \   'markdown': ['proselint'],
+      \   'sh': ['shellcheck'],
       \}
 
 let g:ale_fixers = {
@@ -102,6 +103,7 @@ let g:ale_fixers = {
       \    'json': ['prettier'],
       \    'markdown': ['prettier', 'remove_trailing_lines', 'trim_whitespace'],
       \    'javascript': ['prettier'],
+      \    'sh': ['shfmt'],
       \}
 nnoremap <leader>al :ALEToggle<CR>
 nnoremap <leader>af :ALEFix<CR>
