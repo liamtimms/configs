@@ -43,6 +43,13 @@ call plug#begin('~/.config/nvim/plugged')
     " COC:
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+    " Wiki:
+    " this plug allows you to edit a wiki in vim
+    Plug 'vimwiki/vimwiki'
+
+    " Copilot:
+    Plug 'github/copilot.vim'
+
     " Linter:
     " code linter
     Plug 'dense-analysis/ale'
@@ -113,9 +120,11 @@ call plug#begin('~/.config/nvim/plugged')
     " k i s s i n g
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
+
     " Firenvim:
     " browser embedding of full nvim
     Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
+
 call plug#end()
 
 lua require('impatient')

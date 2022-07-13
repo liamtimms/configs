@@ -85,6 +85,21 @@ augroup END
 "
 let g:pandoc#syntax#conceal#use =  0
 
+" Vimwiki: ----------------------------
+let g:vimwiki_list = [{'path': '~/Documents/LaptopSync/wiki/',
+                      \ 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_markdown_link_ext = 1
+let g:vimwiki_global_ext = 0
+" let g:vimwiki_key_mappings = { 'table_mappings': 0 }
+
+" Copilot: ----------------------------
+let g:copilot_filetypes = { 'markdown': v:false }
+let g:copilot_no_tab_map = v:true
+nnoremap <leader>ce :Copilot enable<CR>
+nnoremap <leader>cd :Copilot disable<CR>
+nnoremap <leader>cp :Copilot panel<CR>
+imap <silent><script><expr> <C-J> copilot#Accept("\<CR>")
+
 " ALE: ---------------------------------
 " define linters and fixers
 " from https://www.vimfromscratch.com/articles/vim-for-python/
@@ -112,7 +127,7 @@ nnoremap [e   :ALEPreviousWrap<CR>
 
 let g:ale_fix_on_save = 1
 
-" Quickscope
+" Quickscope: --------------------------
 " Trigger a highlight in the appropriate direction when pressing these keys:
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 
@@ -142,5 +157,6 @@ nnoremap <leader>gc :Git commit
 nnoremap <leader>gp :Git push
 nnoremap <leader>gpl :Git pull
 
-" NvimTree
+" NvimTree: ----------------------------
 nnoremap <leader>e :NvimTreeToggle<cr>
+
