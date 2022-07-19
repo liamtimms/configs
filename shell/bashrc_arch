@@ -22,12 +22,51 @@ export EDITOR=nvim
 alias ls='ls --color=auto'
 alias tmn='tmux new-session -s'
 alias t='tree'
-alias r='ranger'
+# alias r='ranger'
 alias e='$EDITOR'
 alias nc='nipypecli crash'
 alias tc='trash crash*'
 alias cu='checkupdates | grep -v hask | wc -l'
 alias tm='tmux attach || tmux'
+
+joshuto-cd() {
+  ID="$$"
+  mkdir -p /tmp/$USER
+  OUTPUT_FILE="/tmp/$USER/joshuto-cwd-$ID"
+  env joshuto --output-file "$OUTPUT_FILE" $@
+  exit_code=$?
+
+  case "$exit_code" in
+    # regular exit
+    0)
+      ;;
+    # output contains current directory
+    101)
+      JOSHUTO_CWD=$(cat "$OUTPUT_FILE")
+      cd "$JOSHUTO_CWD"
+      ;;
+    # output selected files
+    102)
+      cat "$OUTPUT_FILE"
+      ;;
+    *)
+      echo "Exit code: $exit_code"
+      ;;
+  esac
+}
+
+alias j='joshuto-cd'
+
+# widget-joshuto-cd() {
+#   BUFFER="joshuto-cd"
+#   zle accept-line
+# }
+# zle -N widget-joshuto-cd
+#
+#
+# bind '"\C-o": "fo\n"'
+#
+
 
 WORKINGDIR=~/Documents/Research
 alias cdw='cd ${WORKINGDIR}'
