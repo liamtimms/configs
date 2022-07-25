@@ -64,6 +64,9 @@ require("indent_blankline").setup {
 -- explorer
 require('nvim-tree').setup()
 
+-- alpha
+require('alpha').setup(require'alpha.themes.startify'.config)
+
 END
 
 " complete with words from any opened file
@@ -87,10 +90,14 @@ let g:pandoc#syntax#conceal#use =  0
 
 " Vimwiki: ----------------------------
 let g:vimwiki_list = [{'path': '~/Documents/LaptopSync/wiki/',
-                      \ 'syntax': 'markdown', 'ext': '.md'}]
+                      \ 'syntax': 'markdown',
+                      \ 'ext': '.md',
+                      \ 'auto_diary_index': 1,
+                      \ 'diary_caption_level': -1}]
 let g:vimwiki_markdown_link_ext = 1
 let g:vimwiki_global_ext = 0
 " let g:vimwiki_key_mappings = { 'table_mappings': 0 }
+let g:vimwiki_hgader_type = '#'     " set to '=' for wiki syntax
 
 " Copilot: ----------------------------
 let g:copilot_filetypes = { 'markdown': v:false }
@@ -119,6 +126,7 @@ let g:ale_fixers = {
       \    'markdown': ['prettier', 'remove_trailing_lines', 'trim_whitespace'],
       \    'javascript': ['prettier'],
       \    'sh': ['shfmt'],
+      \    'rust': ['rustfmt'],
       \}
 nnoremap <leader>al :ALEToggle<CR>
 nnoremap <leader>af :ALEFix<CR>
@@ -149,7 +157,7 @@ nnoremap <F6> :TagbarToggle
 " fzf-lua: -----------------------------
 nnoremap <leader>ff <cmd>lua require('fzf-lua').files()<CR>
 nnoremap <leader>fb <cmd>lua require('fzf-lua').buffers()<CR>
-nnoremap <leader>fg <cmd>lua require('fzf-lua').grep()<CR>
+nnoremap <leader>fg <cmd>lua require('fzf-lua').live_grep()<CR>
 
 " fugitive: -----------------------------
 nnoremap <leader>gw :Gwrite

@@ -94,8 +94,11 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'vim-pandoc/vim-pandoc-syntax', { 'for': 'markdown' }
 
     " Aesthetic:
+    " themes
     Plug 'marko-cerovac/material.nvim'
     Plug 'liamtimms/dracula.nvim'
+    " start screen
+    Plug 'goolord/alpha-nvim'
 
     " LaTeX:
     " this plug contains a bunch of LaTeX support stuff
