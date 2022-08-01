@@ -14,6 +14,11 @@ set completeopt+=noinsert
 " make mouse do more
 set mouse=a
 
+" highlight current line
+set cursorline
+
+" use undo file instead of swap
+set undofile
 
 " Shortcutting split navigation
 map <C-h> <C-w>h

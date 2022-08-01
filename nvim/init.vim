@@ -123,6 +123,9 @@ call plug#begin('~/.config/nvim/plugged')
     " k i s s i n g
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
+    " Undotree:
+    Plug 'mbbill/undotree'
+
 
     " Firenvim:
     " browser embedding of full nvim

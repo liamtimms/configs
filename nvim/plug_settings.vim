@@ -168,3 +168,6 @@ nnoremap <leader>gpl :Git pull
 " NvimTree: ----------------------------
 nnoremap <leader>e :NvimTreeToggle<cr>
 
+" Undotree: ----------------------------
+nnoremap <leader>ut :UndotreeToggle<cr>
+
