@@ -31,8 +31,8 @@ set $menu wofi_path | wofi --allow-images --show run
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 #output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-output * bg /home/liam/Pictures/Wallpapers/wallhaven-013gxw_2560x1600.png fill
-output eDP-1 scale 1.55
+output * bg /home/liam/Pictures/Wallpapers/1426004564500-4.png fill
+output eDP-1 scale 2
 #
 # Example configuration:
 #
