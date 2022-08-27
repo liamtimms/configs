@@ -32,7 +32,7 @@ call plug#begin('~/.config/nvim/plugged')
 
     " extra lua functions required by some other plugins
     Plug 'nvim-lua/plenary.nvim'
-    " Plug 'dstein64/vim-startuptime'
+    Plug 'dstein64/vim-startuptime'
 
     " Indentation Guides:
     Plug 'lukas-reineke/indent-blankline.nvim'
@@ -54,9 +54,12 @@ call plug#begin('~/.config/nvim/plugged')
     " code linter
     Plug 'dense-analysis/ale'
 
+    " Temp igor pro
+    Plug 't-b/igor-pro-vim'
+
     " Tags:
     " tag bar to show variables and functions from ctags
-    Plug 'majutsushi/tagbar'
+    " Plug 'majutsushi/tagbar'
 
     " Statusline:
     Plug 'nvim-lualine/lualine.nvim'
@@ -70,7 +73,7 @@ call plug#begin('~/.config/nvim/plugged')
 
     " Godly TPope:
     " easier parenthesis, etc.
-    Plug 'tpope/vim-surround'
+    " Plug 'tpope/vim-surround'
     " session saving
     Plug 'tpope/vim-obsession'
     " easier commenting
@@ -87,7 +90,7 @@ call plug#begin('~/.config/nvim/plugged')
 
     " Align:
     " easier table formatting?
-    Plug 'junegunn/vim-easy-align'
+    " Plug 'junegunn/vim-easy-align'
 
     " Prose:
     " replaced by prose mode function defined at the bottom of this
@@ -98,13 +101,17 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'marko-cerovac/material.nvim'
     Plug 'liamtimms/dracula.nvim'
     " start screen
-    Plug 'goolord/alpha-nvim'
+    " Plug 'goolord/alpha-nvim'
+    Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
+
+    Plug 'liamtimms/prosemode.nvim'
+
 
     " LaTeX:
     " this plug contains a bunch of LaTeX support stuff
-    Plug 'lervag/vimtex', { 'for': 'tex' }
+    " Plug 'lervag/vimtex', { 'for': 'tex' }
     " this plug allows a live preview of LaTeX
-    Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
+    " Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 
     " Snippets:
     " this plug provides snippet engine support
@@ -124,8 +131,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
     " Undotree:
-    Plug 'mbbill/undotree'
-
+    " Plug 'mbbill/undotree'
 
     " Firenvim:
     " browser embedding of full nvim
@@ -141,11 +147,14 @@ if vim_plug_just_installed
     :PlugInstall
 endif
 
-
-source $CUSTOM_CONFIG_HOME/nvim/basic_settings.vim
-source $CUSTOM_CONFIG_HOME/nvim/coc_settings.vim
+" ======== Settings =========
+" slowly moving to lua
+" source $CUSTOM_CONFIG_HOME/nvim/basic_settings.vim
+luafile $CUSTOM_CONFIG_HOME/nvim/basic_settings.lua
+source $CUSTOM_CONFIG_HOME/nvim/new_coc_settings.vim
 source $CUSTOM_CONFIG_HOME/nvim/plug_settings.vim
 source $CUSTOM_CONFIG_HOME/nvim/prose_mode.vim
+
 
 " Firenvim settings to determine which way we go:
 let g:firenvim_config = {
@@ -172,7 +181,6 @@ if exists('g:started_by_firenvim')
 else
   let g:dracula_transparent_bg = v:true
   colorscheme dracula
+  " colorscheme material
   set laststatus=3
 endif
-
-

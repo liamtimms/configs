@@ -1,5 +1,5 @@
 " ======= In-built Settings ======
-"
+
 " show line numbers
 " set nu
 set number relativenumber
@@ -9,7 +9,7 @@ set splitbelow splitright
 
 " make autocompletion behave better
 set wildmode=list:longest
-set completeopt+=noinsert
+" set completeopt+=noinsert
 
 " make mouse do more
 set mouse=a
@@ -46,6 +46,10 @@ autocmd filetype markdown syn match math '\\$[^$].\{-}\$'
 " remap Escape to get out of terminal mode
 tnoremap <Esc> <C-\><C-n>
 
+" remap leader to space
+nnoremap <SPACE> <Nop>
+let mapleader=" "
+
 " turn on mode change text wrapping and movement that's better suited to prose
 nnoremap <leader>p :call ToggleProse() <CR>
 
@@ -56,6 +60,8 @@ nnoremap <leader>s :setlocal spell! spelllang=en_us <CR>
 nnoremap <leader>zz <c-w>_ \| <c-w>\|
 nnoremap <leader>zo <c-w>=
 
+" make sure jump list works as expected despite tab remap shenanigans
+nnoremap <C-i> <C-i>
 
 " pressing F7 shows tabs and the end of the line more explicitly
 nnoremap <F7> :<C-U>setlocal lcs=tab:>-,trail:-,eol:$ list! list? <CR>
