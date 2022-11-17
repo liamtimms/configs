@@ -54,6 +54,9 @@ call plug#begin('~/.config/nvim/plugged')
     " code linter
     Plug 'dense-analysis/ale'
 
+    " Bacon rust compiler linter
+    Plug 'Canop/nvim-bacon'
+
     " Temp igor pro
     Plug 't-b/igor-pro-vim'
 
@@ -102,7 +105,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'liamtimms/dracula.nvim'
     " start screen
     " Plug 'goolord/alpha-nvim'
-    Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
+    Plug 'akinsho/bufferline.nvim', { 'tag': 'v3.*' }
 
     Plug 'liamtimms/prosemode.nvim'
 
@@ -174,10 +177,12 @@ let g:firenvim_config = {
 
 
 if exists('g:started_by_firenvim')
-  set laststatus=0
   let g:material_style = "darker"
   colorscheme material
   autocmd BufNew,BufEnter *.py execute "silent! CocDisable"
+  autocmd BufNew,BufEnter *.txt execute "ProseOn"
+  set laststatus=0
+  set showtabline=0
 else
   let g:dracula_transparent_bg = v:true
   colorscheme dracula
