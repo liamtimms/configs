@@ -60,6 +60,7 @@ let g:ale_fixers = {
       \    'c': ['clang-format'],
       \    'json': ['prettier'],
       \    'markdown': ['prettier', 'remove_trailing_lines', 'trim_whitespace'],
+      \    'vimwiki': ['prettier'],
       \    'javascript': ['prettier'],
       \    'sh': ['shfmt'],
       \    'rust': ['rustfmt'],
