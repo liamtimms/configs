@@ -31,7 +31,7 @@ set $menu wofi_path | wofi --allow-images --show run
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 #output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-output * bg /home/liam/Pictures/Wallpapers/1426004564500-4.png fill
+output * bg /home/liam/Pictures/Wallpapers/custom.png fill
 output eDP-1 scale 2
 #
 # Example configuration:
@@ -79,6 +79,7 @@ input "2:7:SynPS/2_Synaptics_TouchPad" {
 input type:touchpad {
    tap enabled
    natural_scroll enabled
+   click_method clickfinger
 }
 
 input "type:keyboard" {
