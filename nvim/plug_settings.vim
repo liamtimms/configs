@@ -1,4 +1,5 @@
 " === Specific Plugin Settings ===
+" covers vimscript settings
 
 " lua based configs:
 luafile $CUSTOM_CONFIG_HOME/nvim/plug_lua_settings.lua
@@ -34,6 +35,16 @@ let g:vimwiki_global_ext = 0
 let g:vimwiki_hgader_type = '#'     " set to '=' for wiki syntax
 nmap <Leader>wf <Plug>VimwikiFollowLink
 
+au BufNewFile */diary/[0-9]*.md
+  \ call append(0,[
+  \ "# Shiplog " . split(expand('%:r'),'/')[-1], "",
+  \ "## Dailies", "",
+  \ "- [ ] Ritalin", 
+  \ "- [ ] Therapy Walk", "",
+  \ "## Plans",  "",
+  \ "## Things I did",  "",
+  \ "## Near Future",  "",
+  \ "## Scratch"]) 
 
 " Copilot: ----------------------------
 let g:copilot_filetypes = { 'markdown': v:false }
