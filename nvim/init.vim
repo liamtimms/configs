@@ -154,7 +154,7 @@ endif
 " slowly moving to lua
 " source $CUSTOM_CONFIG_HOME/nvim/basic_settings.vim
 luafile $CUSTOM_CONFIG_HOME/nvim/basic_settings.lua
-source $CUSTOM_CONFIG_HOME/nvim/new_coc_settings.vim
+source $CUSTOM_CONFIG_HOME/nvim/coc_settings.vim
 source $CUSTOM_CONFIG_HOME/nvim/plug_settings.vim
 source $CUSTOM_CONFIG_HOME/nvim/prose_mode.vim
 
