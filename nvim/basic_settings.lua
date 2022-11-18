@@ -19,6 +19,9 @@ opt.expandtab = true
 opt.tabstop = 4
 opt.shiftwidth = 4
 
+-- use undo file to persist history
+opt.undofile = true
+
 -- leaving out latex bit from old config for now
 
 -- KEYMAPS -------------
