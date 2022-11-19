@@ -1,3 +1,6 @@
+-- Specific Plugin Settings --
+-- covers lua plugin settings
+
 -- treesitter
 require("nvim-treesitter.configs").setup({
 	ensure_installed = {

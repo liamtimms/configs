@@ -1,8 +1,5 @@
 " === Specific Plugin Settings ===
-" covers vimscript settings
-
-" lua based configs:
-luafile $CUSTOM_CONFIG_HOME/nvim/plug_lua_settings.lua
+" covers vimscript plugin settings
 
 " complete with words from any opened file
 let g:context_filetype#same_filetypes = {}
