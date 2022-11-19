@@ -152,11 +152,12 @@ endif
 
 " ======== Settings =========
 " slowly moving to lua
-" source $CUSTOM_CONFIG_HOME/nvim/basic_settings.vim
 luafile $CUSTOM_CONFIG_HOME/nvim/basic_settings.lua
-source $CUSTOM_CONFIG_HOME/nvim/coc_settings.vim
+luafile $CUSTOM_CONFIG_HOME/nvim/plug_lua_settings.lua
+luafile $CUSTOM_CONFIG_HOME/nvim/coc_settings.lua
+" vimscript plugin settings
+" source $CUSTOM_CONFIG_HOME/nvim/coc_settings.vim
 source $CUSTOM_CONFIG_HOME/nvim/plug_settings.vim
-source $CUSTOM_CONFIG_HOME/nvim/prose_mode.vim
 
 
 " Firenvim settings to determine which way we go:
