@@ -9,7 +9,7 @@ let g:context_filetype#same_filetypes._ = '_'
 let g:tex_flavor='latex'
 let g:vimtex_view_method = 'zathura'
 " vim-latex-live-preview ---------------
-let g:livepreview_previewer = 'zathura'
+" let g:livepreview_previewer = 'zathura'
 
 
 " Pandoc: ------------------------------
@@ -73,6 +73,8 @@ let g:ale_fixers = {
       \    'sh': ['shfmt'],
       \    'rust': ['rustfmt'],
       \    'lua': ['stylua'],
+      \    'latex': ['latexindent'],
+      \    'tex': ['latexindent'],
       \}
 nnoremap <leader>al :ALEToggle<CR>
 nnoremap <leader>af :ALEFix<CR>

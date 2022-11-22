@@ -109,10 +109,9 @@ call plug#begin('~/.config/nvim/plugged')
 
     Plug 'liamtimms/prosemode.nvim'
 
-
     " LaTeX:
     " this plug contains a bunch of LaTeX support stuff
-    " Plug 'lervag/vimtex', { 'for': 'tex' }
+    Plug 'lervag/vimtex', { 'for': 'tex' }
     " this plug allows a live preview of LaTeX
     " Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 
@@ -134,7 +133,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
     " Undotree:
-    " Plug 'mbbill/undotree'
+    Plug 'mbbill/undotree'
 
     " Firenvim:
     " browser embedding of full nvim
