@@ -1,7 +1,9 @@
 [Unit]
-Description=Backup with restic daily
+Description=Backup ~ with restic
+
 [Timer]
-OnCalendar=weekly
+OnCalendar=*-*-* 08,20:30:00
 Persistent=true
+
 [Install]
 WantedBy=timers.target

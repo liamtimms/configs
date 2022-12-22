@@ -1,0 +1,6 @@
+[Unit]
+Description=Downloads pacman updates in the background without installing them
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/bash -c 'checkupdates -d'

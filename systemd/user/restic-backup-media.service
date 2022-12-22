@@ -1,0 +1,9 @@
+[Unit]
+Description=Restic backup service for media folders
+ConditionACPower=true
+
+[Service]
+Type=oneshot
+ExecStart=restic backup --verbose --tag systemd.timer-media $BACKUP_EXCLUDES $BACKUP_PATHS
+; ExecStartPost=restic forget --verbose --tag systemd.timer-media --group-by "paths,tags" --keep-hourly $RETENTION_HOURS --keep-daily $RETENTION_DAYS --keep-weekly $RETENTION_WEEKS --keep-monthly $RETENTION_MONTHS --keep-yearly $RETENTION_YEARS
+EnvironmentFile=%h/.config/restic-backup-media.conf

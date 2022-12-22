@@ -1,0 +1,10 @@
+[Unit]
+Description=Backup media with restic
+
+[Timer]
+OnCalendar=daily
+OnUnitActiveSec=3hour
+RandomizedDelaySec=10min
+
+[Install]
+WantedBy=timers.target

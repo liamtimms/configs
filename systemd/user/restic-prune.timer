@@ -1,0 +1,10 @@
+[Unit]
+Description=Prune data from the restic repository weekly
+
+[Timer]
+OnCalendar=Sun 20:00
+Persistent=false
+OnUnitActiveSec=3days
+
+[Install]
+WantedBy=timers.target

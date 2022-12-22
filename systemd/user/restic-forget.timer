@@ -1,0 +1,10 @@
+[Unit]
+Description=Forget restic snapshots without removing data
+
+[Timer]
+OnCalendar=daily
+OnUnitActiveSec=6hr
+RandomizedDelaySec=1hr
+
+[Install]
+WantedBy=timers.target

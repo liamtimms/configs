@@ -1,0 +1,6 @@
+[Unit]
+Description=Commit and push select git repo updates
+
+[Service]
+Type=oneshot
+ExecStart=/home/liam/bin/bashscripts/gitbot

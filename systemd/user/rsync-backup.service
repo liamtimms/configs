@@ -1,0 +1,8 @@
+[Unit]
+Description=Rsync backup service for selected folders
+ConditionPathExists=/run/media/liam/essd_backup/Backup_Archbook/liam/
+ConditionACPower=true
+
+[Service]
+Type=oneshot
+ExecStart=/home/liam/bin/bashscripts/backup

@@ -1,0 +1,9 @@
+[Unit]
+Description=Restic pruning backup data on AC power
+ConditionACPower=true
+
+[Service]
+Type=oneshot
+ExecStart=restic unlock
+ExecStartPost=restic prune
+EnvironmentFile=%h/.config/restic-backup.conf

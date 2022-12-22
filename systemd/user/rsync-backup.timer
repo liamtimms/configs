@@ -1,0 +1,10 @@
+[Unit]
+Description=Backup important folders with rsync
+
+[Timer]
+OnStartupSec=1hour
+OnUnitActiveSec=30min
+RandomizedDelaySec=10min
+
+[Install]
+WantedBy=timers.target

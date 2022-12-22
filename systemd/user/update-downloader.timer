@@ -1,0 +1,9 @@
+[Unit]
+Description=Automatically download updates if left on for extended periods
+
+[Timer]
+OnBootSec=6hr
+OnUnitActiveSec=2days
+
+[Install]
+WantedBy=timers.target

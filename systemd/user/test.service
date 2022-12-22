@@ -1,0 +1,8 @@
+[Unit]
+Description=Just for testing purposes
+ConditionACPower=true
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/echo "Hello World"
+
