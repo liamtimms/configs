@@ -36,10 +36,14 @@ au BufNewFile */diary/[0-9]*.md
   \ call append(0,[
   \ "# Shiplog " . split(expand('%:r'),'/')[-1], "",
   \ "## Dailies", "",
-  \ "- [ ] Ritalin", 
+  \ "- [ ] Meds Morning -", 
+  \ "- [ ] Meds Afternoon -",
+  \ "- [ ] Workout", 
   \ "- [ ] Therapy Walk", "",
   \ "## Plans",  "",
+  \ "1.",  "2.",  "3.",  "",  
   \ "## Things I did",  "",
+  \ "1.",  "2.",  "3.",  "",  
   \ "## Near Future",  "",
   \ "## Scratch"]) 
 
