@@ -120,4 +120,9 @@ vim.api.nvim_set_keymap(
 	{ noremap = true, silent = true }
 )
 
+-- prosemode
 require("prosemode").setup()
+
+-- neogen
+require("neogen").setup()
+vim.api.nvim_set_keymap("n", "<Leader>ng", ":lua require('neogen').generate()<CR>", { noremap = true, silent = true })
