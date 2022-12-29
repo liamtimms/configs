@@ -136,6 +136,7 @@ mako
 man-db
 man-pages
 maturin
+mcfly
 mesa-vdpau
 mpv
 mutter
@@ -202,6 +203,7 @@ restic
 ripgrep
 rmlint
 rsync
+ruff
 rustup
 rygel
 sed

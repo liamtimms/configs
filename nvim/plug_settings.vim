@@ -60,15 +60,16 @@ imap <silent><script><expr> <C-J> copilot#Accept("\<CR>")
 " from https://www.vimfromscratch.com/articles/vim-for-python/
 let g:ale_enabled = 0
 let g:ale_linters = {
-      \   'python': ['flake8', 'mypy'],
+      \   'python': ['ruff', 'pydocstyle', 'mypy'],
       \   'ruby': ['standardrb', 'rubocop'],
       \   'javascript': ['eslint'],
       \   'markdown': ['proselint'],
       \   'sh': ['shellcheck'],
       \}
 
+" note ruff may be a good overall replacement fixer for python in the future
 let g:ale_fixers = {
-      \    'python': ['black', 'yapf', 'isort', 'remove_trailing_lines', 'trim_whitespace'],
+      \    'python': ['black', 'yapf', 'isort', 'remove_trailing_lines', 'trim_whitespace'], 
       \    'c': ['clang-format'],
       \    'json': ['prettier'],
       \    'markdown': ['prettier', 'remove_trailing_lines', 'trim_whitespace'],
