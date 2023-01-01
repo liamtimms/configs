@@ -136,7 +136,6 @@ prettier
 python-bottleneck
 python-dask
 python-distutils-extra
-python-isort
 python-numexpr
 python-openpyxl
 python-pygithub
@@ -150,7 +149,7 @@ renameutils
 restic
 ripgrep
 rmlint
-ruff
+ruff-lsp
 rygel
 shellcheck
 shfmt

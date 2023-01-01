@@ -204,6 +204,7 @@ ripgrep
 rmlint
 rsync
 ruff
+ruff-lsp
 rustup
 rygel
 sed
