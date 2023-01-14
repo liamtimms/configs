@@ -19,6 +19,7 @@ boost
 bridge-utils
 btrfs-progs
 ccache
+checkbashisms
 cheese
 chromium
 clamav
@@ -72,6 +73,7 @@ gnome-logs
 gnome-maps
 gnome-menus
 gnome-music
+gnome-nettool
 gnome-photos
 gnome-remote-desktop
 gnome-screenshot
@@ -187,6 +189,7 @@ python-isort
 python-keyrings-alt
 python-numexpr
 python-openpyxl
+python-pooch
 python-pygithub
 python-pynvim
 python-pyqt5
@@ -220,6 +223,7 @@ swayidle
 swaylock
 swtpm
 syncthing
+sysprof
 texinfo
 texlive-bibtexextra
 texlive-core

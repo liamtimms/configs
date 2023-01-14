@@ -16,6 +16,7 @@ bluez-hid2hci
 bluez-utils
 boost
 ccache
+checkbashisms
 cheese
 chromium
 clamav
@@ -53,6 +54,7 @@ gnome-logs
 gnome-maps
 gnome-menus
 gnome-music
+gnome-nettool
 gnome-photos
 gnome-remote-desktop
 gnome-screenshot
@@ -163,6 +165,7 @@ swayidle
 swaylock
 swtpm
 syncthing
+sysprof
 texinfo
 texlive-bibtexextra
 texlive-fontsextra

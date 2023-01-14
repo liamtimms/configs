@@ -17,10 +17,10 @@ fslpy
 gallery-dl
 gdcm
 git-secrets
-gnome-books
 gnome-network-displays
 gnome-shell-extension-just-perfection-desktop-git
 gnome-shell-pomodoro
+gtg-git
 joshuto-git
 mrtrix3-git
 nbqa
@@ -53,7 +53,6 @@ python-p5
 python-pandas-stubs
 python-plotly
 python-polars-bin
-python-pooch
 python-pydicom
 python-pyqt4
 python-scikit-fuzzy
