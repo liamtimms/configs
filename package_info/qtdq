@@ -2,6 +2,7 @@ alsa-plugins
 appstream-glib
 autopep8
 blacken-docs
+clang13
 cmake
 dmd
 geocode-glib
@@ -19,6 +20,7 @@ perl-test-needs
 python-aiosmtpd
 python-autoflake
 python-build
+python-commonmark
 python-funcsigs
 python-hatchling
 python-hypothesis
