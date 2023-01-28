@@ -48,6 +48,7 @@ gnome-calendar
 gnome-characters
 gnome-clocks
 gnome-contacts
+gnome-control-center
 gnome-firmware
 gnome-font-viewer
 gnome-logs
@@ -59,7 +60,6 @@ gnome-photos
 gnome-remote-desktop
 gnome-screenshot
 gnome-shell-extension-appindicator
-gnome-shell-extensions
 gnome-system-monitor
 gnome-terminal
 gnome-text-editor
@@ -136,13 +136,16 @@ pigz
 powerline-fonts
 prettier
 python-bottleneck
+python-build
 python-dask
 python-distutils-extra
+python-hatch-vcs
 python-numexpr
 python-openpyxl
 python-pygithub
 python-pynvim
 python-seaborn
+python-setuptools-git
 qt6-wayland
 radeontop
 rclone

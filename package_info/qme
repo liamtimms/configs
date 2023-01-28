@@ -18,6 +18,7 @@ gallery-dl
 gdcm
 git-secrets
 gnome-network-displays
+gnome-shell-extension-caffeine
 gnome-shell-extension-just-perfection-desktop-git
 gnome-shell-pomodoro
 gtg-git
@@ -48,7 +49,7 @@ python-looseversion
 python-nilearn
 python-nipype
 python-numpy-openblas
-python-p5
+python-openai
 python-pandas-stubs
 python-plotly
 python-polars-bin
@@ -67,5 +68,6 @@ tracker
 tracker-miners
 ventoy-bin
 visual-studio-code-bin
+vxl
 zoom
 zotero-bin

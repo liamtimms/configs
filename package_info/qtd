@@ -9,6 +9,7 @@ geocode-glib
 gfbgraph
 haskell-unbounded-delays
 haskell-wcwidth
+intel-oneapi-mkl
 js91
 libchamplain
 libcryptui
@@ -19,10 +20,8 @@ metis
 perl-test-needs
 python-aiosmtpd
 python-autoflake
-python-build
 python-commonmark
 python-funcsigs
-python-hatchling
 python-hypothesis
 python-installer
 python-jupytext

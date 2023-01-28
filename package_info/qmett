@@ -15,6 +15,7 @@ fsl
 gallery-dl
 git-secrets
 gnome-network-displays
+gnome-shell-extension-caffeine
 gnome-shell-extension-just-perfection-desktop-git
 gnome-shell-pomodoro
 gtg-git
@@ -38,7 +39,7 @@ python-jenkspy
 python-jsmin
 python-nilearn
 python-nipype
-python-p5
+python-openai
 python-pandas-stubs
 python-plotly
 python-polars-bin
@@ -54,5 +55,6 @@ texlive-latexindent-meta
 tracker-miners
 ventoy-bin
 visual-studio-code-bin
+vxl
 zoom
 zotero-bin
