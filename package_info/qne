@@ -184,6 +184,7 @@ python-cloudpickle
 python-dask
 python-distutils-extra
 python-fasteners
+python-flit
 python-hatch-vcs
 python-humanize
 python-iso8601

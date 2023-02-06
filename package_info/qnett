@@ -49,6 +49,7 @@ gnome-characters
 gnome-clocks
 gnome-contacts
 gnome-control-center
+gnome-disk-utility
 gnome-firmware
 gnome-font-viewer
 gnome-logs
@@ -139,6 +140,7 @@ python-bottleneck
 python-build
 python-dask
 python-distutils-extra
+python-flit
 python-hatch-vcs
 python-numexpr
 python-openpyxl

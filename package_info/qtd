@@ -1,6 +1,7 @@
 alsa-plugins
 appstream-glib
 autopep8
+bc
 blacken-docs
 clang13
 cmake
@@ -14,9 +15,11 @@ js91
 libchamplain
 libcryptui
 libvisual
+libxml++2.6
 mdformat
 meson
 metis
+nlopt
 perl-test-needs
 python-aiosmtpd
 python-autoflake

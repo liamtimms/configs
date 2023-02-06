@@ -12,6 +12,7 @@ evcxr_jupyter
 evcxr_repl
 evolution-rss
 fsl
+fslpy
 gallery-dl
 git-secrets
 gnome-network-displays
@@ -22,6 +23,7 @@ gtg-git
 joshuto-git
 mrtrix3-git
 nbqa
+newmat
 nodejs-neovim
 nodejs-reveal-md
 obs-gstreamer
