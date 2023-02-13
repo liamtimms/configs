@@ -1,28 +1,45 @@
 // vim:ft=json
 
 {
-  "modules-left": ["wlr/workspaces", "sway/mode"],
-  "modules-center": ["clock", "idle_inhibitor"],
-  /* "modules-right": ["tray", "custom/scratchpad-indicator", "pulseaudio", "custom/power"], */
+  "layer": "top",
+  "position": "top",
+  "modules-left": ["tray", "wlr/workspaces", "hyprland/window", "sway/mode"],
+  "modules-center": ["clock"],
   "modules-right": [
-    "tray",
-    "custom/scratchpad-indicator",
+    "cpu",
+    "memory",
+    "disk",
+    "network",
     "pulseaudio",
+    "battery",
     "custom/power"
   ],
-
+  "hyprland/window": {
+    "format": "󰖯 {}",
+    "max-length": 20,
+    "separate-outputs": true
+  },
+  "wlr/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "sort-by-number": true
+  },
   "sway/mode": {
     "format": "<span style=\"italic\">{}</span>"
   },
   "network": {
-    "format-wifi": "{essid} ({signalStrength}%) ",
-    "format-ethernet": "{ifname} ",
-    "format-disconnected": "",
-    "max-length": 50,
-    "on-click": "kitty -e 'nmtui'"
+    "format": "{ifname}",
+    "format-wifi": "{signalStrength}% ",
+    "format-ethernet": "{ipaddr}/{cidr} 󰈁",
+    "format-disconnected": "", //An empty format will hide the module.
+    "tooltip-format": "{ifname} via {gwaddr} ",
+    "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+    "tooltip-format-ethernet": "{ifname} ",
+    "tooltip-format-disconnected": "Disconnected",
+    "max-length": 50
   },
   "idle_inhibitor": {
-    "format": "{icon}",
+    "format": "{icon} ",
     "format-icons": {
       "activated": "",
       "deactivated": ""
@@ -34,8 +51,23 @@
     "spacing": 10
   },
   "clock": {
-    // "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    // "format-alt": "{:%Y-%m-%d}"
+    "format": "{:%a %d, %I:%M}  ",
+    "format-alt": "{:%A, %B %d, %Y (%R)}  ",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode": "year",
+      "mode-mon-col": 3,
+      "weeks-pos": "right",
+      "on-scroll": 1,
+      "on-click-right": "mode",
+      "format": {
+        "months": "<span color='#ffead3'><b>{}</b></span>",
+        "days": "<span color='#ecc6d9'><b>{}</b></span>",
+        "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+      }
+    },
     "on-click": "gnome-calendar"
   },
   "pulseaudio": {
@@ -55,6 +87,27 @@
       "default": ["", "", ""]
     },
     "on-click": "pavucontrol"
+  },
+  "battery": {
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{capacity}% {icon}",
+    "format-icons": ["", "", "", "", ""]
+  },
+  "disk": {
+    "interval": 300,
+    "format": "{percentage_used}% 󰋊"
+  },
+  "memory": {
+    "interval": 30,
+    "format": "{}% 󰳆"
+  },
+  "cpu": {
+    "interval": 10,
+    "format": "{usage:2}% 󰧑"
   },
   "custom/power": {
     "format": " ",
