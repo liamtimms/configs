@@ -15,7 +15,7 @@
     "custom/power"
   ],
   "hyprland/window": {
-    "format": "󰖯 {}",
+    "format": "󰖯 {} ",
     "max-length": 20,
     "separate-outputs": true
   },
