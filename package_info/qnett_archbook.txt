@@ -2,15 +2,13 @@ alacritty
 amd-ucode
 asp
 aspell
-autoconf
-automake
 bacon
 baobab
 base
+base-devel
 bash-completion
 bash-language-server
 bat
-bison
 blender
 bluez-hid2hci
 bluez-utils
@@ -22,8 +20,8 @@ chromium
 clamav
 cmatrix
 ctags
-debugedit
 detox
+devtools
 discord
 dmidecode
 dnsmasq
@@ -38,7 +36,6 @@ fdupes
 ffmpegthumbnailer
 file-roller
 firefox
-flex
 fzf
 gdm
 gnome-backgrounds
@@ -87,6 +84,7 @@ jpegoptim
 jupyter-server-mathjax
 kdenlive
 krita
+lazygit
 libjpeg6-turbo
 libreoffice-fresh
 libva-mesa-driver
@@ -99,7 +97,6 @@ linux-lts
 linux-lts-headers
 logrotate
 lua-language-server
-make
 mako
 man-db
 man-pages
@@ -126,10 +123,12 @@ oxipng
 p7zip
 pacman-contrib
 pacutils
+pandoc-cli
+pandoc-crossref
+pandoc-plot
 papirus-icon-theme
 parallel
 paraview
-patch
 pdfgrep
 perl-file-mimeinfo
 perl-image-exiftool
@@ -146,6 +145,7 @@ python-numexpr
 python-openpyxl
 python-pygithub
 python-pynvim
+python-pytest-httpserver
 python-seaborn
 python-setuptools-git
 qt6-wayland
@@ -161,9 +161,9 @@ rygel
 shellcheck
 shfmt
 simple-scan
+slurp
 sshfs
 stylua
-sudo
 sushi
 sway
 swayidle
@@ -171,7 +171,6 @@ swaylock
 swtpm
 syncthing
 sysprof
-texinfo
 texlive-bibtexextra
 texlive-fontsextra
 texlive-formatsextra
@@ -191,7 +190,6 @@ ttf-jetbrains-mono-nerd
 ublock-origin
 usbutils
 virt-manager
-waybar
 wf-recorder
 wireless-regdb
 wl-clipboard

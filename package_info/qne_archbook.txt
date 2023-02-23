@@ -7,6 +7,7 @@ automake
 bacon
 baobab
 base
+base-devel
 bash-completion
 bash-language-server
 bat
@@ -28,6 +29,7 @@ cmatrix
 ctags
 debugedit
 detox
+devtools
 discord
 dmidecode
 dnsmasq
@@ -118,6 +120,7 @@ jupyter-server-mathjax
 jupyterlab
 kdenlive
 krita
+lazygit
 libjpeg6-turbo
 libreoffice-fresh
 libtool
@@ -165,6 +168,9 @@ p7zip
 pacman
 pacman-contrib
 pacutils
+pandoc-cli
+pandoc-crossref
+pandoc-plot
 papirus-icon-theme
 parallel
 paraview
@@ -196,6 +202,7 @@ python-pooch
 python-pygithub
 python-pynvim
 python-pyqt5
+python-pytest-httpserver
 python-seaborn
 python-setuptools-git
 python-setuptools-scm
@@ -219,6 +226,7 @@ sed
 shellcheck
 shfmt
 simple-scan
+slurp
 sshfs
 stylua
 sudo
@@ -255,7 +263,6 @@ ublock-origin
 usbutils
 utf8cpp
 virt-manager
-waybar
 wf-recorder
 which
 wireless-regdb

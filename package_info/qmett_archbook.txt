@@ -20,6 +20,8 @@ gnome-shell-extension-caffeine
 gnome-shell-extension-just-perfection-desktop-git
 gnome-shell-pomodoro
 gtg-git
+hyprland
+hyprpaper-git
 joshuto-git
 mrtrix3-git
 nbqa
@@ -28,8 +30,7 @@ nodejs-neovim
 nodejs-reveal-md
 obs-gstreamer
 onedrive-abraunegg
-pandoc-crossref-bin
-paru
+paru-git
 proselint
 python-dasbus
 python-datalad
@@ -54,9 +55,10 @@ spm12
 teams
 teamviewer
 texlive-latexindent-meta
-tracker-miners
 ventoy-bin
 visual-studio-code-bin
 vxl
+waybar-hyprland-git
+webcord-bin
 zoom
 zotero-bin
