@@ -7,15 +7,21 @@
   "modules-center": ["clock"],
   "modules-right": [
     "cpu",
+    "custom/left-arrow-dark",
     "memory",
+    "custom/left-arrow-dark",
     "disk",
     "network",
     "pulseaudio",
     "battery",
     "custom/power"
   ],
+  "custom/left-seperator": {
+    "format": "",
+    "tooltip": false
+  },
   "hyprland/window": {
-    "format": "󰖯 {} ",
+    "format": "󰖯 {}   ",
     "max-length": 20,
     "separate-outputs": true
   },
