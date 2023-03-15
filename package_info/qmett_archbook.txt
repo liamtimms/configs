@@ -20,6 +20,7 @@ gnome-shell-extension-caffeine
 gnome-shell-extension-just-perfection-desktop-git
 gnome-shell-pomodoro
 gtg-git
+hdfview-bin
 hyprland
 hyprpaper-git
 joshuto-git

@@ -4,6 +4,7 @@ asp
 aspell
 bacon
 baobab
+barrier
 base
 base-devel
 bash-completion
@@ -12,7 +13,6 @@ bat
 blender
 bluez-hid2hci
 bluez-utils
-boost
 ccache
 checkbashisms
 cheese
@@ -136,18 +136,18 @@ pigz
 powerline-fonts
 prettier
 python-bottleneck
-python-build
 python-dask
 python-distutils-extra
 python-flit
 python-hatch-vcs
-python-numexpr
 python-openpyxl
 python-pygithub
 python-pynvim
+python-pytables
 python-pytest-httpserver
 python-seaborn
 python-setuptools-git
+python-whoosh
 qt6-wayland
 radeontop
 rclone

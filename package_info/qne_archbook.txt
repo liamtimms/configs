@@ -6,6 +6,7 @@ autoconf
 automake
 bacon
 baobab
+barrier
 base
 base-devel
 bash-completion
@@ -202,6 +203,7 @@ python-pooch
 python-pygithub
 python-pynvim
 python-pyqt5
+python-pytables
 python-pytest-httpserver
 python-seaborn
 python-setuptools-git
