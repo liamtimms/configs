@@ -113,7 +113,6 @@ neovim
 npm
 ntfs-3g
 octave
-opencl-headers
 opencv
 openvr
 optipng
