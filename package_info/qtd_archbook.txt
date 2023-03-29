@@ -7,8 +7,10 @@ catch2-git
 clang13
 cmake
 dmd
+ffmpeg4.4
 geocode-glib
 gfbgraph
+gmime3
 haskell-unbounded-delays
 haskell-wcwidth
 intel-oneapi-mkl
@@ -36,6 +38,7 @@ python-pylev
 python-pytest-cov
 python-pytest-localserver
 python-pythran
+python-ruff
 python-typed-ast
 qt5-webkit
 radicale
