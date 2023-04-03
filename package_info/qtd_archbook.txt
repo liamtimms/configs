@@ -17,6 +17,7 @@ intel-oneapi-mkl
 js91
 libchamplain
 libcryptui
+libgssglue
 libvisual
 libxml++2.6
 mdformat
