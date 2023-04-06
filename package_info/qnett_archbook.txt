@@ -77,6 +77,7 @@ gvfs-nfs
 gvfs-smb
 hplip
 htop
+hyprland
 ifuse
 inkscape
 jedi-language-server

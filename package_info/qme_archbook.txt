@@ -23,7 +23,6 @@ gnome-shell-extension-just-perfection-desktop-git
 gnome-shell-pomodoro
 gtg-git
 hdfview-bin
-hyprland
 hyprpaper-git
 joshuto-git
 mrtrix3-git

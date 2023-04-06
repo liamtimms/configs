@@ -112,6 +112,7 @@ gvfs-smb
 gzip
 hplip
 htop
+hyprland
 ifuse
 inkscape
 iptables-nft
