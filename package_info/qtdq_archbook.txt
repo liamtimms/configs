@@ -19,6 +19,7 @@ libchamplain
 libcryptui
 libgssglue
 libvisual
+libwrap
 libxml++2.6
 mdformat
 meson-python
