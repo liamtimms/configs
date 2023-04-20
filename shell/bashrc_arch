@@ -261,7 +261,7 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 # mcfly
-source /usr/share/doc/mcfly/mcfly.bash
-export MCFLY_KEY_SCHEME=vim
-export MCFLY_FUZZY=2
-export MCFLY_DISABLE_MENU=TRUE
+# source /usr/share/doc/mcfly/mcfly.bash
+# export MCFLY_KEY_SCHEME=vim
+# export MCFLY_FUZZY=2
+# export MCFLY_DISABLE_MENU=TRUE
