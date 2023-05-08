@@ -102,7 +102,6 @@ mako
 man-db
 man-pages
 maturin
-mcfly
 mesa-vdpau
 mpv
 mypy
