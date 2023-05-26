@@ -12,6 +12,7 @@ ffmpeg4.4
 geocode-glib
 gfbgraph
 gmime3
+gperf
 haskell-unbounded-delays
 haskell-wcwidth
 intel-oneapi-compiler-shared-opencl-cpu
@@ -48,6 +49,7 @@ python-pylev
 python-pytest-cov
 python-pytest-localserver
 python-pythran
+python-pytz-deprecation-shim
 python-ruff
 python-setuptools-scm-git-archive
 python-simplejson
@@ -58,6 +60,7 @@ python-typed-ast
 python-vispy
 python2-dbus
 python2-opengl
+qt5-doc
 qt5-webkit
 radicale
 rest
