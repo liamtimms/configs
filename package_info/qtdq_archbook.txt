@@ -32,6 +32,7 @@ nlopt
 perl-module-build
 perl-test-needs
 phonon-qt4
+python-anytree
 python-async_generator
 python-autoflake
 python-commonmark
@@ -50,6 +51,7 @@ python-pytest-cov
 python-pytest-localserver
 python-pythran
 python-pytz-deprecation-shim
+python-requests-unixsocket
 python-ruff
 python-setuptools-scm-git-archive
 python-simplejson
@@ -69,6 +71,7 @@ sassc
 scdoc
 shared-color-targets
 sip4
+sysfsutils
 vala
 webkit2gtk-5.0
 xandikos
