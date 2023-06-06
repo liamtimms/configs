@@ -22,6 +22,7 @@ libchamplain
 libcryptui
 libgssglue
 libnma
+libsidplay
 libvisual
 libxml++2.6
 lua53
@@ -60,7 +61,6 @@ python-traits
 python-triangle
 python-typed-ast
 python-vispy
-python2-dbus
 python2-opengl
 qt5-doc
 qt5-webkit
