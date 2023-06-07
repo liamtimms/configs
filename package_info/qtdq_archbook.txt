@@ -7,6 +7,7 @@ blacken-docs
 catch2-git
 clang13
 dmd
+dmraid
 extra-cmake-modules
 ffmpeg4.4
 geocode-glib

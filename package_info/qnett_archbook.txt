@@ -13,6 +13,7 @@ bat
 blender
 bluez-hid2hci
 bluez-utils
+btrfs-progs
 ccache
 checkbashisms
 cheese
@@ -98,6 +99,7 @@ linux-lts
 linux-lts-headers
 logrotate
 lua-language-server
+lvm2
 mako
 man-db
 man-pages
