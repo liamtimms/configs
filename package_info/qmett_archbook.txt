@@ -52,6 +52,7 @@ simpleitk
 spm12
 teams
 teamviewer
+tex-gyre-math-fonts
 texlive-latexindent-meta
 ventoy-bin
 visual-studio-code-bin

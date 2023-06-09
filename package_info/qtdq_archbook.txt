@@ -22,6 +22,7 @@ js91
 libchamplain
 libcryptui
 libgssglue
+libindicator-gtk3
 libnma
 libsidplay
 libvisual

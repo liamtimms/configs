@@ -171,6 +171,7 @@ swaylock
 swtpm
 syncthing
 sysprof
+tex-gyre-fonts
 texlive-bibtexextra
 texlive-fontsextra
 texlive-formatsextra
