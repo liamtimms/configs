@@ -197,6 +197,7 @@ python-humanize
 python-iso8601
 python-isort
 python-keyrings-alt
+python-looseversion
 python-numexpr
 python-openpyxl
 python-pooch

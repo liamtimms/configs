@@ -46,7 +46,6 @@ python-freetype-py
 python-hdbscan
 python-jenkspy
 python-jsmin
-python-looseversion
 python-nilearn
 python-numpy-openblas
 python-openai
