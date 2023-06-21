@@ -176,10 +176,10 @@ texlive-bibtexextra
 texlive-fontsextra
 texlive-formatsextra
 texlive-humanities
-texlive-pictures
+texlive-latexextra
+texlive-mathscience
 texlive-pstricks
 texlive-publishers
-texlive-science
 tigervnc
 tmux
 torbrowser-launcher
