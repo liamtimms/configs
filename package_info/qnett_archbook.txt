@@ -84,6 +84,7 @@ inkscape
 jedi-language-server
 jpegoptim
 jupyter-server-mathjax
+jupyterlab
 kdenlive
 krita
 lazygit

@@ -4,7 +4,6 @@ afni
 afni-atlases
 ants-git
 autotiling
-bart-git
 cargo-modules
 castxml
 dcmtk

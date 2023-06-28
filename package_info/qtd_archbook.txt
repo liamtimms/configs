@@ -6,6 +6,7 @@ bc
 blacken-docs
 catch2-git
 clang13
+cython
 dmd
 dmraid
 extra-cmake-modules
@@ -20,6 +21,7 @@ haskell-wcwidth
 intel-oneapi-compiler-shared-opencl-cpu
 intel-oneapi-mkl
 js91
+jupyter-server-ydoc
 libchamplain
 libcryptui
 libgssglue

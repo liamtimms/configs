@@ -4,7 +4,6 @@ afni
 afni-atlases
 ants-git
 autotiling
-bart-git
 cargo-modules
 castxml
 dcm2niix
@@ -47,7 +46,6 @@ python-hdbscan
 python-jenkspy
 python-jsmin
 python-nilearn
-python-numpy-openblas
 python-openai
 python-pandas-stubs
 python-polars-bin
