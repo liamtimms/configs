@@ -44,6 +44,7 @@ python-autoflake
 python-commonmark
 python-etelemetry
 python-funcsigs
+python-httpretty
 python-hypothesis
 python-jupytext
 python-mock
@@ -65,6 +66,9 @@ python-skia
 python-traits
 python-triangle
 python-typed-ast
+python-types-python-dateutil
+python-types-requests
+python-vcrpy
 python-vispy
 python2-opengl
 qt5-doc
