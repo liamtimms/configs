@@ -81,6 +81,7 @@ scdoc
 shared-color-targets
 sip4
 sysfsutils
+tinycompress
 vala
 webkit2gtk-5.0
 xandikos
