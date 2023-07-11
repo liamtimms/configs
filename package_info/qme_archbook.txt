@@ -38,7 +38,6 @@ patool
 proselint
 python-annexremote
 python-dasbus
-python-datalad
 python-dcm2bids
 python-dicom_parser
 python-freetype-py

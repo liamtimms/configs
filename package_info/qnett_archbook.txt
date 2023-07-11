@@ -39,6 +39,7 @@ file-roller
 firefox
 fzf
 gdm
+git-annex
 gnome-backgrounds
 gnome-boxes
 gnome-calculator
@@ -136,11 +137,17 @@ perl-image-exiftool
 pigz
 powerline-fonts
 prettier
+python-boto
 python-bottleneck
 python-dask
 python-distutils-extra
+python-fasteners
 python-flit
 python-hatch-vcs
+python-humanize
+python-iso8601
+python-keyrings-alt
+python-looseversion
 python-openpyxl
 python-pygithub
 python-pynvim

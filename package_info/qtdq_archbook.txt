@@ -9,6 +9,7 @@ clang13
 cython
 dmd
 dmraid
+embree3
 extra-cmake-modules
 ffmpeg4.4
 geocode-glib
@@ -85,6 +86,7 @@ tinycompress
 vala
 webkit2gtk-5.0
 xandikos
+xcftools
 yelp-tools
 zenity
 zig

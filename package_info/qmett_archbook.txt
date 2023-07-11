@@ -31,9 +31,10 @@ nodejs-reveal-md
 obs-gstreamer
 onedrive-abraunegg
 paru-git
+patool
 proselint
+python-annexremote
 python-dasbus
-python-datalad
 python-dcm2bids
 python-dicom_parser
 python-hdbscan
