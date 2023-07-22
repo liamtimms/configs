@@ -188,6 +188,7 @@ python-boto
 python-bottleneck
 python-build
 python-cloudpickle
+python-colorlog
 python-dask
 python-distutils-extra
 python-fasteners

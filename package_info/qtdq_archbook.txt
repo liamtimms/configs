@@ -22,7 +22,9 @@ haskell-wcwidth
 intel-oneapi-compiler-shared-opencl-cpu
 intel-oneapi-mkl
 js91
+jupyter-nbclassic
 jupyter-server-ydoc
+jupyter-widgetsnbextension
 libchamplain
 libcryptui
 libgssglue
@@ -40,6 +42,7 @@ perl-module-build
 perl-test-needs
 phonon-qt4
 python-anytree
+python-appdirs
 python-async_generator
 python-autoflake
 python-commonmark
@@ -47,6 +50,8 @@ python-etelemetry
 python-funcsigs
 python-httpretty
 python-hypothesis
+python-ipython-genutils
+python-jupyter-packaging
 python-jupytext
 python-mock
 python-numpydoc
