@@ -24,7 +24,6 @@ intel-oneapi-mkl
 js91
 jupyter-nbclassic
 jupyter-server-ydoc
-jupyter-widgetsnbextension
 libchamplain
 libcryptui
 libgssglue
