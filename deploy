@@ -1,0 +1,37 @@
+#!/bin/bash
+# This script is used to deploy these dot files to a new server
+export XDG_CONFIG_HOME=$HOME/.config
+
+# Set up shell
+cat <<EOF >>$HOME/.bashrc
+#
+# ~/.bashrc
+#
+export XDG_CONFIG_HOME=~/.config/
+
+# cloned config repo folder
+export CUSTOM_CONFIG_HOME=/fileserver/fastscratch/liam/configs/
+
+# If not running interactively, don't do anything
+[[ \$- != *i* ]] && return
+
+source \$CUSTOM_CONFIG_HOME/shell/bashrc_arch
+EOF
+
+cat <<EOF >>$HOME/.inputrc
+\$include /fileserver/fastscratch/liam/configs/shell/inputrc
+EOF
+
+# Set up neovim and tmux
+mkdir -p $XDG_CONFIG_HOME/{nvim,tmux}
+
+cat <<EOF >>$XDG_CONFIG_HOME/nvim/init.vim
+" ~/.config/nvim/init.vim
+source /fileserver/fastscratch/liam/configs/nvim/init.vim
+EOF
+
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+cat <<EOF >>$XDG_CONFIG_HOME/tmux/tmux.conf
+# ~/.config/tmux/tmux.conf
+source-file /fileserver/fastscratch/liam/configs/tmux/tmux.conf
+EOF

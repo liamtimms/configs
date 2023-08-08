@@ -1,0 +1,36 @@
+# this adds a version of bart compiled from the github repo
+# BART 7.0 is already included in the Ubuntu repos
+# export BARTPATH="$HOME/bin/bart/bin"
+# export PATH=${BARTPATH}:$PATH
+
+BIN_PATH="/fileserver/fastscratch/liam/bin/"
+
+export DCM2NIIXPATH="$BIN_PATH/dcm2niix_lnx"
+export PATH=${DCM2NIIXPATH}:$PATH
+
+export SLICERPATH="$BIN_PATH/Slicer-5.2.2-linux-amd64/"
+export PATH=${SLICERPATH}:$PATH
+
+export ANIMAPATH="$BIN_PATH/Anima-Binaries-4.2/"
+export PATH=${ANIMAPATH}:$PATH
+
+# source /opt/el7/pkgs/crkit/nightly/20220501/bin/crkit-env.sh
+# export CRKITPATH="/opt/el7/pkgs/crkit/nightly/20220501/bin/"
+# export PATH=${CRKITPATH}:$PATH
+
+export ITKSNAPPATH="$BIN_PATH/itksnap-4.0.1-20230320-Linux-gcc64/bin/"
+export PATH=${ITKSNAPPATH}:$PATH
+
+# export CRLDcmpath="/opt/el7/pkgs/crlDcm"
+# export PATH=${CRLDcmpath}:$PATH
+
+export ANTSPATH=/opt/ANTs/bin/
+export PATH=${ANTSPATH}:$PATH
+
+# FSL Setup
+FSLDIR=/fileserver/fastscratch/liam/bin/fsl
+PATH=${FSLDIR}/share/fsl/bin:${PATH}
+export FSLDIR PATH
+
+# export PANDOC_FILTERS="$HOME/bin/pandoc-filters"
+# export PATH=${PANDOC_FILTERS}:$PATH
