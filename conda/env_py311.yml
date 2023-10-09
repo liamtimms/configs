@@ -9,21 +9,26 @@ dependencies:
   - pynvim
   - lazygit
   - jupyterlab=4.0.5
-  - jupter-collaboration
+  - mypy
+  - specialist
+  # - jupter-collaboration
   - ipython
   - bash_kernel
   - numba 
   # CORE
   - numpy
-  - scipy=1.11.1
+  - scipy=1.11.2
   # IMAGING 
   - scikit-learn=1.3.0
   - scikit-image=0.21.0
   - simpleitk
+  - itk
   - nibabel
   - nilearn=0.10.1
+  - dcm2niix
   # - nipype
   - dipy
+  - sigpy
   - intensity-normalization
   # DATA PROCESSING
   - pandas=2.0.3
@@ -33,6 +38,8 @@ dependencies:
   - seaborn
   - statsmodels
   # MISC
+  - numba
+  - cupy
   - click
   - docker-py
   - poetry

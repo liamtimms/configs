@@ -90,7 +90,7 @@ nnoremap [e   :ALEPreviousWrap<CR>
 
 " let g:ale_disable_lsp = 1
 
-let g:ale_fix_on_save = 1
+let g:ale_fix_on_save = 0
 
 " Quickscope: --------------------------
 " Trigger a highlight in the appropriate direction when pressing these keys:

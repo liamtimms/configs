@@ -94,11 +94,7 @@ require("Comment").setup()
 -- vim.opt.listchars:append("space:⋅")
 -- vim.opt.listchars:append("eol:↴")
 
-require("indent_blankline").setup({
-	space_char_blankline = " ",
-	show_current_context = true,
-	show_current_context_start = true,
-})
+require("ibl").setup()
 
 -- explorer
 vim.g.loaded_netrw = 1

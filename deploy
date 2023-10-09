@@ -15,7 +15,7 @@ export CUSTOM_CONFIG_HOME=/fileserver/fastscratch/liam/configs/
 # If not running interactively, don't do anything
 [[ \$- != *i* ]] && return
 
-source \$CUSTOM_CONFIG_HOME/shell/bashrc_arch
+source \$CUSTOM_CONFIG_HOME/shell/bashrc_wombat
 EOF
 
 cat <<EOF >>$HOME/.inputrc
