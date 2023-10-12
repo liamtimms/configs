@@ -14,12 +14,14 @@ bash-language-server
 bat
 binutils
 bison
+blas-openblas
 blender
 bluez-hid2hci
 bluez-utils
 boost
 bridge-utils
 btrfs-progs
+cargo-modules
 ccache
 checkbashisms
 cheese
@@ -41,6 +43,7 @@ entr
 eog
 epiphany
 espeakup
+evcxr_repl
 evince
 evolution
 fakeroot
@@ -112,7 +115,6 @@ gvfs-smb
 gzip
 hplip
 htop
-hyprland
 ifuse
 inkscape
 iptables-nft
@@ -269,6 +271,7 @@ ublock-origin
 usbutils
 utf8cpp
 virt-manager
+webkit2gtk
 wf-recorder
 which
 wireless-regdb
