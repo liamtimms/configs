@@ -13,7 +13,6 @@ gallery-dl
 gdcm
 git-secrets
 gnome-network-displays
-gnome-shell-extension-caffeine
 gnome-shell-extension-just-perfection-desktop-git
 gnome-shell-pomodoro
 google-chrome
@@ -23,6 +22,7 @@ microsoft-edge-stable-bin
 mrtrix3-git
 nbqa
 newmat
+nodejs-lts-gallium
 nodejs-neovim
 nodejs-reveal-md
 obs-gstreamer
@@ -51,6 +51,7 @@ python-sphinxcontrib-napoleon
 python39
 rust-dependency-refresh
 simpleitk
+slack-desktop
 spm12
 teams
 teamviewer

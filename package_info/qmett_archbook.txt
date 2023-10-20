@@ -11,7 +11,6 @@ fsl
 gallery-dl
 git-secrets
 gnome-network-displays
-gnome-shell-extension-caffeine
 gnome-shell-extension-just-perfection-desktop-git
 gnome-shell-pomodoro
 google-chrome
@@ -45,7 +44,9 @@ python-pydicom
 python-scikit-fuzzy
 python-scikit-image
 python-sphinxcontrib-napoleon
+python39
 rust-dependency-refresh
+slack-desktop
 spm12
 teams
 teamviewer

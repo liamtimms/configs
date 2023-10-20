@@ -24,7 +24,6 @@ btrfs-progs
 cargo-modules
 ccache
 checkbashisms
-cheese
 chromium
 clamav
 cli11
@@ -40,7 +39,6 @@ docker
 docker-compose
 e2fsprogs
 entr
-eog
 epiphany
 espeakup
 evcxr_repl
@@ -87,6 +85,7 @@ gnome-session
 gnome-settings-daemon
 gnome-shell
 gnome-shell-extension-appindicator
+gnome-shell-extension-caffeine
 gnome-shell-extensions
 gnome-system-monitor
 gnome-terminal
@@ -137,6 +136,7 @@ linux-headers
 linux-lts
 linux-lts-headers
 logrotate
+loupe
 lua-language-server
 lvm2
 m4
@@ -155,7 +155,6 @@ nautilus
 neofetch
 neovim
 networkmanager
-nodejs-lts-gallium
 npm
 ntfs-3g
 obs-studio
@@ -234,6 +233,7 @@ shellcheck
 shfmt
 simple-scan
 slurp
+snapshot
 sshfs
 stylua
 sudo

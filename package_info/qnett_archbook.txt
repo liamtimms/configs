@@ -16,7 +16,6 @@ bluez-utils
 cargo-modules
 ccache
 checkbashisms
-cheese
 chromium
 clamav
 cli11
@@ -30,7 +29,6 @@ dnsmasq
 docker
 docker-compose
 entr
-eog
 epiphany
 espeakup
 evcxr_repl
@@ -62,6 +60,7 @@ gnome-photos
 gnome-remote-desktop
 gnome-screenshot
 gnome-shell-extension-appindicator
+gnome-shell-extension-caffeine
 gnome-shell-extensions
 gnome-system-monitor
 gnome-terminal
@@ -69,6 +68,7 @@ gnome-text-editor
 gnome-themes-extra
 gnome-tweaks
 gnome-user-share
+gnome-video-effects
 gnome-weather
 grim
 gst-libav
@@ -101,6 +101,7 @@ linux-headers
 linux-lts
 linux-lts-headers
 logrotate
+loupe
 lua-language-server
 mako
 man-db
@@ -172,6 +173,7 @@ shellcheck
 shfmt
 simple-scan
 slurp
+snapshot
 sshfs
 stylua
 sushi
