@@ -67,6 +67,7 @@ gnome-calendar
 gnome-characters
 gnome-clocks
 gnome-color-manager
+gnome-console
 gnome-contacts
 gnome-control-center
 gnome-disk-utility
@@ -88,7 +89,6 @@ gnome-shell-extension-appindicator
 gnome-shell-extension-caffeine
 gnome-shell-extensions
 gnome-system-monitor
-gnome-terminal
 gnome-text-editor
 gnome-themes-extra
 gnome-tweaks
