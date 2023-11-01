@@ -196,6 +196,7 @@ tigervnc
 tmux
 torbrowser-launcher
 totem
+traceroute
 transmission-gtk
 trash-cli
 tree

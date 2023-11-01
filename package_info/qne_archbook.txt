@@ -261,6 +261,7 @@ tmux
 tor
 torbrowser-launcher
 totem
+traceroute
 tracker3
 tracker3-miners
 transmission-gtk

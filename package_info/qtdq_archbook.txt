@@ -50,6 +50,7 @@ phonon-qt4
 python-anytree
 python-async_generator
 python-autoflake
+python-backcall
 python-caldav
 python-commonmark
 python-etelemetry
