@@ -150,6 +150,7 @@ python-humanize
 python-iso8601
 python-keyrings-alt
 python-looseversion
+python-openai
 python-openpyxl
 python-pygithub
 python-pynvim

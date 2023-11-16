@@ -202,6 +202,7 @@ python-keyrings-alt
 python-looseversion
 python-numexpr
 python-numpy
+python-openai
 python-openpyxl
 python-pooch
 python-pygithub

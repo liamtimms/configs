@@ -45,6 +45,7 @@ metis
 nlopt
 openshadinglanguage
 perl-module-build
+perl-params-validate
 perl-test-needs
 phonon-qt4
 python-anytree
@@ -71,11 +72,13 @@ python-pytest-localserver
 python-pythran
 python-pytz-deprecation-shim
 python-requests-unixsocket
+python-restructuredtext_lint
 python-rfc3986-validator
 python-ruff
 python-setuptools-scm-git-archive
 python-simplejson
 python-skia
+python-testpath
 python-traits
 python-triangle
 python-typed-ast
@@ -98,6 +101,7 @@ swig
 sysfsutils
 tinycompress
 vala
+wayland-protocols
 webkit2gtk-5.0
 xandikos
 xcftools

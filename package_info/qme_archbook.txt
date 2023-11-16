@@ -41,7 +41,6 @@ python-hdbscan
 python-jenkspy
 python-jsmin
 python-nilearn
-python-openai
 python-pandas-stubs
 python-polars-bin
 python-pydicom
@@ -49,6 +48,7 @@ python-scikit-fuzzy
 python-scikit-image
 python-sphinxcontrib-napoleon
 python39
+rpi-imager
 rust-dependency-refresh
 simpleitk
 slack-desktop
