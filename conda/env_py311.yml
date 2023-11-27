@@ -9,9 +9,9 @@ dependencies:
   - pynvim
   - lazygit
   - jupyterlab=4.0.5
+  - jupyter-collaboration
   - mypy
   - specialist
-  # - jupter-collaboration
   - ipython
   - bash_kernel
   - numba 
@@ -26,6 +26,9 @@ dependencies:
   - nibabel
   - nilearn=0.10.1
   - dcm2niix
+  - dcm2bids
+  - libiconv
+  - vtk
   # - nipype
   - dipy
   - sigpy
@@ -37,6 +40,8 @@ dependencies:
   # GRAPHING
   - seaborn
   - statsmodels
+  - ipympl
+  - ipywidgets
   # MISC
   - numba
   - cupy
@@ -46,5 +51,7 @@ dependencies:
   - rich
   - pip
   - tqdm
-  # - pip:
+  - types-tqdm
+  - pip:
+    - pynrrd
   #   - niwidgets
