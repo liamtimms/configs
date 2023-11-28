@@ -43,12 +43,12 @@ mdformat
 meson-python
 metis
 nlopt
-openshadinglanguage
 perl-module-build
 perl-params-validate
 perl-test-needs
 phonon-qt4
 python-anytree
+python-async-timeout
 python-async_generator
 python-autoflake
 python-backcall
@@ -82,6 +82,7 @@ python-testpath
 python-traits
 python-triangle
 python-typed-ast
+python-typeguard
 python-types-python-dateutil
 python-types-requests
 python-vcrpy
@@ -103,8 +104,8 @@ tinycompress
 vala
 wayland-protocols
 webkit2gtk-5.0
+wlroots
 xandikos
 xcftools
 yelp-tools
-zenity
 zig

@@ -1,6 +1,7 @@
 3dslicer-bin
 adw-gtk3-git
 afni-atlases
+asp
 autotiling
 castxml
 dcmtk
