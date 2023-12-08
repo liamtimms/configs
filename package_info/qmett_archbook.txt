@@ -3,6 +3,7 @@ adw-gtk3-git
 afni-atlases
 asp
 autotiling
+bazarr
 castxml
 dcmtk
 epson-inkjet-printer-escpr2

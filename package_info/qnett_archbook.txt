@@ -135,6 +135,7 @@ pdfgrep
 perl-file-mimeinfo
 perl-image-exiftool
 pigz
+pipewire-alsa
 powerline-fonts
 prettier
 python-boto

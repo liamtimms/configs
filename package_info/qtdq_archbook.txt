@@ -92,6 +92,7 @@ python2-opengl
 qt5-doc
 qt5-webkit
 radicale
+re2
 rest
 run-parts
 sassc
