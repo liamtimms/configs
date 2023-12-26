@@ -71,7 +71,6 @@ gnome-video-effects
 gnome-weather
 grim
 gst-libav
-gstreamer-vaapi
 gtk-engine-murrine
 gvfs-afc
 gvfs-google
@@ -87,6 +86,7 @@ jedi-language-server
 jpegoptim
 jupyter-server-mathjax
 kdenlive
+kooha
 krita
 lazygit
 libjpeg6-turbo

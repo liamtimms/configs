@@ -121,6 +121,7 @@ jpegoptim
 jupyter-server-mathjax
 jupyterlab
 kdenlive
+kooha
 krita
 lazygit
 libjpeg6-turbo
