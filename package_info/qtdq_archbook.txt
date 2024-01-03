@@ -71,6 +71,7 @@ python-pydocstyle
 python-pylev
 python-pytest-cov
 python-pytest-localserver
+python-pytest-subtests
 python-pythran
 python-pytz-deprecation-shim
 python-requests-unixsocket
