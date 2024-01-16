@@ -18,6 +18,7 @@ gnome-shell-pomodoro
 google-chrome
 hdfview-bin
 joshuto-git
+light
 microsoft-edge-stable-bin
 mrtrix3-git
 nbqa

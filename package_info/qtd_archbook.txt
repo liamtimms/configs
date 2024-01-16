@@ -1,9 +1,7 @@
 alsa-plugins
 appstream-glib
 autoconf-archive
-autopep8
 bc
-blacken-docs
 catch2-git
 clang13
 cython
@@ -58,9 +56,9 @@ python-etelemetry
 python-funcsigs
 python-hatch-jupyter-builder
 python-httpretty
+python-imread
 python-ipython-genutils
 python-jupyter-packaging
-python-jupytext
 python-mock
 python-numpydoc
 python-oldest-supported-numpy
@@ -77,7 +75,6 @@ python-pytz-deprecation-shim
 python-requests-unixsocket
 python-restructuredtext_lint
 python-rfc3986-validator
-python-ruff
 python-setuptools-scm-git-archive
 python-simplejson
 python-skia

@@ -93,7 +93,6 @@ libjpeg6-turbo
 libreoffice-fresh
 libva-mesa-driver
 libva-utils
-light
 linux
 linux-firmware
 linux-headers

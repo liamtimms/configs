@@ -129,7 +129,6 @@ libreoffice-fresh
 libtool
 libva-mesa-driver
 libva-utils
-light
 linux
 linux-firmware
 linux-headers
