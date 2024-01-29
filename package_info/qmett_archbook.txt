@@ -17,6 +17,7 @@ gnome-shell-extension-just-perfection-desktop-git
 gnome-shell-pomodoro
 google-chrome
 hdfview-bin
+icu73
 joshuto-git
 light
 microsoft-edge-stable-bin
@@ -51,6 +52,7 @@ rpi-imager
 rust-dependency-refresh
 slack-desktop
 spm12
+spotify-player
 teams
 teamviewer
 tex-gyre-math-fonts

@@ -2,13 +2,13 @@ alsa-plugins
 appstream-glib
 autoconf-archive
 bc
+blueprint-compiler
 catch2-git
 clang13
 cython
 dmd
 dmraid
 eigen
-embree3
 extra-cmake-modules
 ffmpeg4.4
 geocode-glib
