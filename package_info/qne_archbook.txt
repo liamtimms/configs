@@ -226,6 +226,7 @@ renameutils
 restic
 ripgrep
 rmlint
+rpi-imager
 rsync
 ruff
 ruff-lsp
@@ -238,6 +239,7 @@ simple-scan
 slurp
 smartmontools
 snapshot
+spotify-launcher
 sshfs
 stylua
 sudo

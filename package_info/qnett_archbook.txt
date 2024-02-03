@@ -167,6 +167,7 @@ renameutils
 restic
 ripgrep
 rmlint
+rpi-imager
 ruff-lsp
 rygel
 shellcheck
@@ -175,6 +176,7 @@ simple-scan
 slurp
 smartmontools
 snapshot
+spotify-launcher
 sshfs
 stylua
 sushi

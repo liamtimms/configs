@@ -48,7 +48,6 @@ python-scikit-fuzzy
 python-scikit-image
 python-sphinxcontrib-napoleon
 python39
-rpi-imager
 rust-dependency-refresh
 slack-desktop
 spm12
