@@ -5,6 +5,7 @@ bc
 blueprint-compiler
 catch2-git
 clang13
+clang15
 cython
 dmd
 dmraid
