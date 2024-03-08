@@ -27,16 +27,21 @@ js102
 js91
 jupyter-nbclassic
 jupyter-server-ydoc
+kcmutils5
+kfilemetadata5
 kitemmodels5
+knewstuff5
+knotifyconfig5
+ldns
 libchamplain
 libcryptui
 libgnomekbd
 libgssglue
 libindicator-gtk3
-libnma
 libsidplay
 libvisual
 libxml++2.6
+lld
 lua53
 mdformat
 meson-python
@@ -46,6 +51,7 @@ perl-module-build
 perl-params-validate
 perl-test-needs
 phonon-qt4
+purpose5
 python-anytree
 python-async-timeout
 python-async_generator
@@ -60,6 +66,7 @@ python-httpretty
 python-imread
 python-ipython-genutils
 python-jupyter-packaging
+python-lazy-object-proxy
 python-mock
 python-numpydoc
 python-oldest-supported-numpy
@@ -91,6 +98,7 @@ python-vispy
 python-ypy-websocket
 python2-opengl
 qt5-doc
+qt5-networkauth
 qt5-webkit
 radicale
 re2
@@ -106,7 +114,7 @@ tinycompress
 vala
 wayland-protocols
 webkit2gtk-5.0
-wlroots
+wlroots0.16
 xandikos
 xcftools
 yelp-tools

@@ -1,6 +1,7 @@
 alacritty
 amd-ucode
 aspell
+atool
 autoconf
 automake
 bacon
@@ -23,7 +24,6 @@ btrfs-progs
 cargo-modules
 ccache
 checkbashisms
-chromium
 clamav
 cli11
 cmatrix
@@ -59,6 +59,7 @@ gdm
 gettext
 git
 git-annex
+globalprotect-openconnect
 gnome-backgrounds
 gnome-boxes
 gnome-calculator
@@ -155,6 +156,7 @@ nautilus
 neofetch
 neovim
 networkmanager
+networkmanager-openconnect
 nodejs
 npm
 npm-check-updates
@@ -187,7 +189,6 @@ pipewire-alsa
 pipewire-pulse
 powerline-fonts
 prettier
-python-boto
 python-bottleneck
 python-build
 python-cloudpickle
@@ -220,6 +221,7 @@ python-wrapt
 qt6-wayland
 r
 radeontop
+ranger
 rclone
 reflector
 renameutils
@@ -250,6 +252,7 @@ swaylock
 swtpm
 syncthing
 sysprof
+systemd-resolvconf
 tex-gyre-fonts
 texinfo
 texlive-basic
@@ -278,6 +281,7 @@ ublock-origin
 usbutils
 utf8cpp
 virt-manager
+w3m
 webkit2gtk
 wf-recorder
 which

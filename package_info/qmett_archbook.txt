@@ -9,18 +9,16 @@ dcmtk
 epson-inkjet-printer-escpr2
 evcxr_jupyter
 evolution-rss
-fsl
 gallery-dl
 git-secrets
 gnome-network-displays
 gnome-shell-extension-just-perfection-desktop-git
 gnome-shell-pomodoro
 google-chrome
+gp-saml-gui-git
 hdfview-bin
 icu73
-joshuto-git
 light
-microsoft-edge-stable-bin
 mrtrix3-git
 nbqa
 newmat
@@ -33,6 +31,7 @@ patool
 proselint
 pulse-secure
 python-annexremote
+python-boto
 python-dasbus
 python-dcm2bids
 python-dicom_parser
@@ -56,6 +55,7 @@ teams
 teamviewer
 tex-gyre-math-fonts
 texlive-latexindent-meta
+upd72020x-fw
 ventoy-bin
 visual-studio-code-bin
 zoom

@@ -1,6 +1,7 @@
 alacritty
 amd-ucode
 aspell
+atool
 bacon
 baobab
 barrier
@@ -12,10 +13,10 @@ bat
 blender
 bluez-hid2hci
 bluez-utils
+btrfs-progs
 cargo-modules
 ccache
 checkbashisms
-chromium
 clamav
 cli11
 cmatrix
@@ -38,6 +39,7 @@ firefox
 fzf
 gdm
 git-annex
+globalprotect-openconnect
 gnome-backgrounds
 gnome-boxes
 gnome-calculator
@@ -101,6 +103,7 @@ linux-lts-headers
 logrotate
 loupe
 lua-language-server
+lvm2
 mako
 man-db
 man-pages
@@ -113,6 +116,7 @@ nano
 nautilus
 neofetch
 neovim
+networkmanager-openconnect
 npm-check-updates
 ntfs-3g
 octave
@@ -137,7 +141,6 @@ pigz
 pipewire-alsa
 powerline-fonts
 prettier
-python-boto
 python-bottleneck
 python-colorlog
 python-dask
@@ -158,9 +161,9 @@ python-pytest-httpserver
 python-seaborn
 python-setuptools-git
 python-whoosh
-qt6-wayland
 r
 radeontop
+ranger
 rclone
 reflector
 renameutils
@@ -186,6 +189,7 @@ swaylock
 swtpm
 syncthing
 sysprof
+systemd-resolvconf
 tex-gyre-fonts
 texlive-bibtexextra
 texlive-fontsextra
@@ -208,7 +212,7 @@ ublock-origin
 usbutils
 utf8cpp
 virt-manager
-webkit2gtk
+w3m
 wf-recorder
 wireless-regdb
 wl-clipboard
