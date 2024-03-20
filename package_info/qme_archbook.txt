@@ -1,9 +1,7 @@
-3dslicer-bin
+3dslicer
 adw-gtk3-git
 afni-atlases
-asp
 autotiling
-bazarr
 castxml
 dcm2niix
 dcmtk
@@ -24,11 +22,10 @@ light
 mrtrix3-git
 nbqa
 newmat
-nodejs-neovim
 nodejs-reveal-md
 obs-gstreamer
 onedrive-abraunegg
-paru-git
+paru-bin
 patool
 proselint
 pulse-secure
@@ -52,7 +49,6 @@ python-sphinxcontrib-napoleon
 python39
 rust-dependency-refresh
 simpleitk
-slack-desktop
 spm12
 spotify-player
 teams

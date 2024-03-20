@@ -278,6 +278,7 @@ trash-cli
 tree
 ttf-jetbrains-mono-nerd
 ublock-origin
+unrar
 usbutils
 utf8cpp
 virt-manager

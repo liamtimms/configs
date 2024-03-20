@@ -1,11 +1,8 @@
-3dslicer-bin
+3dslicer
 adw-gtk3-git
 afni-atlases
-asp
 autotiling
-bazarr
 castxml
-dcmtk
 epson-inkjet-printer-escpr2
 evcxr_jupyter
 evolution-rss
@@ -22,11 +19,10 @@ light
 mrtrix3-git
 nbqa
 newmat
-nodejs-neovim
 nodejs-reveal-md
 obs-gstreamer
 onedrive-abraunegg
-paru-git
+paru-bin
 patool
 proselint
 pulse-secure
@@ -48,7 +44,6 @@ python-scikit-image
 python-sphinxcontrib-napoleon
 python39
 rust-dependency-refresh
-slack-desktop
 spm12
 spotify-player
 teams

@@ -3,17 +3,14 @@ appstream-glib
 autoconf-archive
 bc
 blueprint-compiler
-catch2-git
-clang13
-clang15
 cython
 dmd
 dmraid
 eigen
 extra-cmake-modules
 ffmpeg4.4
+gendesk
 geocode-glib
-gfbgraph
 gmime3
 gperf
 gptfdisk
@@ -38,14 +35,13 @@ libcryptui
 libgnomekbd
 libgssglue
 libindicator-gtk3
-libsidplay
+libkate
 libvisual
 libxml++2.6
 lld
 lua53
 mdformat
 meson-python
-metis
 nlopt
 perl-module-build
 perl-params-validate
@@ -70,6 +66,7 @@ python-lazy-object-proxy
 python-mock
 python-numpydoc
 python-oldest-supported-numpy
+python-pbr
 python-prov
 python-py
 python-pyaml
@@ -84,7 +81,6 @@ python-requests-unixsocket
 python-restructuredtext_lint
 python-rfc3986-validator
 python-setuptools-scm-git-archive
-python-simplejson
 python-skia
 python-testpath
 python-traits
@@ -96,7 +92,6 @@ python-types-requests
 python-vcrpy
 python-vispy
 python-ypy-websocket
-python2-opengl
 qt5-doc
 qt5-networkauth
 qt5-webkit
@@ -113,7 +108,7 @@ sysfsutils
 tinycompress
 vala
 wayland-protocols
-webkit2gtk-5.0
+webrtc-audio-processing
 wlroots0.16
 xandikos
 xcftools
