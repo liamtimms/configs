@@ -105,6 +105,7 @@ shared-color-targets
 sip4
 swig
 sysfsutils
+t1lib
 tinycompress
 vala
 wayland-protocols
