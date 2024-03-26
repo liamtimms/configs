@@ -1,6 +1,8 @@
 3dslicer
 adw-gtk3-git
 afni-atlases
+alhp-keyring
+alhp-mirrorlist
 autotiling
 castxml
 epson-inkjet-printer-escpr2

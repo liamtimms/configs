@@ -51,6 +51,7 @@ purpose5
 python-anytree
 python-async-timeout
 python-async_generator
+python-atspi
 python-autoflake
 python-backcall
 python-caldav
