@@ -105,7 +105,9 @@ call plug#begin('~/.config/nvim/plugged')
     " Aesthetic:
     " themes
     Plug 'marko-cerovac/material.nvim'
-    Plug 'liamtimms/dracula.nvim'
+    " Plug 'liamtimms/dracula.nvim'
+    " Using Vim-Plug:
+    Plug 'Mofiqul/dracula.nvim'
     " start screen
     " Plug 'goolord/alpha-nvim'
     Plug 'akinsho/bufferline.nvim', { 'tag': 'v3.*' }
