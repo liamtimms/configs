@@ -87,7 +87,6 @@ python-testpath
 python-traits
 python-triangle
 python-typed-ast
-python-typeguard
 python-types-python-dateutil
 python-types-requests
 python-vcrpy

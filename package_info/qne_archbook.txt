@@ -35,6 +35,7 @@ discord
 dmidecode
 dnsmasq
 docker
+docker-buildx
 docker-compose
 e2fsprogs
 entr

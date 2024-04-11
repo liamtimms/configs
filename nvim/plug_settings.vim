@@ -71,7 +71,7 @@ let g:ale_linters = {
 
 " note ruff may be a good overall replacement fixer for python in the future
 let g:ale_fixers = {
-      \    'python': ['black', 'yapf', 'isort', 'remove_trailing_lines', 'trim_whitespace'], 
+      \    'python': ['black', 'isort', 'remove_trailing_lines', 'trim_whitespace'], 
       \    'c': ['clang-format'],
       \    'json': ['prettier'],
       \    'markdown': ['prettier', 'remove_trailing_lines', 'trim_whitespace'],

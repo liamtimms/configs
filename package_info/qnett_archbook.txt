@@ -26,6 +26,7 @@ devtools
 discord
 dnsmasq
 docker
+docker-buildx
 docker-compose
 entr
 epiphany
