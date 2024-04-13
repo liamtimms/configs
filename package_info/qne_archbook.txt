@@ -294,7 +294,6 @@ xdg-desktop-portal-gnome
 xdg-desktop-portal-wlr
 xdg-user-dirs-gtk
 xorg-server-xvfb
-yapf
 yelp
 yt-dlp
 zathura
