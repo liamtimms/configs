@@ -204,3 +204,10 @@ else
   " colorscheme material
   set laststatus=3
 endif
+
+if exists('g:vscode')
+    imap <silent><script><expr> <C-Right> copilot#Accept("\<CR>")
+else
+    " ordinary Neovim
+endif
+
