@@ -15,7 +15,6 @@ bat
 binutils
 bison
 blas-openblas
-blender
 bluez-hid2hci
 bluez-utils
 boost
@@ -194,6 +193,7 @@ python-bottleneck
 python-build
 python-cloudpickle
 python-colorlog
+python-dasbus
 python-dask
 python-distutils-extra
 python-fasteners

@@ -10,7 +10,6 @@ base-devel
 bash-completion
 bash-language-server
 bat
-blender
 bluez-hid2hci
 bluez-utils
 btrfs-progs
@@ -144,6 +143,7 @@ powerline-fonts
 prettier
 python-bottleneck
 python-colorlog
+python-dasbus
 python-dask
 python-distutils-extra
 python-fasteners
