@@ -31,6 +31,7 @@ entr
 epiphany
 espeakup
 evcxr_repl
+fastfetch
 fd
 fdupes
 ffmpegthumbnailer
@@ -114,7 +115,6 @@ mypy
 namcap
 nano
 nautilus
-neofetch
 neovim
 networkmanager-openconnect
 npm-check-updates

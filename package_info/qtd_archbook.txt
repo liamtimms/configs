@@ -3,6 +3,7 @@ appstream-glib
 autoconf-archive
 bc
 blueprint-compiler
+clang16
 cython
 dmd
 dmraid
@@ -38,7 +39,7 @@ libindicator-gtk3
 libkate
 libvisual
 libxml++2.6
-lld
+lld16
 lua53
 mdformat
 meson-python

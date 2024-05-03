@@ -21,8 +21,6 @@ gp-saml-gui-git
 hdfview-bin
 icu73
 light
-microsoft-edge-stable-bin
-mrtrix3-git
 newmat
 nodejs-reveal-md
 obs-gstreamer

@@ -44,6 +44,7 @@ evcxr_repl
 evince
 evolution
 fakeroot
+fastfetch
 fd
 fdupes
 ffmpegthumbnailer
@@ -153,7 +154,6 @@ mypy
 namcap
 nano
 nautilus
-neofetch
 neovim
 networkmanager
 networkmanager-openconnect
