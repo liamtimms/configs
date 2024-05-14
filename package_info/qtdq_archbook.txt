@@ -7,10 +7,12 @@ clang16
 cython
 dmd
 dmraid
+efivar
 eigen
 extra-cmake-modules
 ffmpeg4.4
 flake8
+gcab
 gendesk
 geocode-glib
 gmime3
@@ -18,7 +20,6 @@ gperf
 gptfdisk
 haskell-connection
 haskell-cprng-aes
-haskell-unbounded-delays
 haskell-wcwidth
 intel-oneapi-compiler-shared-opencl-cpu
 intel-oneapi-mkl
@@ -37,6 +38,7 @@ libgnomekbd
 libgssglue
 libindicator-gtk3
 libkate
+libsmbios
 libvisual
 libxml++2.6
 lld16
@@ -84,6 +86,7 @@ python-types-requests
 python-vcrpy
 python-ypy-websocket
 pyupgrade
+qscintilla-qt5
 qt5-3d
 qt5-charts
 qt5-datavis3d
