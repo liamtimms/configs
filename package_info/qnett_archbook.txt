@@ -219,7 +219,6 @@ wf-recorder
 wireless-regdb
 wl-clipboard
 wofi
-xdg-desktop-portal-gnome
 xdg-desktop-portal-wlr
 xdg-user-dirs-gtk
 xorg-server-xvfb
