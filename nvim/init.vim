@@ -110,7 +110,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'Mofiqul/dracula.nvim'
     " start screen
     " Plug 'goolord/alpha-nvim'
-    Plug 'akinsho/bufferline.nvim', { 'tag': 'v3.*' }
+    Plug 'akinsho/bufferline.nvim'
 
     Plug 'liamtimms/prosemode.nvim'
 
