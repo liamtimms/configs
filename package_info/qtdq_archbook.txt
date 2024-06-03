@@ -13,6 +13,7 @@ extra-cmake-modules
 ffmpeg4.4
 flake8
 gcab
+gcc13
 gendesk
 geocode-glib
 gmime3
@@ -21,6 +22,7 @@ gptfdisk
 haskell-connection
 haskell-cprng-aes
 haskell-wcwidth
+intel-oneapi-compiler-dpcpp-cpp-runtime
 intel-oneapi-compiler-shared-opencl-cpu
 intel-oneapi-mkl
 js102
@@ -39,6 +41,7 @@ libgssglue
 libindicator-gtk3
 libkate
 libsmbios
+libtermkey
 libvisual
 libxml++2.6
 lld16
@@ -61,7 +64,6 @@ python-exceptiongroup
 python-future
 python-hatch-jupyter-builder
 python-httpretty
-python-ipython-genutils
 python-jupyter-packaging
 python-lazy-object-proxy
 python-mock
@@ -96,7 +98,6 @@ qt5-datavis3d
 qt5-doc
 qt5-networkauth
 qt5-scxml
-qt5-webkit
 radicale
 re2
 rest
