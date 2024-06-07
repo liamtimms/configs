@@ -1,4 +1,5 @@
 alsa-plugins
+ann
 appstream-glib
 autoconf-archive
 bc
@@ -41,6 +42,7 @@ libgssglue
 libindicator-gtk3
 libkate
 libsmbios
+libspng
 libtermkey
 libvisual
 libxml++2.6

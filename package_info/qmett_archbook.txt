@@ -5,6 +5,7 @@ alhp-keyring
 alhp-mirrorlist
 autotiling
 castxml
+elastix-bin
 epson-inkjet-printer-escpr2
 evcxr_jupyter
 evolution-rss
@@ -17,6 +18,7 @@ google-chrome
 gp-saml-gui-git
 hdfview-bin
 icu73
+itk-snap-bin
 light
 newmat
 nodejs-reveal-md
