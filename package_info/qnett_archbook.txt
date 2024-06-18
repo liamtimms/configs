@@ -40,6 +40,7 @@ firefox
 fzf
 gdm
 git-annex
+glances
 globalprotect-openconnect
 gnome-backgrounds
 gnome-boxes
@@ -147,6 +148,7 @@ python-colorlog
 python-dasbus
 python-dask
 python-distutils-extra
+python-docker
 python-fasteners
 python-flit
 python-hatch-vcs
@@ -154,6 +156,7 @@ python-humanize
 python-iso8601
 python-keyrings-alt
 python-looseversion
+python-netifaces
 python-openai
 python-openpyxl
 python-pygithub

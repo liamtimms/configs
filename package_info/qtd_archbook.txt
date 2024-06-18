@@ -63,7 +63,6 @@ python-cached-property
 python-caldav
 python-commonmark
 python-exceptiongroup
-python-future
 python-hatch-jupyter-builder
 python-httpretty
 python-jupyter-packaging
@@ -90,6 +89,7 @@ python-triangle
 python-typed-ast
 python-types-python-dateutil
 python-types-requests
+python-ujson
 python-vcrpy
 python-ypy-websocket
 pyupgrade

@@ -60,6 +60,7 @@ gdm
 gettext
 git
 git-annex
+glances
 globalprotect-openconnect
 gnome-backgrounds
 gnome-boxes
@@ -197,6 +198,7 @@ python-colorlog
 python-dasbus
 python-dask
 python-distutils-extra
+python-docker
 python-fasteners
 python-flit
 python-hatch-vcs
@@ -205,10 +207,12 @@ python-iso8601
 python-isort
 python-keyrings-alt
 python-looseversion
+python-netifaces
 python-numexpr
 python-numpy
 python-openai
 python-openpyxl
+python-orjson
 python-pooch
 python-pygithub
 python-pynvim
