@@ -17,6 +17,7 @@ gnome-shell-pomodoro
 google-chrome
 gp-saml-gui-git
 hdfview-bin
+icaclient
 icu73
 itk-snap-bin
 light

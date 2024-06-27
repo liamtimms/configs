@@ -94,7 +94,6 @@ kdenlive
 kooha
 krita
 lazygit
-libjpeg6-turbo
 libreoffice-fresh
 libva-mesa-driver
 libva-utils
