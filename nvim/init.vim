@@ -2,7 +2,9 @@
 " Author: Liam Timms
 
 " TODO: add file type checking so that different settings are loaded for python, latex or anything else I end up doing.
-
+if exists('g:vscode')
+" empty for now to avoid crashes
+else
 " ====== Vim-plug Install =======
 " taken from:
 " raw.githubusercontent.com/fisadev/fisa-nvim-config/master/init.vim
@@ -110,7 +112,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'Mofiqul/dracula.nvim'
     " start screen
     " Plug 'goolord/alpha-nvim'
-    Plug 'akinsho/bufferline.nvim'
+    Plug 'akinsho/bufferline.nvim', { 'tag': 'v3.*' }
 
     Plug 'liamtimms/prosemode.nvim'
 
@@ -204,10 +206,12 @@ else
   " colorscheme material
   set laststatus=3
 endif
-
-if exists('g:vscode')
-    imap <silent><script><expr> <C-Right> copilot#Accept("\<CR>")
-else
-    " ordinary Neovim
 endif
 
+" if exists('g:vscode')
+"     imap <silent><script><expr> <C-J> copilot#Accept("\<CR>")
+"     
+" else
+"     " ordinary Neovim
+" endif
+"
