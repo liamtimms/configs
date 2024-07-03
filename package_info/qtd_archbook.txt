@@ -54,7 +54,6 @@ nlopt
 perl-module-build
 perl-params-validate
 perl-test-needs
-phonon-qt4
 purpose5
 python-anytree
 python-async-timeout
