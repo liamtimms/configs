@@ -92,7 +92,7 @@ call plug#begin('~/.config/nvim/plugged')
 
     " FZF:
     " powerful functionality from fzf
-    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    " Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     " Plug 'junegunn/fzf.vim'
     Plug 'ibhagwan/fzf-lua'
 
