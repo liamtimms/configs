@@ -4,6 +4,7 @@ appstream-glib
 autoconf-archive
 bc
 blueprint-compiler
+cjson
 clang16
 cython
 dmd
