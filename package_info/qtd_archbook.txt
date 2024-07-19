@@ -32,6 +32,7 @@ js91
 jupyter-nbclassic
 kcmutils5
 kfilemetadata5
+kitemmodels
 kitemmodels5
 knewstuff5
 knotifyconfig5
@@ -115,6 +116,7 @@ tinycompress
 vala
 wayland-protocols
 webrtc-audio-processing
+wlroots
 wlroots0.16
 xandikos
 xcftools
