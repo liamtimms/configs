@@ -237,7 +237,6 @@ rmlint
 rpi-imager
 rsync
 ruff
-ruff-lsp
 rustup
 rygel
 sed

@@ -175,7 +175,6 @@ restic
 ripgrep
 rmlint
 rpi-imager
-ruff-lsp
 rygel
 shellcheck
 shfmt
