@@ -113,6 +113,8 @@ swig
 sysfsutils
 t1lib
 tinycompress
+tree-sitter-bash
+tree-sitter-python
 vala
 wayland-protocols
 webrtc-audio-processing
