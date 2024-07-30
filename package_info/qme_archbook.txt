@@ -24,7 +24,6 @@ icaclient
 icu73
 itk-snap-bin
 light
-newmat
 nodejs-reveal-md
 obs-gstreamer
 onedrive-abraunegg
@@ -38,7 +37,6 @@ python-pandas-stubs
 python-scikit-fuzzy
 python-scikit-image
 python39
-ruff-lsp
 rust-dependency-refresh
 simpleitk
 spm12

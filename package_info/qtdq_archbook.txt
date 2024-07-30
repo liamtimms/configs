@@ -5,7 +5,6 @@ autoconf-archive
 bc
 blueprint-compiler
 cjson
-clang16
 cython
 dmd
 dmraid
@@ -48,7 +47,6 @@ libspng
 libtermkey
 libvisual
 libxml++2.6
-lld16
 lua53
 mdformat
 meson-python
