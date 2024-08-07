@@ -75,6 +75,7 @@ python-pyaml
 python-pydocstyle
 python-pylev
 python-pylint
+python-pyrsistent
 python-pytest-cov
 python-pytest-localserver
 python-pytest-subtests
