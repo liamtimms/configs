@@ -216,6 +216,7 @@ usbutils
 utf8cpp
 virt-manager
 w3m
+waybar
 wf-recorder
 wireless-regdb
 wl-clipboard

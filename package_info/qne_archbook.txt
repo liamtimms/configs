@@ -288,6 +288,7 @@ usbutils
 utf8cpp
 virt-manager
 w3m
+waybar
 webkit2gtk
 wf-recorder
 which

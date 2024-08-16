@@ -119,6 +119,7 @@ wayland-protocols
 webrtc-audio-processing
 wlroots
 wlroots0.16
+wpebackend-fdo
 xandikos
 xcftools
 yelp-tools
