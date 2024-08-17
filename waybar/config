@@ -3,7 +3,10 @@
 {
   "layer": "top",
   "position": "top",
-  "modules-left": ["tray", "wlr/workspaces", "hyprland/window", "sway/mode"],
+  "bar_id": "bar-0",
+  "ipc": true,
+  "reload_style_on_change": true,
+  "modules-left": ["tray", "sway/workspaces", "sway/window", "sway/mode"],
   "modules-center": ["clock"],
   "modules-right": [
     "cpu",
@@ -20,12 +23,13 @@
     "format": "",
     "tooltip": false
   },
-  "hyprland/window": {
-    "format": "󰖯 {}   ",
+  "sway/window": {
+    "icon": true,
+    "format": "{app_id} ",
     "max-length": 20,
     "separate-outputs": true
   },
-  "wlr/workspaces": {
+  "sway/workspaces": {
     "format": "{icon}",
     "on-click": "activate",
     "sort-by-number": true
