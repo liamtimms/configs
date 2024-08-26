@@ -4,6 +4,7 @@ aspell
 atool
 autoconf
 automake
+autotiling
 bacon
 baobab
 barrier

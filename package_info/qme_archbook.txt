@@ -3,7 +3,6 @@ adw-gtk3-git
 afni-atlases
 alhp-keyring
 alhp-mirrorlist
-autotiling
 castxml
 dcm2niix
 dcmtk

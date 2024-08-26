@@ -2,6 +2,7 @@ alacritty
 amd-ucode
 aspell
 atool
+autotiling
 bacon
 baobab
 barrier

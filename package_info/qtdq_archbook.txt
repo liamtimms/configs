@@ -10,6 +10,7 @@ dmd
 dmraid
 efivar
 eigen
+embree3
 extra-cmake-modules
 ffmpeg4.4
 flake8
@@ -48,6 +49,7 @@ libtermkey
 libvisual
 libxml++2.6
 lua53
+mbedtls2
 mdformat
 meson-python
 nlopt
@@ -58,6 +60,7 @@ purpose5
 python-anytree
 python-async-timeout
 python-atspi
+python-blosc2
 python-cached-property
 python-caldav
 python-commonmark
