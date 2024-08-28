@@ -4,6 +4,7 @@ afni-atlases
 alhp-keyring
 alhp-mirrorlist
 castxml
+debtap
 elastix-bin
 epson-inkjet-printer-escpr2
 evcxr_jupyter

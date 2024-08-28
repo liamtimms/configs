@@ -6,6 +6,7 @@ alhp-mirrorlist
 castxml
 dcm2niix
 dcmtk
+debtap
 elastix-bin
 epson-inkjet-printer-escpr2
 evcxr_jupyter
