@@ -4,6 +4,7 @@ appstream-glib
 autoconf-archive
 bc
 blueprint-compiler
+box2d
 cjson
 cython
 dmd
@@ -52,10 +53,12 @@ lua53
 mbedtls2
 mdformat
 meson-python
+mtools
 nlopt
 perl-module-build
 perl-params-validate
 perl-test-needs
+powerline
 purpose5
 python-anytree
 python-async-timeout
