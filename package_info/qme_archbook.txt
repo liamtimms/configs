@@ -3,7 +3,6 @@ adw-gtk3-git
 afni-atlases
 alhp-keyring
 alhp-mirrorlist
-castxml
 dcm2niix
 dcmtk
 debtap
@@ -45,6 +44,8 @@ teams
 teamviewer
 tex-gyre-math-fonts
 texlive-latexindent-meta
+tracker3
+tracker3-miners
 upd72020x-fw
 ventoy-bin
 visual-studio-code-bin

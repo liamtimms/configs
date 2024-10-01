@@ -15,6 +15,7 @@ bluez-hid2hci
 bluez-utils
 btrfs-progs
 cargo-modules
+castxml
 ccache
 checkbashisms
 clamav
