@@ -44,8 +44,6 @@ teams
 teamviewer
 tex-gyre-math-fonts
 texlive-latexindent-meta
-tracker3
-tracker3-miners
 upd72020x-fw
 ventoy-bin
 visual-studio-code-bin

@@ -29,6 +29,7 @@ intel-oneapi-compiler-dpcpp-cpp-runtime
 intel-oneapi-compiler-shared-opencl-cpu
 intel-oneapi-mkl
 js102
+js115
 js91
 jupyter-nbclassic
 kcmutils5
@@ -41,6 +42,7 @@ ldns
 libchamplain
 libcryptui
 libgnomekbd
+libgrss
 libgssglue
 libindicator-gtk3
 libkate
@@ -68,6 +70,7 @@ python-cached-property
 python-caldav
 python-commonmark
 python-exceptiongroup
+python-future
 python-hatch-jupyter-builder
 python-httpretty
 python-jupyter-packaging
@@ -107,7 +110,6 @@ qt5-doc
 qt5-networkauth
 qt5-scxml
 radicale
-re2
 rest
 run-parts
 sassc
