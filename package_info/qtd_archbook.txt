@@ -22,8 +22,10 @@ geocode-glib
 gmime3
 gperf
 gptfdisk
+haskell-base64
 haskell-connection
 haskell-cprng-aes
+haskell-string-conversions
 haskell-wcwidth
 intel-oneapi-compiler-dpcpp-cpp-runtime
 intel-oneapi-compiler-shared-opencl-cpu
