@@ -116,7 +116,6 @@ mpv
 mypy
 namcap
 nano
-nautilus
 neovim
 networkmanager-openconnect
 npm-check-updates

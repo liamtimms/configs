@@ -25,6 +25,7 @@ gptfdisk
 haskell-base64
 haskell-connection
 haskell-cprng-aes
+haskell-digits
 haskell-string-conversions
 haskell-wcwidth
 intel-oneapi-compiler-dpcpp-cpp-runtime
@@ -73,6 +74,7 @@ python-cached-property
 python-caldav
 python-commonmark
 python-exceptiongroup
+python-freezegun
 python-future
 python-hatch-jupyter-builder
 python-httpretty
@@ -128,10 +130,11 @@ tree-sitter-python
 vala
 wayland-protocols
 webrtc-audio-processing
-wlroots
 wlroots0.16
+wlroots0.17
 wpebackend-fdo
 xandikos
 xcftools
+yajl
 yelp-tools
 zig
