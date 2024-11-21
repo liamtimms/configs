@@ -28,6 +28,7 @@ pulse-secure
 python-dcm2bids
 python-dicom_parser
 python-dipy
+python-looseversion
 python-nilearn
 python-pandas-stubs
 python-scikit-fuzzy

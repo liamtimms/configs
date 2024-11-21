@@ -13,7 +13,6 @@ efivar
 eigen
 embree3
 extra-cmake-modules
-ffmpeg4.4
 flake8
 gcab
 gcc13
@@ -59,6 +58,7 @@ mbedtls2
 mdformat
 meson-python
 mtools
+nlohmann-json
 nlopt
 perl-module-build
 perl-params-validate
@@ -66,6 +66,7 @@ perl-sub-identify
 perl-test-needs
 powerline
 purpose5
+pybind11
 python-anytree
 python-async-timeout
 python-atspi
@@ -83,6 +84,7 @@ python-lazy-object-proxy
 python-mock
 python-nose
 python-numpydoc
+python-ordered-set
 python-pbr
 python-py
 python-pyaml
@@ -98,12 +100,14 @@ python-requests-unixsocket
 python-rfc3986-validator
 python-ruff
 python-testpath
+python-tomli
 python-traits
 python-triangle
 python-typed-ast
 python-types-python-dateutil
 python-types-requests
 python-ujson
+python-validate-pyproject
 python-vcrpy
 python-ypy-websocket
 pyupgrade

@@ -96,7 +96,6 @@ kooha
 krita
 lazygit
 libreoffice-fresh
-libva-mesa-driver
 libva-utils
 linux
 linux-firmware
@@ -111,7 +110,6 @@ mako
 man-db
 man-pages
 maturin
-mesa-vdpau
 mpv
 mypy
 namcap
@@ -154,7 +152,6 @@ python-hatch-vcs
 python-humanize
 python-iso8601
 python-keyrings-alt
-python-looseversion
 python-netifaces
 python-openai
 python-openpyxl
