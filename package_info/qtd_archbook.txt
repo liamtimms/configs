@@ -106,6 +106,7 @@ python-triangle
 python-typed-ast
 python-types-python-dateutil
 python-types-requests
+python-tzdata
 python-ujson
 python-validate-pyproject
 python-vcrpy

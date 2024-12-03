@@ -232,7 +232,6 @@ reflector
 renameutils
 restic
 ripgrep
-rmlint
 rpi-imager
 rsync
 ruff

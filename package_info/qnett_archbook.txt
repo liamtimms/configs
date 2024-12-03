@@ -170,7 +170,6 @@ reflector
 renameutils
 restic
 ripgrep
-rmlint
 rpi-imager
 rygel
 shellcheck
