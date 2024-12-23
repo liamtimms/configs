@@ -48,6 +48,7 @@ libgrss
 libgssglue
 libindicator-gtk3
 libkate
+libomxil-bellagio
 libsmbios
 libspng
 libtermkey
@@ -104,9 +105,9 @@ python-tomli
 python-traits
 python-triangle
 python-typed-ast
-python-types-python-dateutil
 python-types-requests
 python-tzdata
+python-uc-micro-py
 python-ujson
 python-validate-pyproject
 python-vcrpy
@@ -130,6 +131,7 @@ swig
 sysfsutils
 t1lib
 tinycompress
+tinyxml
 tree-sitter-bash
 tree-sitter-python
 vala
