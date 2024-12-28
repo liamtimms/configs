@@ -1,4 +1,4 @@
-3dslicer
+3dslicer-bin
 adw-gtk3-git
 afni-atlases
 alhp-keyring
@@ -23,6 +23,7 @@ icaclient
 icu73
 itk-snap-bin
 light
+nifticlib
 nodejs-reveal-md
 obs-gstreamer
 onedrive-abraunegg

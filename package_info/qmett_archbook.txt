@@ -1,8 +1,9 @@
-3dslicer
+3dslicer-bin
 adw-gtk3-git
 afni-atlases
 alhp-keyring
 alhp-mirrorlist
+dcmtk
 debtap
 elastix-bin
 epson-inkjet-printer-escpr2
@@ -20,6 +21,7 @@ icaclient
 icu73
 itk-snap-bin
 light
+nifticlib
 nodejs-reveal-md
 obs-gstreamer
 onedrive-abraunegg

@@ -1,3 +1,4 @@
+7zip
 alacritty
 amd-ucode
 aspell
@@ -172,7 +173,6 @@ optipng
 orca
 osinfo-db-tools
 oxipng
-p7zip
 pacman
 pacman-contrib
 pacutils
