@@ -1,4 +1,4 @@
-3dslicer-bin
+3dslicer
 adw-gtk3-git
 afni-atlases
 alhp-keyring
@@ -14,7 +14,6 @@ gallery-dl
 gdcm
 git-secrets
 gnome-network-displays
-gnome-shell-extension-just-perfection-desktop-git
 gnome-shell-pomodoro
 google-chrome
 gp-saml-gui-git
