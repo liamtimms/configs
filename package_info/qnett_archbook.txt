@@ -179,6 +179,7 @@ slurp
 smartmontools
 snapshot
 spotify-launcher
+spotify-player
 sshfs
 stylua
 sushi

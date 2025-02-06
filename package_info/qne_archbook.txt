@@ -160,7 +160,6 @@ nautilus
 neovim
 networkmanager
 networkmanager-openconnect
-nodejs
 npm
 npm-check-updates
 ntfs-3g
@@ -245,6 +244,7 @@ slurp
 smartmontools
 snapshot
 spotify-launcher
+spotify-player
 sshfs
 stylua
 sudo

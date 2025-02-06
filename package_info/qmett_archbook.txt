@@ -3,6 +3,7 @@ adw-gtk3-git
 afni-atlases
 alhp-keyring
 alhp-mirrorlist
+bart
 dcmtk
 debtap
 elastix-bin
@@ -39,7 +40,6 @@ rmlint
 rust-dependency-refresh
 simpleitk
 spm12
-spotify-player
 teams
 teamviewer
 tex-gyre-math-fonts

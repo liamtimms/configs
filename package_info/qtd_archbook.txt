@@ -27,6 +27,7 @@ haskell-cprng-aes
 haskell-digits
 haskell-string-conversions
 haskell-wcwidth
+http-parser
 intel-oneapi-compiler-dpcpp-cpp-runtime
 intel-oneapi-compiler-shared-opencl-cpu
 intel-oneapi-mkl
@@ -48,6 +49,7 @@ libgrss
 libgssglue
 libindicator-gtk3
 libkate
+libngtcp2
 libomxil-bellagio
 libsmbios
 libspng
