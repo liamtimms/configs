@@ -103,7 +103,6 @@ python-requests-unixsocket
 python-rfc3986-validator
 python-ruff
 python-testpath
-python-tomli
 python-traits
 python-triangle
 python-typed-ast
