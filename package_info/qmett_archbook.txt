@@ -4,7 +4,6 @@ afni-atlases
 alhp-keyring
 alhp-mirrorlist
 bart
-dcmtk
 debtap
 elastix-bin
 epson-inkjet-printer-escpr2
@@ -38,7 +37,6 @@ python-scikit-image
 python39
 rmlint
 rust-dependency-refresh
-simpleitk
 spm12
 teams
 teamviewer

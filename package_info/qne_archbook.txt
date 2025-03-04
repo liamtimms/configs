@@ -30,6 +30,7 @@ clamav
 cli11
 cmatrix
 ctags
+dcmtk
 debugedit
 detox
 devtools
@@ -59,6 +60,7 @@ flex
 fzf
 gawk
 gcc
+gdcm
 gdm
 gettext
 git
@@ -240,6 +242,7 @@ sed
 shellcheck
 shfmt
 simple-scan
+simpleitk
 slurp
 smartmontools
 snapshot

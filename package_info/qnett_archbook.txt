@@ -176,6 +176,7 @@ rygel
 shellcheck
 shfmt
 simple-scan
+simpleitk
 slurp
 smartmontools
 snapshot

@@ -5,14 +5,12 @@ alhp-keyring
 alhp-mirrorlist
 bart
 dcm2niix
-dcmtk
 debtap
 elastix-bin
 epson-inkjet-printer-escpr2
 evcxr_jupyter
 evolution-rss
 gallery-dl
-gdcm
 git-secrets
 gnome-network-displays
 gnome-shell-pomodoro
@@ -40,7 +38,6 @@ python-scikit-image
 python39
 rmlint
 rust-dependency-refresh
-simpleitk
 spm12
 teams
 teamviewer
