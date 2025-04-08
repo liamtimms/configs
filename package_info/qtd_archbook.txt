@@ -1,3 +1,4 @@
+adobe-source-code-pro-fonts
 alsa-plugins
 ann
 appstream-glib
@@ -95,6 +96,7 @@ python-pydocstyle
 python-pylev
 python-pylint
 python-pyrsistent
+python-pytest-asyncio
 python-pytest-cov
 python-pytest-localserver
 python-pytest-subtests
@@ -107,6 +109,7 @@ python-traits
 python-triangle
 python-typed-ast
 python-types-requests
+python-tzdata
 python-uc-micro-py
 python-ujson
 python-validate-pyproject
@@ -135,6 +138,7 @@ tinyxml
 tree-sitter-bash
 tree-sitter-python
 vala
+vulkan-headers
 wayland-protocols
 webrtc-audio-processing
 wlroots0.16
