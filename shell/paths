@@ -2,8 +2,14 @@
 # BART 7.0 is already included in the Ubuntu repos
 # export BARTPATH="$HOME/bin/bart/bin"
 # export PATH=${BARTPATH}:$PATH
+#
 
-BIN_PATH="/fileserver/fastscratch/liam/bin/"
+
+BIN_PATH="/fileserver/external/body/liam/bin/"
+export PATH=${BIN_PATH}:$PATH
+
+Script_PATH="$BIN_PATH/bashscripts"
+export PATH=${Script_PATH}:$PATH
 
 export DCM2NIIXPATH="$BIN_PATH/dcm2niix_lnx"
 export PATH=${DCM2NIIXPATH}:$PATH
@@ -13,6 +19,12 @@ export PATH=${SLICERPATH}:$PATH
 
 export ANIMAPATH="$BIN_PATH/Anima-Binaries-4.2/"
 export PATH=${ANIMAPATH}:$PATH
+
+export ANTSPATH="$BIN_PATH/ants-2.5.1/bin/"
+export PATH=${ANTSPATH}:$PATH
+
+export SLICENIIPATH="$BIN_PATH/slicenii"
+export PATH=${SLICENIIPATH}:$PATH
 
 # source /opt/el7/pkgs/crkit/nightly/20220501/bin/crkit-env.sh
 # export CRKITPATH="/opt/el7/pkgs/crkit/nightly/20220501/bin/"
@@ -28,9 +40,19 @@ export ANTSPATH=/opt/ANTs/bin/
 export PATH=${ANTSPATH}:$PATH
 
 # FSL Setup
-FSLDIR=/fileserver/fastscratch/liam/bin/fsl
+FSLDIR=/fileserver/external/body/liam/bin/fsl
 PATH=${FSLDIR}/share/fsl/bin:${PATH}
 export FSLDIR PATH
 
 # export PANDOC_FILTERS="$HOME/bin/pandoc-filters"
 # export PATH=${PANDOC_FILTERS}:$PATH
+#
+QUIN_PATH="$BIN_PATH/quin-utils"
+export PATH=${QUIN_PATH}:$PATH
+
+export BART_TOOLBOX_PATH="$BIN_PATH/bart-0.9.00"
+export PATH=${BART_TOOLBOX_PATH}:$PATH
+export ISMRMRD_HOME=/usr/local/ismrmrd
+
+export SVRDWI_PATH=/fileserver/external/body/liam/svr/svr_dwi_rigid_cpp/build/
+export PATH=${SVRDWI_PATH}:$PATH

@@ -13,9 +13,10 @@ fi
 # ==== Environment Variables ====
 export XDG_CONFIG_HOME=~/.config/
 export XDG_DATA_HOME=~/.local/share/
-export CUSTOM_CONFIG_HOME=/fileserver/fastscratch/liam/configs
-export WORKINGDIR=/fileserver/fastscratch/liam
+export CUSTOM_CONFIG_HOME=/fileserver/external/body/liam/configs
+export WORKINGDIR=/fileserver/external/body/liam
 export EDITOR=nvim
+export ISMRMRD_HOME=/usr/local/bin/
 
 # ==== Sources ====
 # source $CUSTOM_CONFIG_HOME/shell/bashrc_aliases
@@ -34,10 +35,6 @@ ranger() {
 }
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
-# cribbed from connor mcd (nixcast)
-bind '"\C-o": "fo\n"'
-bind '"\C-]": "fcd\n"'
-bind '"\C-e": "fe\n"'
 
 fcd() {
     cd "$(fd -t d | fzf --height 40% --layout=reverse --preview="ls {}")"
@@ -45,7 +42,7 @@ fcd() {
 }
 
 fo() {
-    fd -d 2 -t f | fzf -m | xargs -r -d "\n" xdg-open 2>&-
+    fdfind -d 2 -t f | fzf -m | xargs -r -d "\n" xdg-open 2>&-
 }
 
 fe() {
@@ -53,6 +50,10 @@ fe() {
 }
 export FZF_CTRL_T_OPTS="--preview '(highlight -O ansi -l {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null | head -200'"
 export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"
+# cribbed from connor mcd (nixcast)
+bind '"\C-o": "fo\n"'
+bind '"\C-]": "fcd\n"'
+bind '"\C-e": "fe\n"'
 
 # ==== Aliases ====
 # enable color support of ls and also add handy aliases
@@ -67,9 +68,12 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 alias cdw='cd ${WORKINGDIR}'
+alias cde='cd /fileserver/external/body/liam/'
 alias e='$EDITOR'
 alias tm='tmux attach || tmux'
 alias b='batcat'
+alias sl='ls'
+alias ipy='ipython --TerminalInteractiveShell.editing_mode=vi'
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -80,12 +84,12 @@ type -P "fdfind" > /dev/null && alias fd="fdfind"
 shopt -s autocd
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
-HISTCONTROL=ignoreboth
+export HISTCONTROL=ignoreboth
 # append to the history file, don't overwrite it
 shopt -s histappend
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=100000
-HISTFILESIZE=20000000
+export HISTSIZE=100000
+export HISTFILESIZE=20000000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.

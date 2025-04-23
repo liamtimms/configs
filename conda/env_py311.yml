@@ -1,30 +1,34 @@
 name: analysis_test
 channels:
   - conda-forge
+  - bioconda
 dependencies:
   - python=3.11
   # CODE HELPERS
-  - black=23.3.0
+  - black
   - isort
   - pynvim
   - lazygit
-  - jupyterlab=4.0.5
+  - jupyterlab
   - jupyter-collaboration
   - mypy
   - specialist
   - ipython
+  - ipdb
   - bash_kernel
   - numba 
   # CORE
   - numpy
-  - scipy=1.11.2
+  - scipy
+  - lmfit
+  - nlopt
   # IMAGING 
-  - scikit-learn=1.3.0
-  - scikit-image=0.21.0
+  - scikit-learn
+  - scikit-image
   - simpleitk
   - itk
   - nibabel
-  - nilearn=0.10.1
+  - nilearn
   - dcm2niix
   - dcm2bids
   - libiconv
@@ -34,15 +38,17 @@ dependencies:
   - sigpy
   - intensity-normalization
   # DATA PROCESSING
-  - pandas=2.0.3
+  - pandas
   - pandas-stubs
-  - polars=0.18.15
+  - polars
   # GRAPHING
   - seaborn
   - statsmodels
   - ipympl
   - ipywidgets
+  - customtkinter
   # MISC
+  - opencv
   - numba
   - cupy
   - click
@@ -52,6 +58,6 @@ dependencies:
   - pip
   - tqdm
   - types-tqdm
-  - pip:
-    - pynrrd
+  # - pip:
+    # - pynrrd
   #   - niwidgets
