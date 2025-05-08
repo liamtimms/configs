@@ -3,7 +3,6 @@ adw-gtk3-git
 afni-atlases
 alhp-keyring
 alhp-mirrorlist
-barrier
 bart
 dcm2niix
 debtap
@@ -15,6 +14,7 @@ gallery-dl
 git-secrets
 gnome-network-displays
 gnome-shell-pomodoro
+gnome-shell-pomodoro-debug
 google-chrome
 gp-saml-gui-git
 hdfview-bin
@@ -35,7 +35,6 @@ python-looseversion
 python-nilearn
 python-pandas-stubs
 python-scikit-fuzzy
-python-scikit-image
 python39
 rmlint
 rust-dependency-refresh

@@ -218,6 +218,7 @@ python-pynvim
 python-pyqt5
 python-pytables
 python-pytest-httpserver
+python-scikit-image
 python-seaborn
 python-setuptools-git
 python-setuptools-scm
@@ -280,6 +281,7 @@ transmission-gtk
 trash-cli
 tree
 ttf-jetbrains-mono-nerd
+ttf-ubuntu-font-family
 ublock-origin
 unrar
 usbutils

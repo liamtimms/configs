@@ -159,6 +159,7 @@ python-pygithub
 python-pynvim
 python-pytables
 python-pytest-httpserver
+python-scikit-image
 python-seaborn
 python-setuptools-git
 python-whoosh
@@ -209,6 +210,7 @@ transmission-gtk
 trash-cli
 tree
 ttf-jetbrains-mono-nerd
+ttf-ubuntu-font-family
 ublock-origin
 unrar
 usbutils

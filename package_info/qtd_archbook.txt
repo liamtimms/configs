@@ -14,7 +14,6 @@ efivar
 eigen
 embree3
 extra-cmake-modules
-flake8
 gcab
 gcc13
 gendesk
@@ -25,7 +24,9 @@ gptfdisk
 haskell-base64
 haskell-connection
 haskell-cprng-aes
+haskell-data-array-byte
 haskell-digits
+haskell-ghc-bignum-orphans
 haskell-string-conversions
 haskell-wcwidth
 http-parser
@@ -79,6 +80,7 @@ python-cached-property
 python-caldav
 python-commonmark
 python-exceptiongroup
+python-flake8
 python-freezegun
 python-future
 python-hatch-jupyter-builder
@@ -110,6 +112,7 @@ python-triangle
 python-typed-ast
 python-types-requests
 python-tzdata
+python-tzlocal
 python-uc-micro-py
 python-ujson
 python-validate-pyproject
@@ -128,6 +131,7 @@ rest
 run-parts
 sassc
 scdoc
+scons
 shared-color-targets
 sip4
 swig
