@@ -127,7 +127,6 @@ qt5-doc
 qt5-networkauth
 qt5-scxml
 radicale
-rest
 run-parts
 sassc
 scdoc
