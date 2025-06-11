@@ -7,6 +7,7 @@ bc
 blueprint-compiler
 box2d
 cjson
+clang18
 cython
 dmd
 dmraid
@@ -59,6 +60,7 @@ libtermkey
 libvisual
 libxml++2.6
 lld
+lld18
 lua53
 mbedtls2
 mdformat
@@ -146,6 +148,7 @@ wayland-protocols
 webrtc-audio-processing
 wlroots0.16
 wlroots0.17
+wlroots0.18
 wpebackend-fdo
 xandikos
 xcftools
