@@ -9,6 +9,7 @@ box2d
 cjson
 clang18
 cython
+dash
 dmd
 dmraid
 efivar
@@ -97,6 +98,7 @@ python-pbr
 python-py
 python-pyaml
 python-pydocstyle
+python-pygal
 python-pylev
 python-pylint
 python-pyrsistent
@@ -108,7 +110,9 @@ python-pythran
 python-requests-unixsocket
 python-rfc3986-validator
 python-ruff
+python-sphinx-bootstrap-theme
 python-testpath
+python-tests
 python-traits
 python-triangle
 python-typed-ast
@@ -117,6 +121,7 @@ python-tzdata
 python-tzlocal
 python-uc-micro-py
 python-ujson
+python-utils
 python-validate-pyproject
 python-vcrpy
 python-ypy-websocket
