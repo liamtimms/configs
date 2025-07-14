@@ -13,6 +13,7 @@ base-devel
 bash-completion
 bash-language-server
 bat
+biber
 binutils
 bison
 blas-openblas
@@ -263,6 +264,7 @@ tex-gyre-fonts
 texinfo
 texlive-basic
 texlive-bibtexextra
+texlive-binextra
 texlive-fontsextra
 texlive-formatsextra
 texlive-humanities

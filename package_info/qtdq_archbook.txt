@@ -69,7 +69,6 @@ meson-python
 mtools
 nlopt
 perl-module-build
-perl-params-validate
 perl-sub-identify
 perl-test-needs
 powerline

@@ -11,6 +11,7 @@ base-devel
 bash-completion
 bash-language-server
 bat
+biber
 bluez-hid2hci
 bluez-utils
 bridge-utils
@@ -26,6 +27,7 @@ ctags
 detox
 devtools
 discord
+dmidecode
 docker
 docker-buildx
 docker-compose
@@ -194,6 +196,7 @@ sysprof
 systemd-resolvconf
 tex-gyre-fonts
 texlive-bibtexextra
+texlive-binextra
 texlive-fontsextra
 texlive-formatsextra
 texlive-humanities
