@@ -197,7 +197,9 @@ systemd-resolvconf
 tex-gyre-fonts
 texlive-bibtexextra
 texlive-binextra
+texlive-doc
 texlive-fontsextra
+texlive-fontutils
 texlive-formatsextra
 texlive-humanities
 texlive-latexextra
@@ -212,6 +214,7 @@ traceroute
 transmission-gtk
 trash-cli
 tree
+tree-sitter-cli
 ttf-jetbrains-mono-nerd
 ttf-ubuntu-font-family
 ublock-origin
