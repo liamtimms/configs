@@ -101,7 +101,7 @@ lazygit
 libreoffice-fresh
 libva-utils
 linux
-linux-firmware
+linux-firmware-intel
 linux-headers
 linux-lts
 linux-lts-headers
@@ -115,7 +115,6 @@ man-pages
 maturin
 mpv
 mypy
-namcap
 nano
 neovim
 networkmanager-openconnect

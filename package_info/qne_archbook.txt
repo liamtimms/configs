@@ -139,7 +139,7 @@ libreoffice-fresh
 libtool
 libva-utils
 linux
-linux-firmware
+linux-firmware-intel
 linux-headers
 linux-lts
 linux-lts-headers
