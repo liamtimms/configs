@@ -8,6 +8,7 @@ blueprint-compiler
 box2d
 cjson
 clang18
+clang19
 cython
 dash
 dejagnu
@@ -76,8 +77,8 @@ linux-firmware-mediatek
 linux-firmware-other
 linux-firmware-radeon
 linux-firmware-realtek
-lld
 lld18
+lld19
 lua53
 mbedtls2
 mdformat
