@@ -78,7 +78,6 @@ gnome-user-share
 gnome-video-effects
 gnome-weather
 godot
-grim
 gst-libav
 gtk-engine-murrine
 gvfs-afc
@@ -143,7 +142,6 @@ powerline-fonts
 prettier
 python-bottleneck
 python-colorlog
-python-dasbus
 python-dask
 python-distutils-extra
 python-docker
@@ -164,6 +162,7 @@ python-scikit-image
 python-seaborn
 python-setuptools-git
 python-whoosh
+qt6-wayland
 r
 radeontop
 ranger
@@ -178,7 +177,6 @@ shellcheck
 shfmt
 simple-scan
 simpleitk
-slurp
 smartmontools
 snapshot
 spotify-launcher

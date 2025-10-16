@@ -46,6 +46,7 @@ intel-oneapi-compiler-shared-opencl-cpu
 intel-oneapi-mkl
 js102
 js115
+js128
 js91
 jupyter-nbclassic
 kcmutils5
@@ -61,6 +62,7 @@ libgnomekbd
 libgrss
 libgssglue
 libindicator-gtk3
+libinstpatch
 libkate
 libngtcp2
 libomxil-bellagio
