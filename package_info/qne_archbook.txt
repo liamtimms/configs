@@ -304,6 +304,8 @@ xdg-desktop-portal-gnome
 xdg-desktop-portal-wlr
 xdg-user-dirs-gtk
 xorg-server-xvfb
+xorg-xeyes
+xorg-xlsclients
 yelp
 yt-dlp
 zathura

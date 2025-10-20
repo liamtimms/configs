@@ -227,6 +227,8 @@ wl-clipboard
 wofi
 xdg-desktop-portal-wlr
 xorg-server-xvfb
+xorg-xeyes
+xorg-xlsclients
 yelp
 yt-dlp
 zathura-pdf-mupdf
