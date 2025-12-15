@@ -24,6 +24,7 @@ clamav
 cli11
 cmatrix
 ctags
+deja-dup
 detox
 devtools
 discord
@@ -79,7 +80,6 @@ gnome-video-effects
 gnome-weather
 godot
 gst-libav
-gtk-engine-murrine
 gvfs-afc
 gvfs-google
 gvfs-gphoto2
@@ -140,12 +140,12 @@ pigz
 pipewire-alsa
 powerline-fonts
 prettier
+python-boto3
 python-bottleneck
 python-colorlog
 python-dask
 python-distutils-extra
 python-docker
-python-fasteners
 python-flit
 python-hatch-vcs
 python-humanize
@@ -154,6 +154,7 @@ python-keyrings-alt
 python-netifaces
 python-openai
 python-openpyxl
+python-pydrive2
 python-pygithub
 python-pynvim
 python-pytables
@@ -169,7 +170,6 @@ ranger
 rclone
 reflector
 renameutils
-restic
 ripgrep
 rpi-imager
 rygel

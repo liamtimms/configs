@@ -17,10 +17,12 @@ gnome-shell-pomodoro
 gnome-shell-pomodoro-debug
 google-chrome
 gp-saml-gui-git
+gtk-engine-murrine
 hdfview-bin
 icaclient
 icu73
 itk-snap-bin
+libjpeg6-turbo
 light
 nifticlib
 nodejs-reveal-md
