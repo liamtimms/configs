@@ -27,7 +27,7 @@ nifticlib
 nodejs-reveal-md
 obs-gstreamer
 onedrive-abraunegg
-paru-bin
+paru
 python-dcm2bids
 python-dicom_parser
 python-dipy
