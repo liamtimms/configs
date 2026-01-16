@@ -137,7 +137,7 @@ call plug#begin('~/.config/nvim/plugged')
 
     " Treesitter:
     " k i s s i n g
-    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+    Plug 'nvim-treesitter/nvim-treesitter', { 'branch': 'master' }
 
     " Undotree:
     Plug 'mbbill/undotree'

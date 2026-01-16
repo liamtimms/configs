@@ -70,7 +70,6 @@ libidn11
 libindicator
 libinstpatch
 libkate
-libngtcp2
 libomxil-bellagio
 libpng12
 libsmbios
