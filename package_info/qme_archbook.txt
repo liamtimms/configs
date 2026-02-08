@@ -4,6 +4,7 @@ afni-atlases
 alhp-keyring
 alhp-mirrorlist
 bart
+bridge-utils
 dcm2niix
 debtap
 elastix-bin
@@ -41,7 +42,6 @@ rmlint
 rust-dependency-refresh
 spm12
 teams
-teamviewer
 tex-fmt
 tex-gyre-math-fonts
 texlive-latexindent-meta

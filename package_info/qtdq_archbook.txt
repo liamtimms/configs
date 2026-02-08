@@ -43,6 +43,7 @@ haskell-sha
 haskell-string-conversions
 haskell-type-equality
 haskell-wcwidth
+help2man
 http-parser
 inetutils
 intel-oneapi-compiler-dpcpp-cpp-runtime
@@ -63,6 +64,7 @@ knotifyconfig5
 ldns
 libchamplain
 libcryptui
+libgnome-keyring
 libgnomekbd
 libgrss
 libgssglue
@@ -114,6 +116,7 @@ python-freezegun
 python-future
 python-hatch-jupyter-builder
 python-httpretty
+python-ipython-genutils
 python-jupyter-packaging
 python-lazy-object-proxy
 python-mock

@@ -4,6 +4,7 @@ afni-atlases
 alhp-keyring
 alhp-mirrorlist
 bart
+bridge-utils
 debtap
 elastix-bin
 epson-inkjet-printer-escpr2
@@ -40,7 +41,6 @@ rmlint
 rust-dependency-refresh
 spm12
 teams
-teamviewer
 tex-fmt
 tex-gyre-math-fonts
 texlive-latexindent-meta

@@ -14,7 +14,6 @@ bat
 biber
 bluez-hid2hci
 bluez-utils
-bridge-utils
 btrfs-progs
 cargo-modules
 castxml
@@ -42,6 +41,8 @@ fdupes
 ffmpegthumbnailer
 file-roller
 firefox
+flatpak
+flatpak-xdg-utils
 fzf
 gdm
 git-annex
