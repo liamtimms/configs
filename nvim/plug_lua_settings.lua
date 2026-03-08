@@ -71,6 +71,9 @@ require("lualine").setup({
 	extensions = {},
 })
 
+--claude
+require("claudecode").setup()
+
 -- bufferline without font issues
 require("bufferline").setup({
 	highlights = {

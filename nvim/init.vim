@@ -53,6 +53,10 @@ call plug#begin('~/.config/nvim/plugged')
     " Copilot:
     Plug 'github/copilot.vim'
 
+    " Claude AI:
+    Plug 'folke/snacks.nvim'
+    Plug 'coder/claudecode.nvim'
+
     " Linter:
     " code linter
     Plug 'dense-analysis/ale'
