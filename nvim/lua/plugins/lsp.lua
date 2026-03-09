@@ -15,7 +15,7 @@ return {
 		dependencies = { "mason-org/mason.nvim" },
 		opts = {
 			ensure_installed = {
-				"pyright",       -- Python
+				"basedpyright",  -- Python (fork of pyright with proper LSP inlay hints)
 				"rust_analyzer", -- Rust
 				"lua_ls",        -- Lua
 				"clangd",        -- C/C++
@@ -106,6 +106,27 @@ return {
 		},
 		config = function()
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
+			-- Disable dynamic registration so servers declare inlayHintProvider upfront
+			capabilities.textDocument.inlayHint = { dynamicRegistration = false }
+
+			-- Diagnostic display: gutter signs + float on CursorHold
+			vim.diagnostic.config({
+				signs = true,
+				underline = true,
+				virtual_text = false, -- off: float is used instead
+				float = {
+					border = "rounded",
+					source = true, -- show which LSP reported it
+				},
+				update_in_insert = false,
+			})
+
+			-- Show diagnostics float automatically when cursor rests
+			vim.api.nvim_create_autocmd("CursorHold", {
+				callback = function()
+					vim.diagnostic.open_float(nil, { focus = false })
+				end,
+			})
 
 			-- Global defaults: capabilities + keymaps via LspAttach autocmd
 			vim.lsp.config("*", { capabilities = capabilities })
@@ -131,11 +152,24 @@ return {
 					-- Diagnostics (mirrors [g/]g CoC plugs)
 					k("n", "[g", vim.diagnostic.goto_prev, bopts)
 					k("n", "]g", vim.diagnostic.goto_next, bopts)
+					-- Show diagnostic float for current line on demand
+					k("n", "<leader>e", vim.diagnostic.open_float, bopts)
 					-- Diagnostic list (mirrors \a → CocList diagnostics)
 					k("n", "<Bslash>a", vim.diagnostic.setloclist, bopts)
 					-- Symbol search via fzf-lua (mirrors \o/\s → CocList outline/symbols)
 					k("n", "<Bslash>o", "<cmd>lua require('fzf-lua').lsp_document_symbols()<CR>", bopts)
 					k("n", "<Bslash>s", "<cmd>lua require('fzf-lua').lsp_workspace_symbols()<CR>", bopts)
+
+					-- Inlay hints (type annotations as virtual text)
+					if vim.lsp.inlay_hint then
+						vim.lsp.inlay_hint.enable(true, { bufnr = bufnr })
+						k("n", "<leader>ih", function()
+							vim.lsp.inlay_hint.enable(
+								not vim.lsp.inlay_hint.is_enabled({ bufnr = bufnr }),
+								{ bufnr = bufnr }
+							)
+						end, bopts)
+					end
 
 					-- Highlight references on CursorHold (mirrors CocGroup highlight autocmd)
 					vim.api.nvim_create_autocmd("CursorHold", {
@@ -150,6 +184,21 @@ return {
 			})
 
 			-- Per-server overrides
+			vim.lsp.config("basedpyright", {
+				settings = {
+					basedpyright = {
+						analysis = {
+							inlayHints = {
+								variableTypes = true,
+								functionReturnTypes = true,
+								callArgumentNames = true,
+								pytestParameters = true,
+							},
+						},
+					},
+				},
+			})
+
 			vim.lsp.config("lua_ls", {
 				settings = {
 					Lua = {
@@ -163,7 +212,7 @@ return {
 				},
 			})
 
-			vim.lsp.enable({ "pyright", "rust_analyzer", "clangd", "bashls", "jsonls", "texlab", "lua_ls" })
+			vim.lsp.enable({ "basedpyright", "rust_analyzer", "clangd", "bashls", "jsonls", "texlab", "lua_ls" })
 		end,
 	},
 }
