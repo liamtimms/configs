@@ -63,11 +63,13 @@ return {
 	-- Git workflow (ported from plug_settings.vim)
 	{
 		"tpope/vim-fugitive",
+		cmd = { "Git", "Gvdiffsplit", "Gdiffsplit", "Gwrite", "Gread", "Glog" },
 		keys = {
 			{ "<leader>gw", ":Gwrite<CR>", desc = "Git write/stage" },
 			{ "<leader>gc", ":Git commit<CR>", desc = "Git commit" },
 			{ "<leader>gp", ":Git push<CR>", desc = "Git push" },
 			{ "<leader>gpl", ":Git pull<CR>", desc = "Git pull" },
+			{ "<leader>gd", ":Gvdiffsplit<CR>", desc = "Git vertical diff split" },
 		},
 	},
 

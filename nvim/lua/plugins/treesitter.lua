@@ -1,33 +1,14 @@
--- Treesitter: syntax, indent, and refactoring (ported from plugins/core_plugins.lua)
+-- Treesitter: syntax, indent, and highlighting (rewritten for new nvim-treesitter API)
+-- NOTE: nvim-treesitter-refactor is incompatible with the new rewrite; removed.
+-- NOTE: The new nvim-treesitter does not support lazy-loading.
 
 return {
-  {
-	"nvim-treesitter/nvim-treesitter-refactor",
-	dependencies = { "nvim-treesitter/nvim-treesitter" },
-	event = "BufReadPost",
-	config = false, -- configured via nvim-treesitter.configs.setup
-  },
-  {
 	"nvim-treesitter/nvim-treesitter",
+	lazy = false,
 	build = ":TSUpdate",
-	event = "BufReadPost",
-	opts = {
-		highlight = {
-			enable = true,
-			-- Disable for very large files
-			disable = function(_, buf)
-				local max_filesize = 100 * 1024 -- 100 KB
-				local ok, stats = pcall(vim.loop.fs_stat, vim.api.nvim_buf_get_name(buf))
-				if ok and stats and stats.size > max_filesize then
-					return true
-				end
-			end,
-			additional_vim_regex_highlighting = false,
-		},
-		autopairs = { enable = true },
-		autotag = { enable = true },
-		indent = { enable = true },
-		ensure_installed = {
+	config = function()
+		-- Install parsers (async; no-op if already installed)
+		require("nvim-treesitter").install({
 			"bash",
 			"python",
 			"c",
@@ -39,7 +20,6 @@ return {
 			"css",
 			"dockerfile",
 			"html",
-			"http",
 			"json",
 			"json5",
 			"latex",
@@ -48,19 +28,26 @@ return {
 			"scss",
 			"vim",
 			"yaml",
-		},
-		sync_install = false,
-		ignore_install = {},
-		refactor = {
-			highlight_definitions = {
-				enable = true,
-				clear_on_cursor_move = true,
-			},
-			highlight_current_scope = { enable = false },
-		},
-	},
-	config = function(_, opts)
-		require("nvim-treesitter.configs").setup(opts)
+		})
+
+		-- Enable treesitter highlighting + indent for common filetypes
+		local filetypes = {
+			"bash", "python", "c", "lua", "rust", "javascript",
+			"css", "dockerfile", "html", "json", "markdown", "vim", "yaml",
+		}
+
+		vim.api.nvim_create_autocmd("FileType", {
+			pattern = filetypes,
+			callback = function(args)
+				local buf = args.buf
+				local ok = pcall(vim.treesitter.start, buf)
+				if ok then
+					-- Treesitter-based folding
+					vim.wo.foldmethod = "expr"
+					vim.wo.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+					vim.wo.foldenable = false -- open all folds by default
+				end
+			end,
+		})
 	end,
-  },
 }
