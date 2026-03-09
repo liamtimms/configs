@@ -105,72 +105,65 @@ return {
 			"hrsh7th/cmp-nvim-lsp",
 		},
 		config = function()
-			local lspconfig = require("lspconfig")
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-			-- on_attach: keymaps that mirror coc_settings.lua bindings
-			local on_attach = function(_, bufnr)
-				local bopts = { noremap = true, silent = true, buffer = bufnr }
-				local k = vim.keymap.set
+			-- Global defaults: capabilities + keymaps via LspAttach autocmd
+			vim.lsp.config("*", { capabilities = capabilities })
 
-				-- Navigation (mirrors gd/gy/gi/gr CoC plugs)
-				k("n", "gd", vim.lsp.buf.definition, bopts)
-				k("n", "gy", vim.lsp.buf.type_definition, bopts)
-				k("n", "gi", vim.lsp.buf.implementation, bopts)
-				k("n", "gr", vim.lsp.buf.references, bopts)
-				-- Hover docs (mirrors K → show_docs())
-				k("n", "K", vim.lsp.buf.hover, bopts)
-				-- Code actions (mirrors <leader>a CoC plug)
-				k("n", "<leader>a", vim.lsp.buf.code_action, bopts)
-				k("x", "<leader>a", vim.lsp.buf.code_action, bopts)
-				-- Rename (mirrors <leader>rn CoC plug)
-				k("n", "<leader>rn", vim.lsp.buf.rename, bopts)
-				-- Diagnostics (mirrors [g/]g CoC plugs)
-				k("n", "[g", vim.diagnostic.goto_prev, bopts)
-				k("n", "]g", vim.diagnostic.goto_next, bopts)
-				-- Diagnostic list (mirrors \a → CocList diagnostics)
-				k("n", "<Bslash>a", vim.diagnostic.setloclist, bopts)
-				-- Symbol search via fzf-lua (mirrors \o/\s → CocList outline/symbols)
-				k("n", "<Bslash>o", "<cmd>lua require('fzf-lua').lsp_document_symbols()<CR>", bopts)
-				k("n", "<Bslash>s", "<cmd>lua require('fzf-lua').lsp_workspace_symbols()<CR>", bopts)
+			vim.api.nvim_create_autocmd("LspAttach", {
+				callback = function(args)
+					local bufnr = args.buf
+					local bopts = { noremap = true, silent = true, buffer = bufnr }
+					local k = vim.keymap.set
 
-				-- Highlight references on CursorHold (mirrors CocGroup highlight autocmd)
-				vim.api.nvim_create_autocmd("CursorHold", {
-					buffer = bufnr,
-					callback = vim.lsp.buf.document_highlight,
-				})
-				vim.api.nvim_create_autocmd("CursorMoved", {
-					buffer = bufnr,
-					callback = vim.lsp.buf.clear_references,
-				})
-			end
+					-- Navigation (mirrors gd/gy/gi/gr CoC plugs)
+					k("n", "gd", vim.lsp.buf.definition, bopts)
+					k("n", "gy", vim.lsp.buf.type_definition, bopts)
+					k("n", "gi", vim.lsp.buf.implementation, bopts)
+					k("n", "gr", vim.lsp.buf.references, bopts)
+					-- Hover docs (mirrors K → show_docs())
+					k("n", "K", vim.lsp.buf.hover, bopts)
+					-- Code actions (mirrors <leader>a CoC plug)
+					k("n", "<leader>a", vim.lsp.buf.code_action, bopts)
+					k("x", "<leader>a", vim.lsp.buf.code_action, bopts)
+					-- Rename (mirrors <leader>rn CoC plug)
+					k("n", "<leader>rn", vim.lsp.buf.rename, bopts)
+					-- Diagnostics (mirrors [g/]g CoC plugs)
+					k("n", "[g", vim.diagnostic.goto_prev, bopts)
+					k("n", "]g", vim.diagnostic.goto_next, bopts)
+					-- Diagnostic list (mirrors \a → CocList diagnostics)
+					k("n", "<Bslash>a", vim.diagnostic.setloclist, bopts)
+					-- Symbol search via fzf-lua (mirrors \o/\s → CocList outline/symbols)
+					k("n", "<Bslash>o", "<cmd>lua require('fzf-lua').lsp_document_symbols()<CR>", bopts)
+					k("n", "<Bslash>s", "<cmd>lua require('fzf-lua').lsp_workspace_symbols()<CR>", bopts)
 
-			local servers = {
-				pyright = {},
-				rust_analyzer = {},
-				clangd = {},
-				bashls = {},
-				jsonls = {},
-				texlab = {},
-				lua_ls = {
-					settings = {
-						Lua = {
-							runtime = { version = "LuaJIT" },
-							workspace = {
-								checkThirdParty = false,
-								library = vim.api.nvim_get_runtime_file("", true),
-							},
-							telemetry = { enable = false },
+					-- Highlight references on CursorHold (mirrors CocGroup highlight autocmd)
+					vim.api.nvim_create_autocmd("CursorHold", {
+						buffer = bufnr,
+						callback = vim.lsp.buf.document_highlight,
+					})
+					vim.api.nvim_create_autocmd("CursorMoved", {
+						buffer = bufnr,
+						callback = vim.lsp.buf.clear_references,
+					})
+				end,
+			})
+
+			-- Per-server overrides
+			vim.lsp.config("lua_ls", {
+				settings = {
+					Lua = {
+						runtime = { version = "LuaJIT" },
+						workspace = {
+							checkThirdParty = false,
+							library = vim.api.nvim_get_runtime_file("", true),
 						},
+						telemetry = { enable = false },
 					},
 				},
-			}
+			})
 
-			for server, config in pairs(servers) do
-				config.capabilities = capabilities
-				config.on_attach = on_attach
-				lspconfig[server].setup(config)
-			end
+			vim.lsp.enable({ "pyright", "rust_analyzer", "clangd", "bashls", "jsonls", "texlab", "lua_ls" })
 		end,
 	},
 }

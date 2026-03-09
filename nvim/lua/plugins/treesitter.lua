@@ -1,12 +1,16 @@
 -- Treesitter: syntax, indent, and refactoring (ported from plugins/core_plugins.lua)
 
 return {
+  {
+	"nvim-treesitter/nvim-treesitter-refactor",
+	dependencies = { "nvim-treesitter/nvim-treesitter" },
+	event = "BufReadPost",
+	config = false, -- configured via nvim-treesitter.configs.setup
+  },
+  {
 	"nvim-treesitter/nvim-treesitter",
 	build = ":TSUpdate",
 	event = "BufReadPost",
-	dependencies = {
-		"nvim-treesitter/nvim-treesitter-refactor",
-	},
 	opts = {
 		highlight = {
 			enable = true,
@@ -58,4 +62,5 @@ return {
 	config = function(_, opts)
 		require("nvim-treesitter.configs").setup(opts)
 	end,
+  },
 }
