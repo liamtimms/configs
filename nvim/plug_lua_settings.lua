@@ -72,7 +72,8 @@ require("lualine").setup({
 })
 
 --claude
-require("claudecode").setup()
+-- require("claudecode").setup()
+require('claude-code').setup()
 
 -- bufferline without font issues
 require("bufferline").setup({

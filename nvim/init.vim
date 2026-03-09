@@ -54,7 +54,8 @@ call plug#begin('~/.config/nvim/plugged')
 
     " Claude AI:
     Plug 'folke/snacks.nvim'
-    Plug 'coder/claudecode.nvim'
+    " Plug 'coder/claudecode.nvim'
+    Plug 'greggh/claude-code.nvim'
 
     " Linter:
     " code linter
