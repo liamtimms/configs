@@ -141,3 +141,21 @@ require("prosemode").setup()
 -- neogen
 require("neogen").setup()
 vim.api.nvim_set_keymap("n", "<Leader>ng", ":lua require('neogen').generate()<CR>", { noremap = true, silent = true })
+
+
+-- dracula 
+require("dracula").setup({
+    theme = "dracula-soft",
+    transparent_bg = true,
+    italic_comment = true,
+    overrides = {
+    DiagnosticVirtualTextError = { link = "Error" },
+    DiagnosticVirtualTextHint = { link = "Comment" },
+    DiagnosticVirtualTextInfo = { link = "Comment" },
+    DiagnosticVirtualTextWarn = { link = "Warning" },
+    CocInlayHint = { link = "Comment" },
+    },
+})
+
+
+

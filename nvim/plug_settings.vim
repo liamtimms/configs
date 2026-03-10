@@ -36,13 +36,13 @@ au BufNewFile */diary/[0-9]*.md
   \ call append(0,[
   \ "# Shiplog " . split(expand('%:r'),'/')[-1], "",
   \ "## Dailies", "",
-  \ "- [ ] Meds Morning -", 
-  \ "- [ ] Meds Afternoon -",
+  \ "- [ ] Meds Morning", 
+  \ "- [ ] Meds Afternoon", 
   \ "- [ ] Workout", 
-  \ "- [ ] Vitamins", "",
-  \ "- [ ] Hair", "",
+  \ "- [ ] Vitamins", 
+  \ "- [ ] Hair", 
   \ "- [ ] Walk", "",
-  \ "## Plans",  "",
+  \ "## Plans", 
   \ "1.",  "2.",  "3.",  "",  
   \ "## Things I did",  "",
   \ "1.",  "2.",  "3.",  "",  
@@ -55,7 +55,7 @@ let g:copilot_no_tab_map = v:true
 nnoremap <leader>ce :Copilot enable<CR>
 nnoremap <leader>cd :Copilot disable<CR>
 nnoremap <leader>cp :Copilot panel<CR>
-imap <silent><script><expr> <C-J> copilot#Accept("\<CR>")
+imap <silent><script><expr> <C-Right> copilot#Accept("\<CR>")
 
 " ALE: ---------------------------------
 " define linters and fixers
@@ -73,6 +73,7 @@ let g:ale_linters = {
 let g:ale_fixers = {
       \    'python': ['black', 'yapf', 'isort', 'remove_trailing_lines', 'trim_whitespace'], 
       \    'c': ['clang-format'],
+      \    'cpp': ['clang-format', 'remove_trailing_lines', 'trim_whitespace'],
       \    'json': ['prettier'],
       \    'markdown': ['prettier', 'remove_trailing_lines', 'trim_whitespace'],
       \    'vimwiki': ['prettier'],
@@ -90,7 +91,7 @@ nnoremap [e   :ALEPreviousWrap<CR>
 
 " let g:ale_disable_lsp = 1
 
-let g:ale_fix_on_save = 0
+let g:ale_fix_on_save = 1
 
 " Quickscope: --------------------------
 " Trigger a highlight in the appropriate direction when pressing these keys:

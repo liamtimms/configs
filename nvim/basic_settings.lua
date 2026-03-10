@@ -6,6 +6,9 @@ local opt = vim.opt
 opt.number = true
 opt.relativenumber = true
 opt.cursorline = true
+-- set cursorline color
+vim.api.nvim_set_hl(0, 'CursorLine', { underline = true })
+
 
 -- splits window more naturally
 opt.splitright = true

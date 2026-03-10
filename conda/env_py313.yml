@@ -1,22 +1,22 @@
-name: analysis_test
+name: analysis_13
 channels:
+  - defaults
   - conda-forge
-  - bioconda
+  # - bioconda
 dependencies:
-  - python=3.11
+  - python=3.13
   # CODE HELPERS
   - black
   - isort
   - pynvim
-  - lazygit
+  # - lazygit
   - jupyterlab
-  - jupyter-collaboration
   - mypy
-  - specialist
+  # - specialist
   - ipython
   - ipdb
-  - bash_kernel
-  - numba 
+  # - bash_kernel
+  # - numba 
   # CORE
   - numpy
   - scipy
@@ -27,17 +27,17 @@ dependencies:
   - scikit-learn
   - scikit-image
   - simpleitk
-  - itk
+  # - itk
   - nibabel
   - nilearn
   - dcm2niix
   - dcm2bids
-  - libiconv
-  - vtk
+  # - libiconv
+  # - vtk
   # - nipype
   - dipy
   - sigpy
-  - intensity-normalization
+  # - intensity-normalization
   # DATA PROCESSING
   - pandas
   - pandas-stubs
@@ -46,11 +46,11 @@ dependencies:
   - seaborn
   - statsmodels
   - ipympl
-  - ipywidgets
-  - customtkinter
+  # - ipywidgets
+  # - customtkinter
   # MISC
   - opencv
-  - numba
+  - fury
   - cupy
   - click
   - docker-py

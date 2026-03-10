@@ -2,6 +2,9 @@
 " Author: Liam Timms
 
 " TODO: add file type checking so that different settings are loaded for python, latex or anything else I end up doing.
+if exists('g:vscode')
+  finish
+endif
 
 " ====== Vim-plug Install =======
 " taken from:
@@ -105,10 +108,11 @@ call plug#begin('~/.config/nvim/plugged')
     " Aesthetic:
     " themes
     Plug 'marko-cerovac/material.nvim'
-    Plug 'liamtimms/dracula.nvim'
+    " Plug 'liamtimms/dracula.nvim'
+    Plug 'mofiqul/dracula.nvim'
     " start screen
     " Plug 'goolord/alpha-nvim'
-    Plug 'akinsho/bufferline.nvim', { 'tag': 'v3.*' }
+    Plug 'akinsho/bufferline.nvim'
 
     Plug 'liamtimms/prosemode.nvim'
 
@@ -133,7 +137,7 @@ call plug#begin('~/.config/nvim/plugged')
 
     " Treesitter:
     " k i s s i n g
-    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+    Plug 'nvim-treesitter/nvim-treesitter', {'branch': 'master', 'do': ':TSUpdate'}
 
     " Undotree:
     Plug 'mbbill/undotree'
@@ -197,8 +201,11 @@ if exists('g:started_by_firenvim')
   set laststatus=0
   set showtabline=0
 else
-  let g:dracula_transparent_bg = v:true
+  " let g:dracula_transparent_bg = v:true
   colorscheme dracula
   " colorscheme material
   set laststatus=3
+  " change cursorline to underline
+  " hi clear CursorLine
+  " hi CursorLine cterm=underline gui=underline
 endif
