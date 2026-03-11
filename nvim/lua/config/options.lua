@@ -28,6 +28,9 @@ opt.updatetime = 300
 -- Always show sign column to avoid text shifting on diagnostics
 opt.signcolumn = "yes"
 
+-- 24-bit color (required for treesitter highlight groups and colorschemes)
+opt.termguicolors = true
+
 -- No backup files (avoids issues with some LSP servers)
 opt.backup = false
 opt.writebackup = false

@@ -11,7 +11,12 @@ return {
 				show_end_of_buffer = true,
 				transparent_bg = true,
 				italic_comment = true,
-				overrides = {},
+				overrides = {
+				-- LSP symbol references: subtle background only, no fg color change
+				LspReferenceText  = { bg = "#44475a", fg = "NONE", bold = false },
+				LspReferenceRead  = { bg = "#44475a", fg = "NONE", bold = false },
+				LspReferenceWrite = { bg = "#44475a", fg = "NONE", bold = false },
+			},
 			})
 			-- Only set dracula when not in firenvim (firenvim uses material)
 			if not vim.g.started_by_firenvim then

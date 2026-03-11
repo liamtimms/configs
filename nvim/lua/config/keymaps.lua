@@ -35,6 +35,12 @@ P = function(v)
 	return v
 end
 
+-- Toggle LSP diagnostics visibility (underlines, signs, virtual text)
+keymap("n", "<leader>id", function()
+	local current = vim.diagnostic.is_enabled()
+	vim.diagnostic.enable(not current)
+end, { desc = "Toggle diagnostics" })
+
 -- Show syntax highlight stack under cursor (port of SynStack VimScript fn)
 keymap("n", "ga", function()
 	for _, i1 in ipairs(vim.fn.synstack(vim.fn.line("."), vim.fn.col("."))) do
