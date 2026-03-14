@@ -124,7 +124,7 @@ return {
 			-- Show diagnostics float automatically when cursor rests
 			vim.api.nvim_create_autocmd("CursorHold", {
 				callback = function()
-					vim.diagnostic.open_float(nil, { focus = false })
+					vim.diagnostic.open_float({ focusable = false })
 				end,
 			})
 
@@ -150,8 +150,8 @@ return {
 					-- Rename (mirrors <leader>rn CoC plug)
 					k("n", "<leader>rn", vim.lsp.buf.rename, bopts)
 					-- Diagnostics (mirrors [g/]g CoC plugs)
-					k("n", "[g", vim.diagnostic.goto_prev, bopts)
-					k("n", "]g", vim.diagnostic.goto_next, bopts)
+					k("n", "[g", function() vim.diagnostic.jump({ count = -1 }) end, bopts)
+					k("n", "]g", function() vim.diagnostic.jump({ count = 1 }) end, bopts)
 					-- Show diagnostic float for current line on demand
 					k("n", "<leader>e", vim.diagnostic.open_float, bopts)
 					-- Diagnostic list (mirrors \a → CocList diagnostics)
@@ -171,15 +171,18 @@ return {
 						end, bopts)
 					end
 
-					-- Highlight references on CursorHold (mirrors CocGroup highlight autocmd)
-					vim.api.nvim_create_autocmd("CursorHold", {
-						buffer = bufnr,
-						callback = vim.lsp.buf.document_highlight,
-					})
-					vim.api.nvim_create_autocmd("CursorMoved", {
-						buffer = bufnr,
-						callback = vim.lsp.buf.clear_references,
-					})
+					-- Highlight references on CursorHold (only if server supports it)
+					local client = vim.lsp.get_client_by_id(args.data.client_id)
+					if client and client:supports_method("textDocument/documentHighlight") then
+						vim.api.nvim_create_autocmd("CursorHold", {
+							buffer = bufnr,
+							callback = vim.lsp.buf.document_highlight,
+						})
+						vim.api.nvim_create_autocmd("CursorMoved", {
+							buffer = bufnr,
+							callback = vim.lsp.buf.clear_references,
+						})
+					end
 				end,
 			})
 

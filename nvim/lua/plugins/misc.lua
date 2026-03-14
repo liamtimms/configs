@@ -129,7 +129,7 @@ return {
 		},
 		config = function()
 			require("lint").linters_by_ft = {
-				python     = { "ruff", "mypy" },
+				python     = { "ruff" },
 				javascript = { "eslint" },
 				markdown   = { "proselint" },
 				sh         = { "shellcheck" },
