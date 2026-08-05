@@ -96,6 +96,14 @@
 | Key | Description | Source |
 |-----|-------------|--------|
 | `Space wf` | Follow wiki link (vimwiki) | writing.lua |
+| `Space ww` | Open wiki index (vimwiki) | writing.lua |
+| `Space wt` | Open wiki index in new tab (vimwiki) | writing.lua |
+| `Space wi` | Open diary index (vimwiki) | writing.lua |
+| `Space w Space w` | Open today's diary note (vimwiki) | writing.lua |
+| `Space w Space t` | Open today's diary note in new tab (vimwiki) | writing.lua |
+| `Space w Space y` | Open yesterday's diary note (vimwiki) | writing.lua |
+| `Space w Space m` | Open tomorrow's diary note (vimwiki) | writing.lua |
+| `Space w Space i` | Regenerate diary index links (vimwiki) | writing.lua |
 | `Space ng` | Generate documentation (neogen) | writing.lua |
 
 ## Miscellaneous
