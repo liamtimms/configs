@@ -121,10 +121,14 @@ return {
 				update_in_insert = false,
 			})
 
-			-- Show diagnostics float automatically when cursor rests
+			-- Show diagnostics float automatically when cursor rests (skip in tex)
 			vim.api.nvim_create_autocmd("CursorHold", {
 				callback = function()
-					vim.diagnostic.open_float({ focusable = false })
+					-- Skip in tex: float churn is distracting during prose editing
+					if vim.bo.filetype == "tex" then return end
+					if vim.diagnostic.is_enabled() then
+						vim.diagnostic.open_float({ focusable = false })
+					end
 				end,
 			})
 
@@ -160,8 +164,16 @@ return {
 					k("n", "<Bslash>o", "<cmd>lua require('fzf-lua').lsp_document_symbols()<CR>", bopts)
 					k("n", "<Bslash>s", "<cmd>lua require('fzf-lua').lsp_workspace_symbols()<CR>", bopts)
 
-					-- Inlay hints (type annotations as virtual text)
-					if vim.lsp.inlay_hint then
+					local client = vim.lsp.get_client_by_id(args.data.client_id)
+
+					-- Inlay hints (type annotations as virtual text).
+					-- texlab is opted out: it emits hints with very long resolved-
+					-- caption text at \ref{} sites that overflow the column and
+					-- trip Neovim's virt_text renderer (overlapping captions,
+					-- garbled statusline, "replicated" lines). Attempts to disable
+					-- only labelReferences via texlab settings did not take effect
+					-- in texlab 5.25.1; revisit when schema is figured out.
+					if vim.lsp.inlay_hint and client and client.name ~= "texlab" then
 						vim.lsp.inlay_hint.enable(true, { bufnr = bufnr })
 						k("n", "<leader>ih", function()
 							vim.lsp.inlay_hint.enable(
@@ -172,8 +184,8 @@ return {
 					end
 
 					-- Highlight references on CursorHold (only if server supports it)
-					local client = vim.lsp.get_client_by_id(args.data.client_id)
-					if client and client:supports_method("textDocument/documentHighlight") then
+					-- Skip texlab: highlight queries are expensive on long .tex files
+					if client and client.name ~= "texlab" and client:supports_method("textDocument/documentHighlight") then
 						vim.api.nvim_create_autocmd("CursorHold", {
 							buffer = bufnr,
 							callback = vim.lsp.buf.document_highlight,
@@ -211,6 +223,15 @@ return {
 							library = vim.api.nvim_get_runtime_file("", true),
 						},
 						telemetry = { enable = false },
+					},
+				},
+			})
+
+			vim.lsp.config("texlab", {
+				settings = {
+					texlab = {
+						build = { onSave = false },
+						chktex = { onEdit = false, onOpen = false },
 					},
 				},
 			})

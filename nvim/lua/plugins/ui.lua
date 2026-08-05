@@ -16,6 +16,8 @@ return {
 				LspReferenceText  = { bg = "#44475a", fg = "NONE", bold = false },
 				LspReferenceRead  = { bg = "#44475a", fg = "NONE", bold = false },
 				LspReferenceWrite = { bg = "#44475a", fg = "NONE", bold = false },
+				-- dracula links H1 to rainbowcol1 (= fg, invisible); use orange instead
+				["@markup.heading.1.markdown"] = { fg = "#FFB86C" },
 			},
 			})
 			-- Only set dracula when not in firenvim (firenvim uses material)

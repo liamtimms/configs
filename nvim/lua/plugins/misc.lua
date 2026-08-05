@@ -6,7 +6,7 @@ return {
 		"github/copilot.vim",
 		event = "InsertEnter",
 		init = function()
-			vim.g.copilot_filetypes = { markdown = false }
+			vim.g.copilot_filetypes = { markdown = false, tex = false }
 			vim.g.copilot_no_tab_map = true
 		end,
 		config = function()
@@ -97,7 +97,7 @@ return {
 		},
 		opts = {
 			formatters_by_ft = {
-				python     = { "black", "isort" },
+				python     = { "ruff_format", "ruff_organize_imports" },
 				c          = { "clang_format" },
 				json       = { "prettier" },
 				markdown   = { "prettier" },
@@ -107,10 +107,12 @@ return {
 				lua        = { "stylua" },
 				tex        = { "latexindent" },
 			},
-			format_on_save = {
-				timeout_ms = 500,
-				lsp_fallback = true,
-			},
+			format_on_save = function(bufnr)
+				-- Skip latexindent on save: it takes ~1.4s on long .tex files
+				-- and blocks the editor. Use <leader>af to format manually.
+				if vim.bo[bufnr].filetype == "tex" then return nil end
+				return { timeout_ms = 5000, lsp_fallback = true }
+			end,
 		},
 	},
 
