@@ -10,7 +10,7 @@ cat <<EOF >>$HOME/.bashrc
 export XDG_CONFIG_HOME=~/.config/
 
 # cloned config repo folder
-export CUSTOM_CONFIG_HOME=/fileserver/fastscratch/liam/configs/
+export CUSTOM_CONFIG_HOME=/fileserver/external/body/liam/configs/
 
 # If not running interactively, don't do anything
 [[ \$- != *i* ]] && return
@@ -19,7 +19,7 @@ source \$CUSTOM_CONFIG_HOME/shell/bashrc_wombat
 EOF
 
 cat <<EOF >>$HOME/.inputrc
-\$include /fileserver/fastscratch/liam/configs/shell/inputrc
+\$include /fileserver/external/body/liam/configs/shell/inputrc
 EOF
 
 # Set up neovim and tmux
