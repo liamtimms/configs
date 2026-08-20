@@ -1,0 +1,67 @@
+name: analysis_14
+channels:
+  - conda-forge
+dependencies:
+  - ants
+  - basedpyright
+  - black
+  - click
+  - cupy
+  - dcm2bids
+  - dcm2niix
+  - dmri-amico
+  - docker-py
+  - ffmpeg-python
+  - hypothesis
+  - imageio
+  - imageio-ffmpeg
+  - intensity-normalization
+  - ipdb
+  - ipykernel
+  - ipympl
+  - ipython
+  - ipywidgets
+  - isort
+  - jupyter_client
+  - jupyterlab
+  - lazy_loader
+  - lazygit
+  - libabseil
+  - libprotobuf
+  - lmfit
+  - matplotlib
+  - mypy
+  - nibabel
+  - nilearn
+  - nlopt
+  - numdifftools
+  - numpy
+  - opencv
+  - openpyxl
+  - pandas
+  - pandas-stubs
+  - poetry
+  - polars
+  - pydicom
+  - pynrrd
+  - pynvim
+  - pytest
+  - pytest-cov
+  - pytest-xdist
+  - python=3.14
+  - radon
+  - rich
+  - ruff
+  - scikit-image
+  - scikit-learn
+  - scipy
+  - scipy-stubs
+  - seaborn
+  - sigpy
+  - simpleitk
+  - statsmodels
+  - tqdm
+  - types-tqdm
+  - vtk
+
+prefix: "/home/ch243636/.local/opt/miniforge3/envs/analysis_14"
