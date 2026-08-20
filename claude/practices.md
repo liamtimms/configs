@@ -1,14 +1,13 @@
 # Working practices (all machines)
 
-Shared expectations for Claude Code sessions, distilled from the 2026-08-20
-usage-insights reviews of wombat and gamakichi. Machine-specific rules live in
-each machine's `~/.claude/CLAUDE.md`, next to the import of this file.
+Machine-specific rules live in each machine's `~/.claude/CLAUDE.md`, next to the import of this file.
 
 ## Plans
 
-Ask the scoped questions BEFORE drafting a plan — constraints arrive up front,
+Ask initial scoping questions BEFORE drafting a plan — constraints arrive up front,
 not bolted on mid-review. Every plan states: its assumptions, what will NOT be
-touched, and how the result gets verified.
+touched, and how the result gets verified. Then ask questions to build shared
+understanding about the plan before sharing it.
 
 ## Debugging discipline
 
@@ -39,11 +38,12 @@ short "Changes made:" list of files and new options. Prefer the minimal
 change; try the simplest configuration path empirically before reaching for
 containers or shims.
 
-## Data privacy (hospital data)
+## Data privacy
 
 Never dump raw logs, DICOM headers, or filenames containing patient
 identifiers into the transcript. Redact subject IDs (`sub-XXX`); grep only the
-relevant lines.
+relevant lines. If interaction with data is needed, ask the user to provided redacted
+targeted information without any personal information.
 
 ## Long-running and background jobs
 
