@@ -30,8 +30,10 @@ source $CUSTOM_CONFIG_HOME/shell/paths
 # NOT in conda envs.
 if [ -f "$HOME/.local/opt/miniforge3/etc/profile.d/conda.sh" ]; then
     . "$HOME/.local/opt/miniforge3/etc/profile.d/conda.sh"
-    [ -f "$HOME/.local/opt/miniforge3/etc/profile.d/mamba.sh" ] &&
+    if [ -f "$HOME/.local/opt/miniforge3/etc/profile.d/mamba.sh" ]; then
+        export MAMBA_ROOT_PREFIX="$HOME/.local/opt/miniforge3" # mamba >=2.0 requires this
         . "$HOME/.local/opt/miniforge3/etc/profile.d/mamba.sh"
+    fi
 fi
 
 # ==== Program Tweaks ====
