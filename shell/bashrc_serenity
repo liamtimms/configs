@@ -24,6 +24,16 @@ case ":$PATH:" in *":$HOME/bin:"*) ;; *) PATH="$HOME/bin:$PATH" ;; esac
 # ==== Sources ====
 source $CUSTOM_CONFIG_HOME/shell/paths
 
+# conda (miniforge, ~/.local/opt): defines the `conda`/`mamba` commands only —
+# ~/.condarc sets auto_activate_base false, so envs are activated explicitly
+# per project (see claude/practices.md). Editor LSPs live in nvim's mason,
+# NOT in conda envs.
+if [ -f "$HOME/.local/opt/miniforge3/etc/profile.d/conda.sh" ]; then
+    . "$HOME/.local/opt/miniforge3/etc/profile.d/conda.sh"
+    [ -f "$HOME/.local/opt/miniforge3/etc/profile.d/mamba.sh" ] &&
+        . "$HOME/.local/opt/miniforge3/etc/profile.d/mamba.sh"
+fi
+
 # ==== Program Tweaks ====
 # Stop nested Ranger
 ranger() {
