@@ -6,9 +6,12 @@ dependencies:
   - basedpyright
   - black
   - click
+  - cuda-crt
+  - cuda-cudart-dev
   - cupy
   - dcm2bids
   - dcm2niix
+  - dipy
   - dmri-amico
   - docker-py
   - ffmpeg-python
