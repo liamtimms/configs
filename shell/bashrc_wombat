@@ -70,6 +70,10 @@ fi
 alias cdw='cd ${WORKINGDIR}'
 alias cde='cd /fileserver/external/body/liam/'
 alias e='$EDITOR'
+# vi/vim otherwise resolve via update-alternatives to the stale /usr/bin/nvim;
+# the current nvim lives in ~/.local/opt with a symlink in ~/.local/bin
+alias vi='nvim'
+alias vim='nvim'
 alias tm='tmux attach || tmux'
 alias b='batcat'
 alias sl='ls'
