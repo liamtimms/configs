@@ -4,5 +4,4 @@
 d="$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)"
 dconf load /org/gnome/desktop/wm/keybindings/ < "$d/wm-keybindings.conf"
 dconf load /org/gnome/settings-daemon/plugins/media-keys/ < "$d/media-keys.conf"
-dconf load /org/gnome/mutter/keybindings/ < "$d/mutter-keybindings.conf"
 echo "GNOME keybindings applied."
